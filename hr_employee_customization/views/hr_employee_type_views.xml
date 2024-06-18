@@ -1,0 +1,60 @@
+<odoo>
+    <!-- Employee Type creation tree view -->
+        <record id="employee_type_tree_view" model="ir.ui.view">
+            <field name="name">employee.type.tree.view</field>
+            <field name="model">hr.employee.type</field>
+            <field name="arch" type="xml">
+                <tree editable="bottom" string="Employee Type">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+    <!-- Modify Employee Form -->
+        <record id="inherit_its_view_employee_form" model="ir.ui.view">
+            <field name="name">inherit.its.view.employee.form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet/notebook/page[@name='hr_settings']/group/group[@name='active_group']/field[@name='employee_type']" position="before">
+                    <field name="hr_employee_type_id"/>
+                </xpath>
+            </field>
+        </record>
+
+    <!-- Make employee_type field invisible -->
+         <record id="inherit_its_employee_type_view_employee_form" model="ir.ui.view">
+            <field name="name">inherit.its.employee.type.view.employee.form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet/notebook/page[@name='hr_settings']/group/group[@name='active_group']/field[@name='employee_type']" position="attributes">
+                     <attribute name="invisible">1</attribute>
+                </xpath>
+            </field>
+        </record>
+
+    <!-- Employee Type menu action -->
+        <record id="employee_type_action" model="ir.actions.act_window">
+            <field name="name">Employee Type</field>
+            <field name="res_model">hr.employee.type</field>
+            <field name="view_mode">tree</field>
+        </record>
+
+    <!-- Employee Type menu -->
+        <menuitem
+            id="employee_type_menu" name="Employee Type" action="employee_type_action"
+            parent="hr.menu_human_resources_configuration_employee" sequence="200"/>
+
+    <!-- Employee Type increment sequence number -->
+        <record id="employee_type_increment_number_sequence" model="ir.sequence">
+            <field name="name">Employee Type number incrementation</field>
+            <field name="code">employee_type_number_auto_increment</field>
+            <field name="active">TRUE</field>
+            <!-- <field name="prefix"></field> -->
+            <field name="padding">6</field>
+            <field name="number_next">1</field>
+            <field name="number_increment">1</field>
+        </record>
+
+</odoo>

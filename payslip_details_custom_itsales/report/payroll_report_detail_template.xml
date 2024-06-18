@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="payroll_detail_doc">
+        <t t-call="web.html_container">
+            <t t-call="web.external_layout">
+                <div class="page" style="font-size: 13px;">
+                    <t t-set="total_general" t-value="0" />
+                    <t t-set="empleados_totales" t-value="0" />
+
+                    <t t-foreach="payroll_by_period.keys()" t-as="payroll">
+                        <div class="oe_structure" />
+                        <div class="row">
+                            <div class="col-12 mx-auto pb-5">
+                                <div class="text-center">
+                                    <h4>
+                                        <b>REPORTE DE <span t-esc="payroll.upper()"/>
+                                        </b>
+                                    </h4>
+                                    <h5>
+                                        PERIODO DEL
+                                        <span t-esc="date_start" />
+                                        AL
+                                        <span t-esc="date_end" />
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+
+                        <t t-foreach="payroll_by_period.get(payroll).keys()" t-as="departamento">
+                            <div class="text-left pb-3">
+                                <span>
+                                    <b>Departamento:</b>
+                                </span>
+                                <span t-esc="departamento" />
+                            </div>
+                            <t t-set="pay_list" t-value="payroll_by_period.get(payroll).get(departamento)" />
+                            <t t-set="total_depart" t-value="0" />
+                            <t t-set="empleados_depart" t-value="0" />
+                            <t t-foreach="pay_list" t-as="line">
+                                <t t-set="neto_apagar" t-value="'{:,.2f}'.format(line[7]).replace(',', '@').replace('.', ',').replace('@', '.')"/>
+                                <t t-set="total_depart" t-value="total_depart + line[7]" />
+                                <t t-set="empleados_depart" t-value="empleados_depart + 1" />
+                                <table class="table table-sm pb-5 o_main_table">
+                                    <tr>
+                                        <th style="width:30%" class="text-left">
+                                            Empleado
+                                        </th>
+                                        <th style="width:15%" class="text-center">
+                                            Identificación
+                                        </th>
+                                        <th style="width:20%" class="text-center">
+                                            Puesto de Trabajo
+                                        </th>
+                                        <th style="width:15%" class="text-center">
+                                            Salario
+                                        </th>
+                                        <th style="width:20%" class="text-center">
+                                            Fecha de Ingreso
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-left">
+                                            <t t-esc="line[0]" />
+                                        </td>
+                                        <td class="text-center">
+                                            <t t-esc="line[1]" />
+                                        </td>
+                                        <td class="text-center">
+                                            <t t-esc="line[2]" />
+                                        </td>
+                                        <td class="text-center">
+                                            <t t-esc="line[3]" />
+                                        </td>
+                                        <td class="text-center">
+                                            <t t-esc="line[4]"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-left">
+                                            Concepto
+                                        </th>
+                                        <th class="text-center">
+                                            Duración
+                                        </th>
+                                        <th class="text-center">
+                                            Monto
+                                        </th>
+                                        <th class="text-center">
+                                            Asignación
+                                        </th>
+                                        <th class="text-center">
+                                            Deducción
+                                        </th>
+                                    </tr>
+                                    <t t-foreach="line[5]" t-as="pay">
+                                        <tr>
+                                            <td class="text-left">
+                                                <t t-esc="pay[0]"/>
+                                            </td>
+                                            <td class="text-center">
+                                                <t t-esc="pay[5]"/>
+                                            </td>
+                                            <td class="text-center">
+                                                <t t-esc="'{:,.2f}'.format(pay[4]).replace(',', '@').replace('.', ',').replace('@', '.')"/>
+                                            </td>
+                                            <td class="text-center">
+                                                <t t-esc="'{:,.2f}'.format(pay[2]).replace(',', '@').replace('.', ',').replace('@', '.')"/>
+                                            </td>
+                                            <td class="text-center">
+                                                <t t-esc="'{:,.2f}'.format(pay[3]).replace(',', '@').replace('.', ',').replace('@', '.')"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                    <tr>
+                                        <td class="text-right font-weight-bold fs-4" colspan="2">Totales:</td>
+                                        <td />
+                                        <td class="text-center fs-4">
+                                            <span t-esc="'{:,.2f}'.format(line[6][0]).replace(',', '@').replace('.', ',').replace('@', '.')"/>
+                                        </td>
+                                        <td class="text-center fs-4">
+                                            <span t-esc="'{:,.2f}'.format(line[6][1]).replace(',', '@').replace('.', ',').replace('@', '.')" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-right" colspan="2">
+                                            <b> Neto a pagar trabajador: </b>
+                                        </td>
+                                        <td class="text-center">
+                                            <span t-esc="neto_apagar" />
+                                        </td>
+                                        <td colspan="2" />
+                                    </tr>
+                                </table>
+                            </t>
+                            <t t-set="total_general" t-value="total_general + total_depart" />
+                            <t t-set="empleados_totales" t-value="empleados_totales + empleados_depart" />
+                            <p class="text-right">
+                                <b> Total trabajadores por departamento:</b>
+                                <span t-esc="empleados_depart" />
+                            </p>
+                            <p class="text-right">
+                                <b> Total por departamento:</b>
+                                <span t-esc="'{:,.2f}'.format(total_depart).replace(',', '@').replace('.', ',').replace('@', '.')" />
+                            </p>
+                        </t>
+                    </t>
+                    <p class="fs-1">
+                        <b>TOTAL GENERAL DE TRABAJADORES:</b>
+                        <span t-esc="empleados_totales" />
+                    </p>
+                    <p class="fs-1">
+                        <b>TOTAL GENERAL: </b>
+                        <span t-esc="'{:,.2f}'.format(total_general).replace(',', '@').replace('.', ',').replace('@', '.')"/>
+                    </p>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

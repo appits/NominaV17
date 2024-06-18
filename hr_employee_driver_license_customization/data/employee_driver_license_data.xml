@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        
+        <record id="employee_driver_license_001" model="hr_employee_driver_license">
+            <field name="name">first_grade</field>
+            <field name="type_of_drivers_license">type_a</field>
+        </record>
+
+        <record id="employee_driver_license_002" model="hr_employee_driver_license">
+            <field name="name">first_grade</field>
+            <field name="type_of_drivers_license">type_b</field>
+        </record>
+
+        <record id="employee_driver_license_003" model="hr_employee_driver_license">
+            <field name="name">second_grade</field>
+            <field name="type_of_drivers_license">type_a</field>
+        </record>
+
+        <record id="employee_driver_license_004" model="hr_employee_driver_license">
+            <field name="name">second_grade</field>
+            <field name="type_of_drivers_license">type_b</field>
+        </record>
+
+        <record id="employee_driver_license_005" model="hr_employee_driver_license">
+            <field name="name">third_grade</field>
+        </record>
+
+        <record id="employee_driver_license_006" model="hr_employee_driver_license">
+            <field name="name">fourth_grade</field>
+        </record>
+
+        <record id="employee_driver_license_007" model="hr_employee_driver_license">
+            <field name="name">fifth_grade</field>
+        </record>
+
+        <record id="employee_driver_license_008" model="hr_employee_driver_license">
+            <field name="name">tsp</field>
+        </record>
+    
+    </data>
+</odoo>

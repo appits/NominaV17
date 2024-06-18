@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<data>
+	<record id="res_config_settings_view_form_custom_inherit_contract" model="ir.ui.view">
+		<field name="name">res.config.settings.view.form.custom.inherit.contract</field>
+		<field name="model">res.config.settings</field>
+		<field name="inherit_id" ref="hr_payroll.res_config_settings_view_form"/>
+		<field name="arch" type="xml">
+			<xpath expr="//div[@id='hr_payroll_localization']" position="after">
+				<!-- -->
+				<h2>Calculations</h2>
+				<div class="row mt16 o_settings_container" id="custom_calculations_hr_payroll">
+					<div class="col-lg-6 col-12 o_setting_box">
+						<div class="o_setting_left_pane"/>
+						<div class="o_setting_right_pane">
+							<div class="text-muted">
+								Changes the way some special calculations are made
+							</div>
+							<group class="mt16" name="trust_calculation">
+								<label for="trust_config"/>
+								<div>
+									<field name="trust_config" required="1"/>
+								</div>
+							</group>
+						</div>
+					</div>
+				</div>
+			</xpath>
+		</field>
+	</record>
+</data>
+</odoo> 

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="inherit_id_employee_form" model="ir.ui.view">
+            <field name="name">inherit.id.employee.form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='registration_number']" position="replace">
+                    <!--  -->
+                </xpath>
+
+                <xpath expr="//field[@name='mobile_phone']" position="before">
+                    <field name="registration_number" string="File"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

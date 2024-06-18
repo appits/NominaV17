@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_wizard_personnel_turnover,access_wizard_personnel_turnover,model_wizard_personnel_turnover,base.group_user,1,1,1,1
+access_wizard_personnel_turnover_line,access_wizard_personnel_turnover_line,model_wizard_personnel_turnover_line,base.group_user,1,1,1,1
+access_hr_personnel_turnover,access_hr_personnel_turnover,model_hr_personnel_turnover,base.group_user,1,1,1,0

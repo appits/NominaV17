@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <record id="inherit_salary_rule_new_account" model="ir.ui.view">
+        <field name="name">inherit.salary.rule.new.account</field>
+        <field name="model">hr.salary.rule</field>
+        <field name="inherit_id" ref="hr_payroll.hr_salary_rule_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='accounting']/group[1]" position="after">
+                <field name="categ_code" invisible="1"/>
+                <group id="new_account" attrs="{'invisible': [('categ_code', 'in', ['CONTRIB'])]}">
+                    <group string="Direct Cost" id="direct">
+                        <field name="account_debit_direct_cost_id"/>
+                        <field name="account_credit_direct_cost_id"/>
+                    </group>
+                    <group string="Indirect Cost" id="indirect">
+                        <field name="account_debit_indirect_cost_id"/>
+                        <field name="account_credit_indirect_cost_id"/>
+                    </group>
+                </group>
+            </xpath>
+
+            <xpath expr="//field[@name='account_debit']" position="attributes">
+                <attribute name="string">Debit account expense</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='account_credit']" position="attributes">
+                <attribute name="string">Credit account expense</attribute>
+            </xpath>
+        </field>
+    </record>
+    
+</odoo>

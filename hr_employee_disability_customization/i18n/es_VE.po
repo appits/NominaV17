@@ -1,0 +1,78 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_employee_disability_customization
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e-20220307\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-28 18:33+0000\n"
+"PO-Revision-Date: 2022-04-28 18:33+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_employee_disability_customization
+#: model:ir.model.fields,field_description:hr_employee_disability_customization.field_hr_employee_disability__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: hr_employee_disability_customization
+#: model:ir.model.fields,field_description:hr_employee_disability_customization.field_hr_employee_disability__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: hr_employee_disability_customization
+#: model:ir.model.fields,field_description:hr_employee_disability_customization.field_hr_employee__disability
+#: model:ir.model.fields,field_description:hr_employee_disability_customization.field_hr_employee_disability__name
+msgid "Disability"
+msgstr "Discapacidad"
+
+#. module: hr_employee_disability_customization
+#: model:ir.model.fields,field_description:hr_employee_disability_customization.field_hr_employee_disability__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: hr_employee_disability_customization
+#: model:ir.model,name:hr_employee_disability_customization.model_hr_employee
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: hr_employee_disability_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_disability_customization.hr_employee_disability_form
+#: model_terms:ir.ui.view,arch_db:hr_employee_disability_customization.hr_employee_inherit_employee_disability
+msgid "Employee Disability"
+msgstr "Discapacidad del empleado"
+
+#. module: hr_employee_disability_customization
+#: model:ir.model,name:hr_employee_disability_customization.model_hr_employee_disability
+msgid "Employees disability"
+msgstr "Discapacidad del empleado"
+
+#. module: hr_employee_disability_customization
+#: model:ir.model.fields,field_description:hr_employee_disability_customization.field_hr_employee__type_disability_ids
+msgid "Employees type disability"
+msgstr "Discapacidad de tipo"
+
+#. module: hr_employee_disability_customization
+#: model:ir.model.fields,field_description:hr_employee_disability_customization.field_hr_employee_disability__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_employee_disability_customization
+#: model:ir.model.fields,field_description:hr_employee_disability_customization.field_hr_employee_disability____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: hr_employee_disability_customization
+#: model:ir.model.fields,field_description:hr_employee_disability_customization.field_hr_employee_disability__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: hr_employee_disability_customization
+#: model:ir.model.fields,field_description:hr_employee_disability_customization.field_hr_employee_disability__write_date
+msgid "Last Updated on"
+msgstr ""

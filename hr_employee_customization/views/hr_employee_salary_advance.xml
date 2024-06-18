@@ -1,0 +1,163 @@
+<odoo>
+  <data>
+    <!-- hr_employee_salary_advance -->
+    <record id="hr_employee_salary_advance_tree" model="ir.ui.view">
+      <field name="name">hr.employee.salary.advance.tree</field>
+      <field name="model">hr_employee_salary_advance</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="active" invisible="1" />
+          <field name="date" />
+          <field name="name" />
+          <field name="employee_ids" widget="many2many_tags" />
+          <field name="department_ids" widget="many2many_tags" />
+          <field name="reason" />
+          <field name="advancement"/>
+          <field name="rate_id" />
+          <field name="rate_amount" />
+          <field name="company_id" />
+          <field name="state"  widget="badge" decoration-warning="state == 'confirm'"  decoration-danger="state == 'refuse'" decoration-info="state == 'approved'" decoration-success="state == 'paid'"/>
+          <field name="employee_payslip_id" invisible="1" />
+          <field name="currency_id" optional="hide" />
+          <field name="quote_amount" optional="hide" />
+          <field name="debt_total" optional="hide" />
+          <field name="debt_inicial" optional="hide" />
+        </tree>
+      </field>
+    </record>
+
+    <record id="hr_employee_salary_advance_form" model="ir.ui.view">
+      <field name="name">hr.employee.salary.advance.form</field>
+      <field name="model">hr_employee_salary_advance</field>
+      <field name="arch" type="xml">
+        <form string="Request advance">
+          <header>
+            
+              <button string="Confirm" name="action_confirm" states="draft" type="object" class="oe_highlight"/>
+              <button string="Approve" name="action_approve" type="object" class="oe_highlight" attrs="{'invisible': [('state', '!=', 'confirm')]}"/>
+              <button string="Refuse" name="action_refuse" type="object" attrs="{'invisible': [('state', 'not in', ('confirm','approved'))]}"/>
+              <button string="Mark as Draft" name="action_draft" type="object" attrs="{'invisible': [('state', 'not in', ['confirm', 'refuse'])]}"/>
+              
+              <field name="state" widget="statusbar" statusbar_visible="confirm,approved,paid" />
+
+          </header>
+          <sheet>
+            <field name="active" invisible="1" />
+            <group name="group_top" string="Advance">
+              <group name="group_left" style="width:50%;">
+                <field name="name" required="1" attrs="{'readonly': [('state', 'not in', ('draft', 'confirm'))]}"/>
+                <field name="employee_ids" widget="many2many_tags" attrs="{'invisible': [('name', '!=', '1')], 'required': [('name', '!=', '3')], 'readonly': [('state', 'not in', ('draft', 'confirm'))]}" />
+                <field name="employee_contract_ids" widget="many2many_tags" invisible="1" />
+                <field name="department_ids" widget="many2many_tags" attrs="{'invisible': [('name', '=', '3')], 'required': [('name', '=', '2')], 'readonly': [('state', 'not in', ('draft', 'confirm'))]}" options="{'no_open': True}" />
+                <field name="company_id" attrs="{'readonly': [('state', 'not in', ('draft', 'confirm'))]}" options="{ 'no_open': True}" />
+                <field name="quotes" attrs="{'invisible': [('reason', 'in', ['1', '2'])]}"/>
+                <field name="asig_struct_nomina" required='1'/>
+                <field name="desc_struct_nomina" widget='many2many_tags' attrs="{'invisible': [('reason', 'in', ['1'])], 'required': [('reason', '!=', '1')]}"/>
+
+                <field name="active_advance" widget="boolean_toggle" attrs="{'invisible': [('reason', 'in', ['1', '2'])]}"/>
+                <field name="money_assigned" widget="boolean_toggle" attrs="{'invisible': [('reason', 'in', ['1'])]}" readonly="1"/>
+              </group>
+              <group name="group_right" style="width:50%;">
+                <field name="date" required="1" attrs="{'readonly': [('state', 'not in', ('draft', 'confirm'))]}"/>
+                <field name="reason" required="1" attrs="{'readonly': [('state', 'not in', ('draft', 'confirm'))]}"/>
+                <field name="advance_vacation" attrs="{'invisible': [('reason', '!=', '4')], 'required': [('reason', '=', '4')],'readonly': [('state', 'not in', ('draft', 'confirm'))]}" />
+                <label for="advancement" />
+                <div class="o_row" name="advancement">
+                  <field name="advancement" required="1" nolabel="1" widget="monetary" attrs="{'readonly': [('state', 'not in', ('draft', 'confirm'))]}" options="{'currency_field': 'currency_id'}" />
+                  <span> - </span>
+                  <field name="currency_id" required="1" attrs="{'readonly': [('state', 'not in', ('draft', 'confirm'))]}" options="{ 'no_open': True}" />
+                </div>
+                <label for="rate_id" />
+                <div class="o_row" name="rate">
+                  <field name="rate_id" nolabel="1" attrs="{'readonly': [('state', 'not in', ('draft', 'confirm'))]}" options="{'no_create': True, 'no_open': True}" domain="[('is_payroll_rate', '=', True)]"/>
+                  <span> - </span>
+                  <field name="rate_amount" readonly="1" force_save="1" attrs="{'readonly': [('state', 'not in', ('draft', 'confirm'))]}" />
+                </div>
+                <field name="quote_amount"  attrs="{'invisible': [('reason', 'in', ['1', '2'])]}"/>
+                <field name="debt_total"  attrs="{'invisible': [('reason', 'in', ['1', '2'])]}"/>
+                <field name="quot_actual"  attrs="{'invisible': [('reason', 'in', ['1', '2'])]}"/>
+                <field name="debt_inicial" attrs="{'invisible': [('reason', 'in', ['1', '2'])]}"/>
+
+
+              </group>
+            
+            </group>
+            <group col="8">
+            <notebook >
+            
+              <page string='Pagos de Empleados' >
+                  <field name="payments_links_ids" mode="tree,kanban" invisible="0"  >
+                                <form string="Pagos de Prestamos">
+                                        <group>
+                                            <group>
+                                                <field name="employee_id"  invisible="0"  />
+                                                <field name="currency_id" readonly="0"/>
+                                                <field name="cuota_nro" readonly="0"/>
+                                                <field name="date" readonly="0"/>
+                                                <field name="quote_amount" readonly="0"/>
+                                            </group>
+                                        </group>
+                                    </form>
+                                    <tree string="Pagos de Prestamos" editable="bottom">
+                                                <field name="employee_id"  invisible="0"  />
+                                                <field name="currency_id" readonly="0"/>
+                                                <field name="cuota_nro" readonly="0"/>
+                                                <field name="date_from" readonly="1"/>
+                                                <field name="date_to" readonly="1"/>
+                                                <field name="quote_amount" readonly="0"/>
+                                                <field name="date" readonly="0" optional="hide"/>
+                                                
+                                    </tree>
+                            </field>
+
+
+                </page>
+
+            </notebook>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+    <!-- Archived-->
+    <record id="hr_employee_salary_advance_search" model="ir.ui.view">
+      <field name="name">hr.employee.salary.advance.search</field>
+      <field name="model">hr_employee_salary_advance</field>
+      <field name="arch" type="xml">
+        <search>
+          <field name="name" />
+          <separator />
+          <filter name="archived" string="Archived" domain="[('active', '=', False)]" />
+        </search>
+      </field>
+    </record>
+
+    <record id="hr_employee_salary_advance_action" model="ir.actions.act_window">
+      <field name="name">Advance</field>
+      <field name="res_model">hr_employee_salary_advance</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- actions -->
+    <menuitem id="menu_hr_employee_salary_advance" name="Advances" parent="hr.menu_hr_root" sequence="96" />
+
+    <menuitem id="hr_employee_salary_advance_config" name="Request advance" action="hr_employee_salary_advance_action" parent="menu_hr_employee_salary_advance" sequence="1" />
+
+    <!--Page of Advances in employees-->
+    <record id="hr_advance_employee_form" model="ir.ui.view">
+      <field name="name">hr.advance.employee.form</field>
+      <field name="model">hr.employee</field>
+      <field name="inherit_id" ref="hr.view_employee_form" />
+      <field name="arch" type="xml">
+        <xpath expr="//page[@name='bank_information']" position="after">
+          <page name="employee_advance" string="Advances">
+            <separator string="Advances" />
+            <field name="salary_advance_ids" nolabel="1" readonly="1" force_saved="1" />
+          </page>
+        </xpath>
+      </field>
+    </record>
+
+  </data>
+</odoo>

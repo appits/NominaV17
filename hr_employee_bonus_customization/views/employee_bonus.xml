@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+
+        <!-- Employee bonus -->
+        <record id="hr_employee_bonus_tree" model="ir.ui.view">
+            <field name="name">hr.employee.bonus.tree</field>
+            <field name="model">hr_employee_bonus</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="active" invisible="1" />
+                    <field name="date" />
+                    <field name="name" />
+                    <field name="description" />
+                    <field name="amount" />
+                    <field name="minimum_age" />
+                    <field name="type_minimum_age" />
+                    <field name="maximum_age" />
+                    <field name="type_maximum_age" />
+                    <field name="study_level" />
+                    <field name="state" widget="badge" decoration-info="state == 'new'" decoration-warning="state == 'cancel'" decoration-success="state == 'assigned'" />
+                    <field name="currency_id" optional="hide"/>
+                    
+                </tree>
+            </field>
+        </record>
+
+        <record id="hr_employee_bonus_form" model="ir.ui.view">
+            <field name="name">hr.employee.bonus.form</field>
+            <field name="model">hr_employee_bonus</field>
+            <field name="arch" type="xml">
+                <form string="Employee Bonus">
+                    <header>
+                        <field name="state" widget="statusbar" />
+                        <button name="action_confirm" string="Confirm" type="object" class="oe_highlight" attrs="{'invisible': [('state', 'in', ['new', 'cancel'])]}"/>
+                        <button name="action_cancel" string="Cancel" type="object" class="oe_highlight" attrs="{'invisible': [('state', 'in', ['new', 'draft'])]}"/>
+                        <button name="action_draft" string="Draft" type="object" class="oe_highlight" attrs="{'invisible': [('state', 'in', ['new', 'draft'])]}"/>
+                        <button name="search_employees" string="Search employees" type="object" class="oe_highlight" attrs="{'invisible': [('state', '!=', 'new')]}"/>
+                    </header>
+                    <sheet>
+                        <field name="active" invisible="1" />
+                        <group name="group_top" string="Employee Bonus">
+                            
+                            <group name="group_left" style="width:50%;">
+                                <field name="name" required="True" />
+
+                                <label for="amount" />
+                                <div class="o_row" name="amount">
+                                    <field name="amount" required="1" nolabel="1" widget="monetary" options="{'currency_field': 'currency_id'}" />
+                                    <span> - </span>
+                                    <field name="currency_id" required="1" />
+                                </div>
+                                <field name="date" required="True" />
+                            </group>
+                            
+                            <group name="group_right" style="width:50%;">
+                                <field name="description" attrs="{'invisible': [('name', '!=', '3')], 'required': [('name', '=', '3')]}" />
+                                <label for="minimum_age" attrs="{'invisible': [('name', '=', '3')], 'required': [('name', 'in', ['1','2'])]}" />
+                                <div class="o_row" name="minimun_age">
+                                    <field name="minimum_age" nolabel="1" attrs="{'invisible': [('name', '=', '3')], 'required': [('name', 'in', ['1','2'])]}" />
+                                    <field name="type_minimum_age" attrs="{'invisible': [('name', '=', '3')], 'required': [('name', 'in', ['1','2'])]}" />
+                                </div>
+                                <label for="maximum_age" attrs="{'invisible': [('name', '=', '3')], 'required': [('name', 'in', ['1','2'])]}" />
+                                <div class="o_row" name="miximun_age">
+                                    <field name="maximum_age" nolabel="1" attrs="{'invisible': [('name', '=', '3')], 'required': [('name', 'in', ['1','2'])]}" />
+                                    <field name="type_maximum_age" attrs="{'invisible': [('name', '=', '3')], 'required': [('name', 'in', ['1','2'])]}" />
+                                </div>
+                                
+                                <field name="study_level" attrs="{'invisible': [('name', '!=', '2')], 'required': [('name', '=', '2')]}" />
+                            </group>
+                        </group>
+                        <notebook>
+                            
+                            <page string="Bonus" name="employee_bonus">
+                                <group>
+                                    <field name="bonus_line_ids" widget="one2many" readonly="0" nolabel="1">
+                                        <tree string="Current Bonus" editable="bottom" no_open="1" create="0" delete="1">
+                                            <field name="employee_id" no_open="1"/>
+                                            <field name="bonus_id" no_open="1"/>
+                                            <field name="employee_bonus_amount" sum='Total bonus amount'/>
+                                        </tree>
+                                    </field>
+                                </group>
+                            </page>
+                            
+                        </notebook>
+                        
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="hr_employee_bonus_search" model="ir.ui.view">
+            <field name="name">hr.employee.bonus.search</field>
+            <field name="model">hr_employee_bonus</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name" />
+                    <separator />
+                    <filter name="archived" string="Archived" domain="[('active', '=', False)]" />
+                </search>
+            </field>
+        </record>
+
+        <record id="hr_employee_bonus_action" model="ir.actions.act_window">
+            <field name="name">Employee Bonus</field>
+            <field name="res_model">hr_employee_bonus</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- actions -->
+        <menuitem id="menu_hr_employee_bonus" name="Bonus" parent="hr.menu_hr_root" sequence="98" />
+        
+        <menuitem id="hr_employee_bonus_config" name="Employee Bonus" action="hr_employee_bonus_action" parent="menu_hr_employee_bonus" sequence="1" />
+
+        <!-- Page Bonus-->
+        <record id="hr_employee_bonus_page_form" model="ir.ui.view">
+            <field name="name">hr.employee.bonus.page.form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='personal_information']" position="after">
+
+                    <page string="Bonus">
+                        <separator string="Bonus" colspan="4" />
+                        
+                        <field name="bonus_line_ids" widget="one2many" readonly="0">
+                            <tree string="Current Bonus" editable="bottom" no_open="1" create="0" delete="1">
+                                <field name="employee_id" />
+                                <field name="bonus_id" />
+                                <field name="employee_bonus_amount" sum='Total bonus amount'/>
+                            </tree>
+                        </field>
+                        
+                    </page>
+
+                </xpath>
+            </field>
+        </record>
+        
+    </data>
+</odoo>

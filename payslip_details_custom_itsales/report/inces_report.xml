@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="inces_report_report">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <t t-set="months_dict" t-value="o._get_month_names()"/>
+                    <t t-set="months_name" t-value="list(months_dict.keys())"/>
+                    <t t-set="months_date" t-value="list(months_dict.values())"/>
+                    <t t-set="currency" t-value="o.contract_ids._get_fiscal_currency()"/>
+
+                    <div id="title" style="text-align: center;">
+                        <h3>
+                            Detalle de Salario Anual INCES
+                        </h3>
+                        <h4>
+                            <t t-if="o.period == 'one'">
+                                <t t-set="date" t-value="months_name[0] + ' ' + str(o.date.year)"/>
+                                Mes <span t-esc="date"/>
+                            </t>
+                            <t t-else="else">
+                                <t t-if="o.quarter == 'q1'">
+                                    Primer Trimestre Año <span t-esc="str(o.date.year)"/>
+                                </t>
+                                <t t-if="o.quarter == 'q2'">
+                                    Segundo Trimestre Año <span t-esc="str(o.date.year)"/>
+                                </t>
+                                <t t-if="o.quarter == 'q3'">
+                                    Tercer Trimestre Año <span t-esc="str(o.date.year)"/>
+                                </t>
+                                <t t-else="else">
+                                    Cuarto Trimestre Año <span t-esc="str(o.date.year)"/>
+                                </t>
+                            </t>
+                        </h4>
+                    </div>
+
+                    <div style="font-size: 12px;">
+                        <table style="width: 100%;">
+                            <t t-set="count" t-value="0"/>
+                            <t t-set="total" t-value="0"/>
+                            <t t-set="total_per_month" t-value="[0, 0, 0]"/>
+
+                            <thead>
+                                <tr style="border-bottom: 1px solid black; border-top: 1px solid black;">
+                                    <th class="text-left" style="width:60%;">Nombre</th>
+                                    <t t-if="o.period == 'one'">
+                                        <th class="text-center" style="width:30%;"><span t-esc="months_name[0]"/></th>
+                                    </t>
+                                    <t t-else="else">
+                                        <th class="text-center" style="width:10%;"><span t-esc="months_name[0]"/></th>
+                                        <th class="text-center" style="width:10%;"><span t-esc="months_name[1]"/></th>
+                                        <th class="text-center" style="width:10%;"><span t-esc="months_name[2]"/></th>
+                                    </t>
+                                    <th class="text-center" style="width:10%;">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="docs.contract_ids" t-as="con">
+                                    <t t-set="total_employee" t-value="0"/>
+                                    <tr style="text-align: center;">
+                                        <td style="text-align: left;">
+                                            <span t-esc="con.employee_id.name"/>
+                                        </td>
+
+                                        <t t-if="o.period == 'one'">
+                                            <td>
+                                                <t t-set="inces" t-value="con._paid_interest(o.date, ['APORTINCES', 'INCE', 'AINCES'])"/>
+                                                <span t-esc="inces" t-options="{'widget': 'monetary', 'display_currency': currency}"/>
+                                                <t t-set="total_employee" t-value="total_employee + inces"/>
+                                                <t t-set="total_per_month[0]" t-value="total_per_month[0] + inces"/>
+                                            </td>
+                                        </t>
+                                        <t t-else="else">                                                
+                                            <t t-set="i" t-value="0"/>
+
+                                            <t t-foreach="months_date" t-as="date">
+                                                <t t-set="inces" t-value="con._paid_interest(date, ['APORTINCES', 'INCE', 'AINCES'])"/>
+                                                <td>
+                                                    <span t-esc="inces" t-options="{'widget': 'monetary', 'display_currency': currency}"/>
+                                                </td>
+
+                                                <t t-set="total_employee" t-value="total_employee + inces"/>
+                                                <t t-set="total_per_month[i]" t-value="total_per_month[i] + inces"/>
+                                                <t t-set="i" t-value="i + 1"/>
+                                            </t>
+                                        </t>
+
+                                        <td>
+                                            <span t-esc="total_employee" t-options="{'widget': 'monetary', 'display_currency': currency}"/>
+                                        </td>
+                                    </tr>
+
+                                    <t t-set="count" t-value="count + 1"/>
+                                    <t t-set="total" t-value="total + total_employee"/>
+                                </t>
+                            </tbody>
+                        </table>
+
+                        <table class="table table-sm" style="border: none;">
+                            <tbody>
+                                <tr id="total" style="text-align: center; font-weight: bold;">
+                                    <td style="text-align: left; width:60%;">
+                                        Total
+                                    </td>
+
+                                    <t t-if="o.period == 'one'">
+                                        <td style="width:30%;">
+                                            <span t-esc="total_per_month[0]" t-options="{'widget': 'monetary', 'display_currency': currency}"/>
+                                        </td>
+                                    </t>
+                                    <t t-else="else">
+                                        <t t-set="i" t-value="0"/>
+
+                                        <t t-foreach="months_date" t-as="date">
+                                            <td style="width: 10%;"> 
+                                                <span t-esc="total_per_month[i]" t-options="{'widget': 'monetary', 'display_currency': currency}"/>
+                                            </td>
+
+                                            <t t-set="i" t-value="i + 1"/>
+                                        </t>                                    
+                                    </t>
+
+                                    <td style="width:10%;">
+                                        <span t-esc="total" t-options="{'widget': 'monetary', 'display_currency': currency}"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                        <!--<div style="margin-top: 120px;">
+                            <table style="width: 70%; height: 3cm; margin: 0 auto;">
+                                <tr>
+                                    <td style="width: 5%; position:relative;padding: 0 50px 0 50px;" >
+                                        <div style="position:relative; height: 3cm;">
+                                            <div style="text-align: center;">
+                                                <hr style="border: 1px solid black; width=5%;" />
+                                                <b>Elaborado por</b>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td style="width: 5%; position:relative;padding: 0 50px 0 50px;" >
+                                        <div style="position:relative; height: 3cm;">
+                                            <div style="text-align: center;">
+                                                <hr style="border: 1px solid black; width=5%;" />
+                                                <b>Revisado por</b>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div> -->
+                    <!-- </t> -->
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

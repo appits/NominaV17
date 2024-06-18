@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        
+        <!-- Employee children -->
+        <record id="hr_employee_children_tree" model="ir.ui.view">
+            <field name="name">hr.employee.children.tree</field>
+            <field name="model">hr_employee_children</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="active" invisible="1"/>
+                    <field name="name"/>
+                    <field name="birhtdate"/>
+                    <field name="age"/>
+                    <field name="type_age"/>
+                    <field name="guardianship" />
+                    <field name="study_level"/>
+                    <field name="employee_id" optional="hide"/>
+                    <field name="child_has_ci" optional="hide"/>
+                    <field name="child_ci" optional="hide" />
+                    <field name="child_parent_ci" optional="hide" />
+                    <field name="child_mother_ci" optional="hide" />
+                </tree>
+            </field>
+        </record>
+
+        <record id="hr_employee_children_form" model="ir.ui.view">
+            <field name="name">hr.employee.children.form</field>
+            <field name="model">hr_employee_children</field>
+            <field name="arch" type="xml">
+                <form string="Children">
+                    <header>
+                    </header>
+                    <sheet>
+                        <field name="active" invisible="1"/>
+                        <group name="group_top" string="Children">
+                            <group name="group_left" style="width:50%;">
+                                <field name="name" required="True"/>
+                                <field name="birhtdate" required="True" />
+                                <label for="age" />
+                                <div class="o_row" name="age" >
+                                    <field name="age" nolabel="1" readonly="1" force_save="1" />
+                                    <field name="type_age" required="True"/>
+                                </div>
+                                <field name="guardianship" />
+                                <field name="study_level" required="True" />
+                            </group>
+                            <group name="group_right" style="width:50%;">
+                                <field name="employee_id" invisible="1" />
+                                
+                                <field name="child_has_ci" />
+                                <field name="child_ci" attrs="{'invisible':[('child_has_ci', '=', False)], 'required':[('child_has_ci', '=', True)]}" />
+                                <field name="child_parent_ci" attrs="{'invisible':[('child_has_ci', '=', True)], 'required':[('child_has_ci', '=', False)]}" />
+                                <field name="child_mother_ci" attrs="{'invisible':[('child_has_ci', '=', True)], 'required':[('child_has_ci', '=', False)]}" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        
+        <record id="hr_employee_children_search" model="ir.ui.view">
+            <field name="name">hr.employee.children.search</field>
+            <field name="model">hr_employee_children</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <separator/>
+                    <filter name="archived" string="Archived" domain="[('active', '=', False)]"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="hr_employee_children_action" model="ir.actions.act_window">
+            <field name="name">Children</field>
+            <field name="res_model">hr_employee_children</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+    </data>
+</odoo>

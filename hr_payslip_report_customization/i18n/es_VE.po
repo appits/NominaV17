@@ -1,0 +1,478 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_payslip_report_customization
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-14 16:15+0000\n"
+"PO-Revision-Date: 2023-09-14 12:16-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid ""
+") \n"
+"                    de acuerdo con el detalle anterior firmo en señal de conformidad."
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b> Nómina: </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Cédula de Identidad: </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Departamento: </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Elaborado por</b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Entidad de Trabajo: </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Fecha de Egreso: </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Fecha de Ingreso:  </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Fecha de Ingreso: </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Fecha de Regreso: </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Fecha de Salida: </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Ficha:</b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Firma del Trabajador</b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Motivo: </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Nro de Cta Bancaria:  </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Periodo: </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Periódo de Nómina: </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Puesto de Trabajo: </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>RIF Trabajador(a):  </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>RIF:</b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Revisado por</b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Salario Integral: </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Salario promedio: </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Sueldo Básico: </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Tiempo de Servicio: </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "<b>Trabajador(a): </b>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid ""
+"<span>\n"
+"                                        <strong>Neto a pagar</strong>\n"
+"                                        :\n"
+"                                    </span>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid ""
+"<span>\n"
+"                                        <strong>Totales</strong>\n"
+"                                        :\n"
+"                                    </span>"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_report_names__active
+msgid "Active"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_report_name_search
+msgid "Archived"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "Asignaciones"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_leave__hr_payslip_custom_id
+msgid "Ausencia en Payslip"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_payslip__leaves_all_days_ids
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.custom_hr_payslip_inh_holidays_number
+msgid "Ausencias Contabilizadas"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_payslip__leaves_out_period
+msgid "Ausencias Fuera de Periodo"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_payslip__leaves_all_days
+msgid "Ausencias Totales"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_payslip__calcular_in_periodo
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.custom_hr_payslip_inh_holidays_number
+msgid "Ausencias en Periodo"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "Años:"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "Certifico haber recibido la cantidad de"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "Concepto"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_report_names__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_report_names__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "Deducciones"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "Devengado de Utilidades:"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_leave__work_days_aditionales
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_payslip__work_days_aditionales
+msgid "Dias Adicionales"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_leave__holidays_number_hr
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.custom_hr_payslip_inh_holidays_number
+msgid "Dias Feriados"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_payslip__holidays_number_hr
+msgid "Dias Feriados Laborable"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_leave__work_days_hr
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_payslip__work_days_hr
+msgid "Dias Vacaciones"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_leave__weekend_days_hr
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_payslip__weekend_days_hr
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.custom_hr_payslip_inh_holidays_number
+msgid "Dias de Descanso"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.custom_hr_payslip_inh_holidays_number
+msgid "Dias de Vacaciones"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_report_names__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "Días:"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model,name:hr_payslip_report_customization.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrato de empleado"
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_leave__is_holiday_nomina
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_payslip__is_holiday_nomina
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_leave_custom_leave
+msgid "Es Vacaciones"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_leave_type__is_remunerado_nomina
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_work_entry_type__is_remunerado_nomina
+msgid "Es remunerado"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_payslip__format_struct_id_name
+msgid "Estructura General"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_payslip__date_return_holiday
+msgid "Fecha de Regreso Vacaciones"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_payslip__date_exit_holiday
+msgid "Fecha de Salida Vacaciones"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.inherit_id_employee_form
+msgid "File"
+msgstr "Ficha"
+
+#. module: hr_payslip_report_customization
+#: model:ir.model,name:hr_payslip_report_customization.model_hr_work_entry_type
+msgid "HR Work Entry Type"
+msgstr "Tipo de entrada de trabajo de RRHH"
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_report_names__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_other_input_custom
+msgid "Input Data"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_uom_category__is_payroll_category
+msgid "Is payroll category"
+msgstr "Es una categoría para nómina?"
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_report_names____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_report_names__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_report_names__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "Meses:"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_payslip__net_salary_text
+msgid "Neto en Texto"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "Nro de días"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_payslip_report_custom
+msgid "Nro de horas"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model,name:hr_payslip_report_customization.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Nómina"
+
+#. module: hr_payslip_report_customization
+#: model:ir.model,name:hr_payslip_report_customization.model_hr_payslip_input
+msgid "Payslip Input"
+msgstr "Entrada de recibo de nómina"
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.custom_hr_payslip_inh_holidays_number
+msgid "Periodo"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_payslip__period_holidays
+msgid "Periodo de Vacaciones"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model,name:hr_payslip_report_customization.model_uom_category
+msgid "Product UoM Categories"
+msgstr "Categoria de productos UdM"
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_report_names__name
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.hr_report_name_form
+msgid "Report Name"
+msgstr "Nombre del Recibo"
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_payroll_structure__report_name_id
+msgid "Report name"
+msgstr "Nombre del Recibo"
+
+#. module: hr_payslip_report_customization
+#: model:ir.model,name:hr_payslip_report_customization.model_hr_report_names
+msgid "Report names"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: code:addons/hr_payslip_report_customization/models/models.py:0
+#, python-format
+msgid "Salary Slip"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model,name:hr_payslip_report_customization.model_hr_payroll_structure
+msgid "Salary Structure"
+msgstr "Estructura salarial"
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,help:hr_payslip_report_customization.field_hr_report_names__active
+msgid "Set active to false to hide the report name tag without removing it."
+msgstr ""
+"Establezca active en false para ocultar la etiqueta del nombre del recibo sin "
+"eliminarla."
+
+#. module: hr_payslip_report_customization
+#: code:addons/hr_payslip_report_customization/models/models.py:0
+#, python-format
+msgid "There's no average salary calculated in the contract"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model,name:hr_payslip_report_customization.model_hr_leave
+msgid "Time Off"
+msgstr "Ausencias"
+
+#. module: hr_payslip_report_customization
+#: model:ir.model,name:hr_payslip_report_customization.model_hr_leave_type
+msgid "Time Off Type"
+msgstr "Tipo de ausencia"
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_payslip_input__uom_id
+msgid "Uom"
+msgstr "Medida"
+
+#. module: hr_payslip_report_customization
+#: model_terms:ir.ui.view,arch_db:hr_payslip_report_customization.custom_hr_payslip_inh_holidays_number
+msgid "Vacaciones"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_leave__work_days_legales
+msgid "Vaciones Leagales"
+msgstr ""
+
+#. module: hr_payslip_report_customization
+#: model:ir.model.fields,field_description:hr_payslip_report_customization.field_hr_payslip__work_days_legales
+msgid "Vaciones Legales"
+msgstr ""

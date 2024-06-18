@@ -1,0 +1,852 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* payslip_details_custom_itsales
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-20 13:12+0000\n"
+"PO-Revision-Date: 2024-05-20 09:24-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es_VE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.3\n"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,help:payslip_details_custom_itsales.field_social_benefits_report__massive_selection
+msgid ""
+"\n"
+"                                                Active this check to "
+"bring al employee with ongoing contract.\n"
+"\n"
+"                                                Desactive to clean all "
+"selected employees\n"
+"                                                "
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.actions.report,print_report_name:payslip_details_custom_itsales.ppss_report_action
+msgid " 'Reporte PPSS'"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.actions.report,print_report_name:payslip_details_custom_itsales.banavih_report_action
+msgid "'Banavih Report'"
+msgstr "'Reporte Banavih'"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.actions.report,print_report_name:payslip_details_custom_itsales.inces_report_action
+msgid "'INCES Report'"
+msgstr "'Reporte INCES'"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.actions.report,print_report_name:payslip_details_custom_itsales.islr_report_action
+msgid "'ISLR Report'"
+msgstr "'Reporte ISLR'"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.actions.report,print_report_name:payslip_details_custom_itsales.report_payroll_detail_action
+msgid "'Payroll Report Detail'"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.actions.report,print_report_name:payslip_details_custom_itsales.report_payroll_by_concepts_action
+msgid "'Payroll Report by concepts'"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_inces__quarter__q1
+msgid "1st Quarter"
+msgstr "1er Trimestre"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_inces__quarter__q2
+msgid "2nd Quarter"
+msgstr "2do Trimestre"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_inces__quarter__q3
+msgid "3rd Quarter"
+msgstr "3er Trimestre"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_inces__quarter__q4
+msgid "4th Quarter"
+msgstr "4to Trimestre"
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid "<b> Neto a pagar trabajador: </b>"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid "<b> Total por departamento:</b>"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid "<b> Total trabajadores por departamento:</b>"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.banavih_report_report
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.islr_report_report
+msgid "<b>Elaborado por</b>"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.banavih_report_report
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.islr_report_report
+msgid "<b>Revisado por</b>"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid "<b>TOTAL GENERAL DE TRABAJADORES:</b>"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid "<b>TOTAL GENERAL: </b>"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid ""
+"<span>\n"
+"                                    <b>Departamento:</b>\n"
+"                                </span>"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_inces_form
+msgid "<strong>INCES Report</strong><br/>"
+msgstr "<strong>Reporte INCES</strong><br/>"
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.banavih_report_report
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.islr_report_report
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.ppss_report_report
+msgid "<strong>Nro. de Trabajadores:</strong>"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.islr_report_report
+msgid "<strong>Total Deducido:</strong>"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.ppss_report_report
+msgid "<strong>Total PPSS del Mes:</strong>"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.banavih_report_report
+msgid "<strong>Total:</strong>"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_by_concepts_doc
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid "AL"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.banavih_report_report
+msgid "Aporte Empleado"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.banavih_report_report
+msgid "Aporte Empresa"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_by_concepts_doc
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid "Asignación"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.actions.report,name:payslip_details_custom_itsales.banavih_report_action
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_banavih_form
+msgid "Banavih Report"
+msgstr "Reporte Banavih"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model,name:payslip_details_custom_itsales.model_wizard_report_banavih
+msgid "Banavih report wizard Model"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_banavih__order_table_by__birthday
+msgid "Birth Date"
+msgstr "Fecha de Nacimiento"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_payslip_detail__state__draft
+msgid "Borrador"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_banavih_form
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_inces_form
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_islr_form
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_payslip_detail_form
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_ppss_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_by_concepts_doc
+msgid "Cantidad"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_by_concepts_doc
+msgid "Cantidad de trabajadores en el periodo:"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.ppss_report_report
+msgid "Cargo"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_inces_form
+msgid "Choose a date to print report for following months:"
+msgstr "La fecha elegida para imprimir el informe de los meses siguientes:"
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_inces_form
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_ppss_form
+msgid "Choose a date to print report for month"
+msgstr "La fecha elegida para imprimir el informe del mes"
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_by_concepts_doc
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid "Concepto"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_payslip_detail__state_lote__verify
+msgid "Confirmado"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_banavih__contract_ids
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_inces__contract_ids
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_islr__contract_ids
+msgid "Contract"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_social_benefits_report__create_uid
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_banavih__create_uid
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_inces__create_uid
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_islr__create_uid
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_payslip_detail__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_social_benefits_report__create_date
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_banavih__create_date
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_inces__create_date
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_islr__create_date
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_payslip_detail__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.inces_report_report
+msgid "Cuarto Trimestre Año"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.banavih_report_report
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.islr_report_report
+msgid "Cédula"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_social_benefits_report__date
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_inces__date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_inces__date_msg
+msgid "Date Msg"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_by_concepts_doc
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid "Deducción"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.islr_report_report
+msgid "Deducción en el periodo"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.ppss_report_report
+msgid "Departamento"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_payslip_detail__type_report__detallado
+msgid "Detallado"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.inces_report_report
+msgid "Detalle de Salario Anual INCES"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.banavih_report_report
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.islr_report_report
+msgid "Devengado"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_social_benefits_report__display_name
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_banavih__display_name
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_inces__display_name
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_islr__display_name
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_payslip_detail__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid "Duración"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_islr__file_type__xlsx_report
+msgid "EXCEL"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.banavih_report_report
+msgid "Edad"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid "Empleado"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model,name:payslip_details_custom_itsales.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrato de empleado"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_social_benefits_report__employee_ids
+msgid "Employees"
+msgstr "Empleados"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_payslip_detail__state__verify
+msgid "En Espera"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_payslip_detail__date_end
+msgid "End Date"
+msgstr "Fecha final"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_payslip_detail__state
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_payslip_detail__state_lote
+msgid "Estado"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.banavih_report_report
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.islr_report_report
+msgid "Fecha de Egreso"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.banavih_report_report
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.islr_report_report
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid "Fecha de Ingreso"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.banavih_report_report
+msgid "Fecha de Nacimiento"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.ppss_report_report
+msgid "Fecha de ingreso"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.banavih_report_report
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.islr_report_report
+msgid "Ficha"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_islr__file_type
+msgid "File type"
+msgstr "Tipo de archivo"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_banavih__start_date
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_islr__start_date
+msgid "From date"
+msgstr "Desde el"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_payslip_detail__state__done
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_payslip_detail__state_lote__close
+msgid "Hecho"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_payslip_detail__payslip_ids
+msgid "Hojas de Pago"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_social_benefits_report__id
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_banavih__id
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_inces__id
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_islr__id
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_payslip_detail__id
+msgid "ID"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.actions.report,name:payslip_details_custom_itsales.inces_report_action
+msgid "INCES Report"
+msgstr "Reporte INNNCES"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model,name:payslip_details_custom_itsales.model_wizard_report_inces
+msgid "INCES report wizard Model"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.actions.report,name:payslip_details_custom_itsales.islr_report_action
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_inces_form
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_islr_form
+msgid "ISLR Report"
+msgstr "Reporte ISLR"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model,name:payslip_details_custom_itsales.model_social_benefits_report
+#: model:ir.model,name:payslip_details_custom_itsales.model_wizard_report_islr
+msgid "ISLR report wizard Model"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid "Identificación"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_banavih__order_table_by__identification_id
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_islr__order_table_by__identification_id
+msgid "Identification Number"
+msgstr "Número de Identificación"
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_payslip_detail_form
+msgid "Invoice Payment Report"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_social_benefits_report____last_update
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_banavih____last_update
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_inces____last_update
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_islr____last_update
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_payslip_detail____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_social_benefits_report__write_uid
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_banavih__write_uid
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_inces__write_uid
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_islr__write_uid
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_payslip_detail__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_social_benefits_report__write_date
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_banavih__write_date
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_inces__write_date
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_islr__write_date
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_payslip_detail__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.ppss_report_report
+msgid "MES"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_social_benefits_report__massive_selection
+msgid "Massive selection"
+msgstr "Selección masiva"
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.inces_report_report
+msgid "Mes"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_social_benefits_report__month_name
+msgid "Month Name"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_inces__period__one
+msgid "Monthly"
+msgstr "Mensual"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_inces__months_display
+msgid "Months Display"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_by_concepts_doc
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid "Monto"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_social_benefits_report__msg
+msgid "Msg"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_banavih__order_table_by__name
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_islr__order_table_by__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.banavih_report_report
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.inces_report_report
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.islr_report_report
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.ppss_report_report
+msgid "Nombre"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_payslip_detail__state_lote__draft
+msgid "Nuevo"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_banavih__order_table_by
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_islr__order_table_by
+msgid "Order by"
+msgstr "Ordenar por"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_islr__file_type__pdf_report
+msgid "PDF"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_by_concepts_doc
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid "PERIODO DEL"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.ppss_report_report
+msgid "PPSS disponible"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_payslip_detail__state__paid
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_payslip_detail__state_lote__paid
+msgid "Pagado"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.actions.report,name:payslip_details_custom_itsales.report_payroll_detail_action
+msgid "Payroll Report Detail"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.actions.report,name:payslip_details_custom_itsales.report_payroll_by_concepts_action
+msgid "Payroll Report by concepts"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model,name:payslip_details_custom_itsales.model_wizard_report_payslip_detail
+msgid "Payslip Detail report wizard Model"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_banavih__payslip_ids
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_islr__payslip_ids
+msgid "Payslip ids"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_inces__period
+msgid "Period"
+msgstr "Periodo"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_payslip_detail__type_report__conceptos
+msgid "Por Conceptos"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_payslip_detail__is_for_contract
+msgid "Por Contrato"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_payslip_detail__is_for_reference
+msgid "Por referencia"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.islr_report_report
+msgid "Porcentaje de Retención"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.inces_report_report
+msgid "Primer Trimestre Año"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_banavih_form
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_inces_form
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_ppss_form
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_payslip_detail_form
+msgid "Print Details"
+msgstr "Imprimir Detalles"
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_islr_form
+msgid "Print EXCEL"
+msgstr "Imprimir EXCEL"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model,name:payslip_details_custom_itsales.model_report_payslip_details_custom_itsales_report_employee_xlsx
+msgid "Print ISLR report in excel format"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_islr_form
+msgid "Print PDF"
+msgstr "Imprimir PDF"
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid "Puesto de Trabajo"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_inces__quarter
+msgid "Quarter"
+msgstr "Trimestre"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_inces__period__three
+msgid "Quarterly"
+msgstr "Trimestral"
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.banavih_report_report
+msgid "REPORTE BANAVIH"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid "REPORTE DE"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.ppss_report_report
+msgid "REPORTE DE PRESTACIONES SOCIALES"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.islr_report_report
+msgid "REPORTE ISLR"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_by_concepts_doc
+msgid "RESUMEN POR CONCEPTOS DE"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_islr__order_table_by__rif
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.islr_report_report
+msgid "RIF"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_banavih__LPVH
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_islr__LPVH
+msgid "RPE"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_banavih__order_table_by__registration_number
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_islr__order_table_by__registration_number
+msgid "Receipt"
+msgstr "Ficha"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields.selection,name:payslip_details_custom_itsales.selection__wizard_report_payslip_detail__state__cancel
+msgid "Rechazada"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.actions.act_window,name:payslip_details_custom_itsales.wizard_report_banavih_action
+#: model:ir.ui.menu,name:payslip_details_custom_itsales.wizard_report_banavih_menuitem
+msgid "Reporte Banavih"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.actions.act_window,name:payslip_details_custom_itsales.wizard_report_inces_action
+#: model:ir.ui.menu,name:payslip_details_custom_itsales.wizard_report_inces_menuitem
+msgid "Reporte INCES"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.actions.act_window,name:payslip_details_custom_itsales.wizard_report_islr_action
+#: model:ir.actions.report,name:payslip_details_custom_itsales.report_banavih_report_action_xlsx
+#: model:ir.ui.menu,name:payslip_details_custom_itsales.wizard_report_islr_menuitem
+msgid "Reporte ISLR"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.actions.act_window,name:payslip_details_custom_itsales.wizard_report_ppss_action
+#: model:ir.ui.menu,name:payslip_details_custom_itsales.wizard_report_ppss_menuitem
+msgid "Reporte de Prestaciones Sociales"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.actions.act_window,name:payslip_details_custom_itsales.payslip_report_payslip_detail_action
+#: model:ir.ui.menu,name:payslip_details_custom_itsales.payslip_report_detail_menuitem
+msgid "Reportes de Nomina"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.ppss_report_report
+msgid "Salario"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_banavih__salary_structure_type
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_islr__salary_structure_type
+msgid "Salary structure type"
+msgstr "Tipo de estructura salarial"
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.inces_report_report
+msgid "Segundo Trimestre Año"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.actions.report,name:payslip_details_custom_itsales.ppss_report_action
+msgid "Social Benefits Report"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_payslip_detail__date_start
+msgid "Start Date"
+msgstr "Fecha de inicio"
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.banavih_report_report
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.islr_report_report
+msgid "Sueldo Básico"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.inces_report_report
+msgid "Tercer Trimestre Año"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_inces_form
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_ppss_form
+msgid ""
+"The date chosen is outside the range of the contract or is later than the "
+"current day"
+msgstr ""
+"La fecha elegida está fuera del rango del contrato o es posterior al día "
+"actual"
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_payslip_detail__type_payslip_id
+msgid "Tipo de Nomina"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_payslip_detail__type_report
+msgid "Tipo de Reporte"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_payslip_detail__type_contract_ids
+msgid "Tipo de contrato"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_payslip_detail__reference_ids
+msgid "Tipo de referencia"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_banavih__end_date
+#: model:ir.model.fields,field_description:payslip_details_custom_itsales.field_wizard_report_islr__end_date
+msgid "To date"
+msgstr "Hasta el"
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.banavih_report_report
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.inces_report_report
+msgid "Total"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_by_concepts_doc
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.payroll_detail_doc
+msgid "Totales:"
+msgstr ""
+
+#. module: payslip_details_custom_itsales
+#: model_terms:ir.ui.view,arch_db:payslip_details_custom_itsales.wizard_report_ppss_form
+msgid "ppss Report"
+msgstr "Reporte de prestaciones sociales"

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="inherit_hr_payslip_report_custom" inherit_id="hr_payslip_report_customization.hr_payslip_report_custom">
+        
+        <xpath expr="//div[@id='total']//thead//th[2]" position="replace">
+            <th style='width: 15%;'>Duración</th>
+        </xpath>
+
+        <xpath expr="//div[@id='total']//thead//th[3]" position="replace">
+            <th style='width: 15%;'></th>
+        </xpath>
+
+        <xpath expr="//div[@id='total']//tbody/span[4]" position="replace">
+            <!-- hr.payslip.line -->
+            <span t-foreach="o.line_ids.filtered(lambda line: line.appears_on_payslip)" t-as="line">
+                <t t-set="line_style" />
+                <t t-set="line_class" />
+
+                <t t-if="(line.code == 'BASIC') or (line.code == 'GROSS')">
+                    <t t-set="line_style" t-value="'color:#00A09D;'" />
+                    <t t-set="line_class" t-value="'o_subtotal o_border_bottom'" />
+                </t>
+
+                <tr t-att-class="line_class" t-att-style="line_style">
+                    <td>
+                        <span t-field="line.name" />
+                    </td>
+
+                    <td class='text-center'> 
+                        <span t-esc="line.duration_display"/> 
+                    </td>
+
+                    <td></td>
+
+                    <td class='text-center'>
+                        <span t-if="line.quantity > 1" t-esc="line.quantity" />
+                    </td>
+
+                    <!--assignments-->
+                    <t t-if="line.category_id.code not in ['DED', 'DED2', 'DED3', 'DED4', 'COMP']">
+                        <td style="text-align: center;">
+                            <span t-esc="line.total" t-options='{"widget": "monetary", "display_currency": currency}' t-att-style="'color:#875A7B;' if line.total &lt; 0 else ''" />
+                        </td>
+                    </t>
+                    <t t-else="">
+                        <td style="text-align: center;">
+                            <span t-options="{'widget': 'text'}">-</span>
+                        </td>
+                    </t>
+
+                    <t t-if="line.category_id.code in ['DED', 'DED2', 'DED3', 'DED4', 'COMP']">
+                        <td style="text-align: center;">
+                            <span t-esc="line.total" t-options='{"widget": "monetary", "display_currency": currency}' t-att-style="'color:#875A7B;' if line.total &lt; 0 else ''" />
+                        </td>
+                    </t>
+                    <t t-else="">
+                        <td style="text-align: center;">
+                            <span t-options="{'widget': 'text'}">-</span>
+                        </td>
+                    </t>
+                </tr>
+            </span>
+        </xpath>
+
+        <xpath expr="//div[@id='total']//tbody/span[2]" position="replace">
+            <!-- delete -->
+        </xpath>
+
+        <xpath expr="//span[@t-foreach='o.input_line_ids']" position="replace">
+            <!-- delete -->
+        </xpath>
+
+        <xpath expr="//span[@t-foreach='o.worked_days_line_ids']" position="replace">
+            <!-- delete -->
+        </xpath>
+
+    </template>
+
+</odoo>

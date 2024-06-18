@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <record id="hr_payslip_other_input_custom" model="ir.ui.view">
+        <field name="name">hr.payslip.other.input.custom</field>
+        <field name="model">hr.payslip</field>
+        <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form" />
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='input_line_ids']/tree" position="replace">
+                <tree string="Input Data" editable="bottom">
+                    <!--
+                        Required 0 to force client to send on change request even when not defined
+                        Salary Attachments would otherwise not properly be computed and payslip_id is
+                        required for _allowed_input_type_ids to work..
+                    -->
+                    <field name="payslip_id" invisible="1" required="0"/>
+                    <field name="_allowed_input_type_ids" invisible="1"/>
+                    <field name="input_type_id"/>
+                    <field name="name"/>
+                    <field name="amount"/>
+                    <field name="uom_id" domain="[('category_id.is_payroll_category', '=', True)]" options="{'no_create': True, 'no_open': True}"/>
+                    <field name="contract_id" invisible="True"/>
+                    <field name="sequence" invisible="True"/>
+                </tree>
+            </xpath>
+            
+        </field>
+    </record>
+    
+    
+    <!--Number of days in Payroll-->
+    <record id="custom_hr_payslip_inh_holidays_number" model="ir.ui.view">
+      <field name="name">custom.hr.payslip.inh.holidays.form</field>
+      <field name="model">hr.payslip</field>
+      <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form" />
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='input_line_ids']" position="after">
+            <field name="leaves_all_days_ids" 
+                    readonly='0' 
+                    string='Ausencias Contabilizadas'
+                    />
+\       </xpath>
+
+        <xpath expr="//field[@name='struct_id']" position="after">
+                    <field name="format_struct_id_name" invisible='1'/> 
+                    <field name="is_holiday_nomina" string="Vacaciones" invisible="0" />
+                    <field name="calcular_in_periodo" string="Ausencias en Periodo" invisible="0" />
+                    <field name="leaves_all_days" invisible="0" />
+                     
+                     <!-- <field name="net_salary_text" /> -->
+                    <field name="weekend_days_hr"
+                           string="Dias de Descanso"
+                           attrs="{ 'invisible': [
+                              ('is_holiday_nomina', '=', False),
+                              ]}"/>
+                    <field name="work_days_hr"
+                           string="Dias de Vacaciones"
+                           attrs="{ 'invisible': [
+                              ('is_holiday_nomina', '=', False),
+                              ]}"/>
+
+                    <field name="work_days_legales" 
+                        attrs="{ 'invisible': [
+                              ('is_holiday_nomina', '=', False),
+                              ]}" />
+                    <field name="work_days_aditionales" 
+                        attrs="{ 'invisible': [
+                              ('is_holiday_nomina', '=', False),
+                              ]}" />
+                    <field name="holidays_number_hr"
+                           string="Dias Feriados"
+                           attrs="{ 'invisible': [
+                              ('is_holiday_nomina', '=', False),
+                              ]}"/> 
+                    <field name="period_holidays" string="Periodo"
+                           attrs="{ 'invisible': [
+                              ('is_holiday_nomina', '=', False),
+                              ],
+                              'required': [
+                              ('is_holiday_nomina', '!=', False)
+                              ]}"/> 
+                    <field name="date_exit_holiday"
+                           attrs="{ 'invisible': [
+                              ('is_holiday_nomina', '=', False),
+                              ]}" /> 
+                    <field name="date_return_holiday"
+                           attrs="{ 'invisible': [
+                              ('is_holiday_nomina', '=', False),
+                              ]}"/> 
+
+
+                    
+        </xpath>
+
+      </field>
+    </record>
+    
+    
+</odoo>

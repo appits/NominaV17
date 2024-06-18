@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data noupdate="1">
+        <!-- 1: Salary rule category-->
+        <record id="hr_salary_rule_category_001" model="hr.salary.rule.category">
+            <field name="name">Special Bonuses</field>
+            <field name="code">BESP</field>
+        </record>
+
+        <record id="hr_salary_rule_category_002" model="hr.salary.rule.category">
+            <field name="name">Company Bonds</field>
+            <field name="code">BEMP</field>
+        </record>
+
+        <record id="hr_salary_rule_category_003" model="hr.salary.rule.category">
+            <field name="name">Company Contribution</field>
+            <field name="code">CONTRIB</field>
+        </record>
+
+        <record id="hr_salary_rule_category_004" model="hr.salary.rule.category">
+            <field name="name">Base</field>
+            <field name="code">BAS</field>
+        </record>
+
+        <record id="hr_salary_rule_category_005" model="hr.salary.rule.category">
+            <field name="name">Basic2</field>
+            <field name="code">BASIC2</field>
+        </record>
+
+        <record id="hr_salary_rule_category_006" model="hr.salary.rule.category">
+            <field name="name">Basic3</field>
+            <field name="code">BASIC3</field>
+        </record>
+    </data>
+</odoo>

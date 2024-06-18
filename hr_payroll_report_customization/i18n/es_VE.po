@@ -1,0 +1,42 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_payroll_report_customization
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-18 17:49+0000\n"
+"PO-Revision-Date: 2022-02-18 17:49+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_payroll_report_customization
+#: model:ir.model.fields,field_description:hr_payroll_report_customization.field_hr_payroll_report__count_assignments
+msgid "Assignments"
+msgstr "Asignaciones"
+
+#. module: hr_payroll_report_customization
+#: model:ir.model.fields,field_description:hr_payroll_report_customization.field_hr_payroll_report__count_deductions
+msgid "Deductions"
+msgstr "Deducciones"
+
+#. module: hr_payroll_report_customization
+#: model:ir.model,name:hr_payroll_report_customization.model_hr_payroll_report
+msgid "Payroll Analysis Report"
+msgstr "Informe de Análisis de Nómina"
+
+#. module: hr_payroll_report_customization
+#: model:ir.model.fields,field_description:hr_payroll_report_customization.field_hr_payroll_report__salary_rule_name
+msgid "Salary rule"
+msgstr "Regla Salarial"
+
+#. module: hr_payroll_report_customization
+#: model:ir.model.fields,field_description:hr_payroll_report_customization.field_hr_payroll_report__employee_category_id
+msgid "Category"
+msgstr "Etiqueta"
+

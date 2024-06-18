@@ -1,0 +1,1032 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_payroll_customization
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-12 20:58+0000\n"
+"PO-Revision-Date: 2023-12-12 17:03-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_regeneration_wizard__massive_regeneration
+msgid ""
+"\n"
+"                                                Active this check to bring "
+"al employee with ongoing contract.\n"
+"\n"
+"                                                Desactive to clean all "
+"selected employees\n"
+"                                                "
+msgstr ""
+
+#. module: hr_payroll_customization
+#: model_terms:ir.ui.view,arch_db:hr_payroll_customization.hr_payroll_payslip_by_employees_customization
+msgid ""
+"<span class=\"text-muted\">Set a specific department if you want to select "
+"all employees of this department (and sub-departments) at once. In case you "
+"have selected a structure that has associated departments these will be "
+"selected automatically as well as their employees.</span>"
+msgstr ""
+"<span class=\"text-muted\">Establezca un departamento específico si desea "
+"seleccionar todos los empleados de este departamento (y subdepartamentos) a "
+"la vez. En caso de haber seleccionado una estructura salarial que tenga "
+"asociados departamentos, estos se seleccionaran automáticamente así como "
+"sus empleados.</span>"
+
+#. module: hr_payroll_customization
+#: model:mail.template,body_html:hr_payroll_customization.mail_template_new_payslip_custom
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%; "
+"margin:0px auto;\">\n"
+"                    <tbody>\n"
+"                        <tr>\n"
+"                            <td valign=\"top\" style=\"text-align: left; "
+"font-size: 14px;\">\n"
+"                                Dear <t t-esc=\"object.employee_id.name\"/"
+">, a new payslip is available for you.<br/><br/>\n"
+"                                Please find the PDF in your employee portal."
+"<br/><br/>\n"
+"                                Have a nice day,<br/>\n"
+"                                The HR Team\n"
+"                            </td>\n"
+"                        </tr>\n"
+"                    </tbody>\n"
+"                </table>\n"
+"            "
+msgstr ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"width:100%; "
+"margin:0px auto;\">\n"
+"                    <tbody>\n"
+"                        <tr>\n"
+"                            <td valign=\"top\" style=\"text-align: left; "
+"font-size: 14px;\">\n"
+"                                Estimado(a) <t t-esc=\"object.employee_id."
+"name\"/>, hay un nuevo recibo de nómina disponible para usted.<br/><br/>\n"
+"                                Encontrará el PDF adjunto a éste correo.<br/"
+"><br/>\n"
+"                                Tenga un buen día,<br/>\n"
+"                                El equipo de RR.HH\n"
+"                            </td>\n"
+"                        </tr>\n"
+"                    </tbody>\n"
+"                </table>\n"
+"            "
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__message_needaction
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__message_needaction
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__message_needaction
+msgid "Action Needed"
+msgstr "Acción necesaria"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__active
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__activity_ids
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__activity_ids
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__activity_exception_decoration
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__activity_exception_decoration
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Actividad Decoración de excepción"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__activity_state
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__activity_state
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__activity_state
+msgid "Activity State"
+msgstr "Estado de la actividad"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__activity_type_icon
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__activity_type_icon
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icono de tipo de actividad"
+
+#. module: hr_payroll_customization
+#: model_terms:ir.ui.view,arch_db:hr_payroll_customization.hr_payslip_view_form_inherit_advance
+msgid "Advances"
+msgstr "Anticipos"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip_run__group_account_id
+msgid "Agrupar Cuentas"
+msgstr ""
+
+#. module: hr_payroll_customization
+#: model_terms:ir.ui.view,arch_db:hr_payroll_customization.payslip_run_form_inherit_net_amount_button
+msgid "Agrupar por Cuentas"
+msgstr ""
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__is_leave
+msgid "Allow the work entry type to be linked with time off types."
+msgstr ""
+"Permitir que el tipo de entrada de trabajo se vincule con los tipos de "
+"tiempo personal."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__amount_select
+msgid "Amount Type"
+msgstr "Tipo de importe"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_contract_history__analytic_account_id
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__analytic_account_id
+msgid "Analytic Account"
+msgstr "Cuenta analítica"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__appears_on_payslip
+msgid "Appears on Payslip"
+msgstr "Aparece en el recibo de nómina"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__condition_python
+msgid ""
+"Applied this rule for calculation if condition is true. You can specify "
+"condition like basic > 1000."
+msgstr ""
+"Se utiliza esta regla para el cálculo si la condición es verdadera. Puedes "
+"especificar una condición como: 'basic > 1000'."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__message_attachment_count
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__message_attachment_count
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields.selection,name:hr_payroll_customization.selection__hr_payroll_structure_type__payroll_type__bi
+msgid "Biweekly"
+msgstr "Quincenal"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__biweekly_advance
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip_run__biweekly_advance
+msgid "Biweekly advance"
+msgstr "Anticipo de quincena"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__cancel_loans_paid
+msgid "Cancel Loans Paid"
+msgstr ""
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__cancel_profit_paid
+msgid "Cancel Profit Paid"
+msgstr ""
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__cancel_vac_paid
+msgid "Cancel Vac Paid"
+msgstr ""
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__code
+msgid ""
+"Carefull, the Code is used in many references, changing it could lead to "
+"unwanted changes."
+msgstr ""
+"Cuidado, este código se usa en muchas referencias, cambiarlo podría "
+"resultar en cambios no deseados."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__category_id
+msgid "Category"
+msgstr "Categoría"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__code
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__code
+msgid "Code"
+msgstr "Código"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__color
+msgid "Color"
+msgstr ""
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip_run__compute_field_payslip_run
+msgid "Compute Field Payslip Run"
+msgstr ""
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__condition_select
+msgid "Condition Based on"
+msgstr "Condición basada en"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__contract_id
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: hr_payroll_customization
+#: model:ir.model,name:hr_payroll_customization.model_hr_contract_history
+msgid "Contract history"
+msgstr "Histórico de contratación"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__country_id
+msgid "Country"
+msgstr "País"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__account_credit
+msgid "Credit Account"
+msgstr "Cuenta de crédito"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__currency_id
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure_type__currency_id
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__currency_id
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip_line__currency_id
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip_worked_days__currency_id
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__custom_currency_id
+msgid "Custom Currency"
+msgstr "Tasa personalizada"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__account_debit
+msgid "Debit Account"
+msgstr "Cuenta de débito"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_payroll_structure__schedule_pay
+msgid "Defines the frequency of the wage payment."
+msgstr "Define la frecuencia del pago de salario."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_payslip__struct_id
+msgid ""
+"Defines the rules that have to be applied to this payslip, according to the "
+"contract chosen. If the contract is empty, this field isn't mandatory "
+"anymore and all the valid rules of the structures of the employee's "
+"contracts will be applied."
+msgstr ""
+"Define las reglas que tienen que ser aplicadas a este recibo de nómina, de "
+"acuerdo al contrato elegido. Si el contrato está vacío, este campo ya no es "
+"obligatorio y todas las reglas de estructuras validadas en los contratos de "
+"los empleados serán aplicadas."
+
+#. module: hr_payroll_customization
+#: model_terms:ir.ui.view,arch_db:hr_payroll_customization.hr_payroll_payslip_by_employees_customization
+msgid "Department"
+msgstr "Departamento"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__email_cc
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__email_cc
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__email_cc
+msgid "Email cc"
+msgstr ""
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_regeneration_wizard__employee_id
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_regeneration_wizard__employee_ids
+msgid "Employees"
+msgstr "Empleados"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__leave_type_ids
+msgid ""
+"Every new time off type in this list will be reported as select work entry "
+"in payslip."
+msgstr ""
+"Cada nuevo tipo de tiempo personal en esta lista se reportará como entrada "
+"de trabajo seleccionado en la nómina."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__amount_fix
+msgid "Fixed Amount"
+msgstr "Importe fijo"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__message_follower_ids
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__message_follower_ids
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__message_partner_ids
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__message_partner_ids
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Socios)"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_payroll_structure__activity_type_icon
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__activity_type_icon
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__amount_percentage
+msgid "For example, enter 50.0 to apply a percentage of 50%"
+msgstr "Por ejemplo, introduce 50.0 para aplicar un porcentaje de 50%"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__date_from
+msgid "From"
+msgstr "Desde"
+
+#. module: hr_payroll_customization
+#: model:ir.model,name:hr_payroll_customization.model_hr_payslip_employees
+msgid "Generate payslips for all selected employees"
+msgstr "Generar los recibos de nómina para todos los empleados seleccionados"
+
+#. module: hr_payroll_customization
+#: model:ir.model,name:hr_payroll_customization.model_hr_work_entry_type
+msgid "HR Work Entry Type"
+msgstr "Tipo de entrada de trabajo de RRHH"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__has_message
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__has_message
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__has_message
+msgid "Has Message"
+msgstr "Tiene mensaje"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__activity_exception_icon
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__activity_exception_icon
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__activity_exception_icon
+msgid "Icon"
+msgstr "Icono"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_payroll_structure__activity_exception_icon
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__activity_exception_icon
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icono para indicar una actividad de excepción."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_payroll_structure__message_needaction
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_payroll_structure__message_unread
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__message_needaction
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__message_unread
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__message_needaction
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcada, los nuevos mensajes requieren su atención."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_payroll_structure__message_has_error
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_payroll_structure__message_has_sms_error
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__message_has_error
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__message_has_sms_error
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__message_has_error
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si está marcada, algunos mensajes tienen un error de entrega."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__active
+msgid ""
+"If the active field is set to false, it will allow you to hide the salary "
+"rule without removing it."
+msgstr ""
+"Si el campo activo se establece a falso, se puede ocultar la regla salarial "
+"sin eliminarla."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__message_is_follower
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__message_is_follower
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__message_is_follower
+msgid "Is Follower"
+msgstr "Es seguidor?"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__quantity
+msgid ""
+"It is used in computation for percentage and fixed amount. E.g. a rule for "
+"Meal Voucher having fixed amount of 1€ per worked day can have its quantity "
+"defined in expression like worked_days.WORK100.number_of_days."
+msgstr ""
+"Se utiliza en el cálculo para el porcentaje y el importe fijo. Ej. una "
+"regla para un vale de comida que tenga una cantidad fija de 1€ por día "
+"trabajado puede tener su cantidad definida en una expresión como "
+"worked_days.WORK100.number_of_days."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_payroll_structure__email_cc
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__email_cc
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__email_cc
+msgid "List of cc from incoming emails."
+msgstr "Lista de cc de los correos electrónicos entrantes."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__loans_paid
+msgid "Loans Paid"
+msgstr "Prestamos pagados"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__message_main_attachment_id
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__message_main_attachment_id
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Adjunto principal"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_regeneration_wizard__massive_regeneration
+msgid "Massive regeneration"
+msgstr "Regeneración masiva"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__condition_range_max
+msgid "Maximum Range"
+msgstr "Intervalo máximo"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__message_has_error
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__message_has_error
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__message_has_error
+msgid "Message Delivery error"
+msgstr "Error en la entrega del mensaje"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__message_ids
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__message_ids
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__condition_range_min
+msgid "Minimum Range"
+msgstr "Intervalo mínimo"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__monday_number_id
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip_run__monday_number_id
+msgid "Monday number"
+msgstr "Número de lunes"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__monday_numbers
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip_run__monday_numbers
+msgid "Monday numbers"
+msgstr "Número de lunes"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields.selection,name:hr_payroll_customization.selection__hr_payroll_structure_type__payroll_type__month
+msgid "Monthly"
+msgstr "Mensual"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__my_activity_date_deadline
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__my_activity_date_deadline
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Mi plazo de actividad"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__name
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__name
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_payroll_structure__payslip_name
+msgid ""
+"Name to be set on a payslip. Example: 'End of the year bonus'. If not set, "
+"the default value is 'Salary Slip'"
+msgstr ""
+"Nombre que se establecerá en un recibo de nómina. Ejemplo: 'Bono de fin de "
+"año'. Si no se establece, el valor predeterminado es 'Salario'"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__activity_calendar_event_id
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__activity_calendar_event_id
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Próximo evento del calendario de actividades"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__activity_date_deadline
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__activity_date_deadline
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Plazo de la próxima actividad"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__activity_summary
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__activity_summary
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resumen de la siguiente actividad"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__activity_type_id
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__activity_type_id
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__activity_type_id
+msgid "Next Activity Type"
+msgstr "Siguiente tipo de actividad"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__not_computed_in_net
+msgid "Not computed in net accountably"
+msgstr "No se calcula en contabilidad neta"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__note
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__note
+msgid "Note"
+msgstr "Nota"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__message_needaction_counter
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__message_needaction_counter
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__saturdays_sunday_numbers
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip_run__saturdays_sunday_numbers
+msgid "Number of Saturdays and Sundays"
+msgstr "Número de sábados y domingos"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__message_has_error_counter
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__message_has_error_counter
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de errores"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_payroll_structure__message_needaction_counter
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__message_needaction_counter
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensajes que requieren una acción"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_payroll_structure__message_has_error_counter
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__message_has_error_counter
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de entrega"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_payroll_structure__message_unread_counter
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__message_unread_counter
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensajes no leídos"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__input_line_type_ids
+msgid "Other Input Line"
+msgstr "Otra línea de entrada"
+
+#. module: hr_payroll_customization
+#: model:ir.model,name:hr_payroll_customization.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Nómina"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure_type__payroll_type
+msgid "Payroll type"
+msgstr "Tipo de nómina"
+
+#. module: hr_payroll_customization
+#: model:mail.template,name:hr_payroll_customization.mail_template_new_payslip_custom
+msgid "Payroll: New Payslip Custom"
+msgstr "Nómina: Nueva nómina personalizada"
+
+#. module: hr_payroll_customization
+#: model:ir.model,name:hr_payroll_customization.model_hr_payslip_run
+msgid "Payslip Batches"
+msgstr "Lotes de recibos de nómina"
+
+#. module: hr_payroll_customization
+#: model:ir.model,name:hr_payroll_customization.model_hr_payslip_line
+msgid "Payslip Line"
+msgstr "Línea de recibo de nómina"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__payslip_name
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__name
+msgid "Payslip Name"
+msgstr "Nombre de recibo de nómina"
+
+#. module: hr_payroll_customization
+#: model:ir.model,name:hr_payroll_customization.model_hr_payslip_worked_days
+msgid "Payslip Worked Days"
+msgstr "Días trabajados en el recibo de nómina"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__amount_percentage
+msgid "Percentage (%)"
+msgstr "Porcentaje (%)"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__amount_percentage_base
+msgid "Percentage based on"
+msgstr "Porcentaje basado en"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__profit_paid
+msgid "Profit Paid"
+msgstr "Utilidades pagadas"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__amount_python_compute
+msgid "Python Code"
+msgstr "Código Python"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__condition_python
+msgid "Python Condition"
+msgstr "Condición Python"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__quantity
+msgid "Quantity"
+msgstr "Cantidad"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__condition_range
+msgid "Range Based on"
+msgstr "Intervalo basado en"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__rate_id
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip_run__rate_id
+msgid "Rate"
+msgstr "Tasa"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__rate_amount
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip_run__rate_amount
+msgid "Rate amount"
+msgstr "Monto de tasa"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__number
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: hr_payroll_customization
+#: model:ir.model,name:hr_payroll_customization.model_hr_work_entry_regeneration_wizard
+msgid "Regenerate Employee Work Entries"
+msgstr "Regenerar entradas de trabajo del empleado"
+
+#. module: hr_payroll_customization
+#: model_terms:ir.ui.view,arch_db:hr_payroll_customization.inherit_hr_work_entry_regeneration_wizard
+msgid "Regenerate Work Entries"
+msgstr "Regenerar Entradas de Trabajos"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__regular_pay
+msgid "Regular Pay"
+msgstr "Pago regular"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__report_id
+msgid "Report"
+msgstr "Informe"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__activity_user_id
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__activity_user_id
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__activity_user_id
+msgid "Responsible User"
+msgstr "Usuario responsable"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__round_days_type
+msgid "Round Type"
+msgstr "Tipo de redondeo"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__round_days
+msgid "Rounding"
+msgstr "Redondeo"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__message_has_sms_error
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__message_has_sms_error
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Error de entrega de SMS"
+
+#. module: hr_payroll_customization
+#: model_terms:ir.ui.view,arch_db:hr_payroll_customization.custom_payroll_payslip_run_monday_number_form
+msgid "SSO and Basket ticket"
+msgstr "SSO y Cesta ticket"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip_run__salary_basket_ticket
+msgid "Salary Basket Ticket"
+msgstr "Salario cesta ticket"
+
+#. module: hr_payroll_customization
+#: model:ir.model,name:hr_payroll_customization.model_hr_salary_rule
+msgid "Salary Rule"
+msgstr "Regla de Salario"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip_run__social_security_salary
+msgid "Salary Social Security SSO"
+msgstr "Salario seguro social SSO"
+
+#. module: hr_payroll_customization
+#: model:ir.model,name:hr_payroll_customization.model_hr_payroll_structure
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__struct_id
+msgid "Salary Structure"
+msgstr "Estructura salarial"
+
+#. module: hr_payroll_customization
+#: model:ir.model,name:hr_payroll_customization.model_hr_payroll_structure_type
+msgid "Salary Structure Type"
+msgstr "Tipo de estructura salarial"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_payslip__salary_advance_ids
+msgid "Salary advances requested by the employee"
+msgstr "Anticipo de salario solicitado por el empleado"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__schedule_pay
+msgid "Scheduled Pay"
+msgstr "Pago planeado"
+
+#. module: hr_payroll_customization
+#: model:ir.actions.server,name:hr_payroll_customization.action_send_payslip_by_email
+msgid "Send Payslip by Email"
+msgstr "Enviar por correo electrónico"
+
+#. module: hr_payroll_customization
+#: model_terms:ir.ui.view,arch_db:hr_payroll_customization.payslip_form_inherit_net_amount_button
+msgid "Send by Email"
+msgstr "Enviar por correo electrónico"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__sequence
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_payroll_structure__activity_state
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__activity_state
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+"Estado basado en las actividades\n"
+"Atrasado: La fecha de vencimiento ya ha pasado\n"
+"Hoy: La fecha de actividad es hoy\n"
+"Planificado: Actividades futuras."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__struct_id
+msgid "Structure"
+msgstr "Estructura"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__is_unforeseen
+msgid ""
+"The Work Entry checked as Unforeseen Absence will be counted in absenteeism "
+"at work report."
+msgstr ""
+"La entrada de trabajo marcada como ausencia imprevista se contabilizará en "
+"el reporte de ausencias laborales."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__code
+msgid ""
+"The code of salary rules can be used as reference in computation of other "
+"rules. In that case, it is case sensitive."
+msgstr ""
+"El código de las reglas salariales puede ser usado como referencia en el "
+"cálculo de otras reglas. En ese caso, se distingue entre mayúsculas y "
+"minúsculas."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__amount_select
+msgid "The computation method for the rule amount."
+msgstr "El método de cálculo para el importe de la regla."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__condition_range_max
+msgid "The maximum amount, applied for this rule."
+msgstr "El importe máximo aplicado a esta regla."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__condition_range_min
+msgid "The minimum amount, applied for this rule."
+msgstr "El importe mínimo aplicado a esta regla."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__unpaid_structure_ids
+msgid "The work entry won’t grant any money to employee in payslip."
+msgstr ""
+"La entrada de trabajo no otorgará dinero al empleado en el recibo de nómina."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__not_computed_in_net
+msgid ""
+"This field allows you to delete the value of this rule in the \"Net "
+"Salary\" rule at the accounting level to explicitly display the value of "
+"this rule in the accounting. For example, if you want to display the value "
+"of your representation fees, you can check this field."
+msgstr ""
+"Este campo te permite eliminar el valor de esta regla en la regla \"Salario "
+"neto\" en el nivel de contabilidad para mostrar explícitamente el valor de "
+"esta regla en la contabilidad. Por ejemplo, si deseax mostrar el valor de "
+"tus tarifas de representación, puedes seleccionar este campo."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__condition_range
+msgid ""
+"This will be used to compute the % fields values; in general it is on "
+"basic, but you can also use categories code fields in lowercase as a "
+"variable names (hra, ma, lta, etc.) and the variable basic."
+msgstr ""
+"Se usará para calcular el valor de los campos %; en general se utiliza lo "
+"básico, pero también puede usar campos de código de categorías en minúscula "
+"como nombres de variables (hra, ma, lta, etc.) y las variables básicas."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__is_leave
+msgid "Time Off"
+msgstr "Tiempo personal"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__leave_type_ids
+msgid "Time Off Type"
+msgstr "Tipo de tiempo libre"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__date_to
+msgid "To"
+msgstr "A"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__type_id
+msgid "Type"
+msgstr "Tipo"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_payroll_structure__activity_exception_decoration
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__activity_exception_decoration
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__is_unforeseen
+msgid "Unforeseen Absence"
+msgstr "Ausencia imprevista"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__unpaid_work_entry_type_ids
+msgid "Unpaid Work Entry Type"
+msgstr "Tipo de entrada de trabajo no pagado"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__unpaid_structure_ids
+msgid "Unpaid in Structures Types"
+msgstr "Sin pagar en tipos de estructura"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__message_unread
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__message_unread
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__message_unread
+msgid "Unread Messages"
+msgstr "Mensajes no leídos"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__message_unread_counter
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__message_unread_counter
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contador de mensajes no leídos"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__use_worked_day_lines
+msgid "Use Worked Day Lines"
+msgstr "Usar líneas de día trabajado"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__sequence
+msgid "Use to arrange calculation sequence"
+msgstr "Se utiliza para organizar la secuencia de cálculo"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__appears_on_payslip
+msgid "Used to display the salary rule on payslip."
+msgstr "Se usa para mostrar la regla de salario en el recibo de nómina."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__vac_paid
+msgid "Vac Paid"
+msgstr "Vacaciones pagadas"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__round_days_type
+msgid "Way of rounding the work entry type."
+msgstr "Método de redondeo del tipo de entrada de trabajo."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__website_message_ids
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_salary_rule__website_message_ids
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_work_entry_type__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes del sitio web"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_payroll_structure__website_message_ids
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__website_message_ids
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__website_message_ids
+msgid "Website communication history"
+msgstr "Historia de la comunicación en la web"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__weekend_id
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip_run__weekend_id
+msgid "Weekend"
+msgstr "Fin de semana"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields.selection,name:hr_payroll_customization.selection__hr_payroll_structure_type__payroll_type__week
+msgid "Weekly"
+msgstr "Semanal"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_work_entry_type__round_days
+msgid ""
+"When the work entry is displayed in the payslip, the value is rounded "
+"accordingly."
+msgstr ""
+"Cuando la entrada de trabajo se muestra en el recibo de nómina, el valor se "
+"redondea en consecuencia."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_payroll_structure__use_worked_day_lines
+msgid "Worked days won't be computed/displayed in payslips."
+msgstr ""
+"Los días trabajados no se computarán / mostrarán en recibos de nómina."
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payroll_structure__department_ids
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip_employees__department_ids
+msgid "departments"
+msgstr "Departamentos"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,help:hr_payroll_customization.field_hr_salary_rule__amount_percentage_base
+msgid "result will be affected to a variable"
+msgstr "el resultado afectará a una variable"
+
+#. module: hr_payroll_customization
+#: model:ir.model.fields,field_description:hr_payroll_customization.field_hr_payslip__salary_advance_ids
+msgid "salary_advance"
+msgstr ""
+
+#. module: hr_payroll_customization
+#: model:mail.template,subject:hr_payroll_customization.mail_template_new_payslip_custom
+msgid "{{ object.employee_id.name }}, a new payslip is available for you"
+msgstr ""
+"{{ object.employee_id.name }}, una nueva nómina está disponible para usted"

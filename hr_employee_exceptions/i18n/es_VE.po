@@ -1,0 +1,36 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_employee_exceptions
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-11 19:50+0000\n"
+"PO-Revision-Date: 2023-08-11 15:51-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: hr_employee_exceptions
+#: model:ir.model,name:hr_employee_exceptions.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrato de empleado"
+
+#. module: hr_employee_exceptions
+#: model:ir.model.fields,field_description:hr_employee_exceptions.field_hr_contract__exception_struct_ids
+#: model:ir.model.fields,field_description:hr_employee_exceptions.field_hr_payslip_employees__exceptions_employee_ids
+#: model_terms:ir.ui.view,arch_db:hr_employee_exceptions.inherit_hr_contract_exception
+#: model_terms:ir.ui.view,arch_db:hr_employee_exceptions.inherit_payslip_by_employees_exceptions
+msgid "Exceptions"
+msgstr "Excepciones"
+
+#. module: hr_employee_exceptions
+#: model:ir.model,name:hr_employee_exceptions.model_hr_payslip_employees
+msgid "Generate payslips for all selected employees"
+msgstr "Generar los recibos de nómina para todos los empleados seleccionados"

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="ppss_report_report">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.external_layout">
+                    <div id="title" style="text-align: center;">
+                        <h3>
+                            REPORTE DE PRESTACIONES SOCIALES
+                        </h3>
+                        <h4>
+                            MES <span t-esc="o.month_name"/>
+                        </h4>
+                    </div>
+
+                    <div style="font-size: 12px;">
+                        <table style="width: 100%;">
+                            <t t-set="count" t-value="0"/>
+                            <t t-set="total_month" t-value="0"/>
+
+                            <thead>
+                                <tr style="border-bottom: 1px solid black; border-top: 1px solid black;">
+                                    <th style="width:30%;" class="text-center">Nombre</th>
+                                    <th style="width:10%;" class="text-center">Fecha de ingreso</th>
+                                    <th style="width:20%;" class="text-center">Departamento</th>
+                                    <th style="width:20%;" class="text-center">Cargo</th>
+                                    <th style="width:20%;" class="text-center">Salario</th>
+                                    <th style="width:20%;" class="text-center">PPSS disponible</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-foreach="o.employee_ids" t-as="e">
+                                    <t t-set="con" t-value="e.contract_id"/>
+                                    <tr style="text-align: center;">
+                                        <td style="text-align: left;">
+                                            <span t-esc="e.name"/>
+                                        </td>
+
+                                        <td>
+                                            <span t-esc="con.date_start"/>
+                                        </td>
+                                        
+                                        <td>
+                                            <span t-esc="con.department_id.name"/>
+                                        </td>
+                                        
+                                        <td>
+                                            <span t-esc="con.job_id.name"/>
+                                        </td>
+
+                                        <td>
+                                            <span t-esc="con.wage" t-options="{'widget': 'monetary', 'display_currency': con.fiscal_currency_id}"/>
+                                        </td>
+
+                                        <td>
+                                            <t t-set="available" t-value="con._selected_available_social_benefits(o.date)"/>
+                                            <span t-esc="available" t-options="{'widget': 'monetary', 'display_currency': con.fiscal_currency_id}"/>
+                                        </td>
+                                    </tr>
+
+                                    <t t-set="count" t-value="count + 1"/>
+                                    <t t-set="total_month" t-value="total_month + con.available_social_benefits"/>
+                                </t>
+                            </tbody>
+                        </table>
+                    <!-- </div> -->
+                        
+                        <table class="table table-sm" style="border: none;">
+                            <tbody>
+                                <tr id="total_month">
+                                    <td style="width:80%; text-align: right;">
+                                        <strong>Total PPSS del Mes:</strong>
+                                    </td>
+                                    <td style="width:20%; text-align: center;">
+                                        <t t-set="currency" t-value="o.employee_ids[0].contract_id._get_fiscal_currency()"/>
+                                        <span t-esc="total_month" t-options="{'widget': 'monetary', 'display_currency': currency}"/>
+                                    </td>
+                                </tr>
+                                <tr id="nro_employee">
+                                    <td style="width:80%; text-align: right;">
+                                        <strong>Nro. de Trabajadores:</strong>
+                                    </td>
+                                    <td style="width:20%; text-align: center;">
+                                        <span t-esc="count"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- <div style="margin-top: 120px;">
+                        <table style="width: 70%; height: 3cm; margin: 0 auto;">
+                            <tr>
+                                <td style="width: 5%; position:relative;padding: 0 50px 0 50px;" >
+                                    <div style="position:relative; height: 3cm;">
+                                        <div style="text-align: center;">
+                                            <hr style="border: 1px solid black; width=5%;" />
+                                            <b>Elaborado por</b>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="width: 5%; position:relative;padding: 0 50px 0 50px;" >
+                                    <div style="position:relative; height: 3cm;">
+                                        <div style="text-align: center;">
+                                            <hr style="border: 1px solid black; width=5%;" />
+                                            <b>Revisado por</b>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div> -->
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>

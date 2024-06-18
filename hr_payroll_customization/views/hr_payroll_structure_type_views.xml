@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        
+        <record id="inherit_hr_payroll_structure_type_view_form" model="ir.ui.view">
+			<field name="name">inherit.hr.payroll.structure.type.view.form</field>
+			<field name="model">hr.payroll.structure.type</field>
+			<field name="inherit_id" ref="hr_payroll.hr_payroll_structure_type_view_form" />
+			<field name="arch" type="xml">
+                <xpath expr="//group/group[1]" position="inside">
+                    <field name="payroll_type" required="1"/>
+                </xpath>
+			</field>
+		</record>
+
+    </data>
+</odoo>

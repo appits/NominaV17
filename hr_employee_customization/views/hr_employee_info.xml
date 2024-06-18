@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+
+        <record id="hr_employee_view_form_inherit_employee_info" model="ir.ui.view">
+            <field name="name">hr.employee.view.form.inherit.employee.info</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form" />
+            <field name="arch" type="xml">
+                <!--ADD RIF-->
+                <xpath expr="//page[@name='personal_information']//field[@name='identification_id']" position="after">
+                    <field name="rif" placeholder="Ej.: J-012345678" required="1" />
+                </xpath>
+
+                <xpath expr="//field[@name='coach_id']" position="replace">
+                    <field name="coach_custom_id" />
+                </xpath>
+
+                <!-- Employee age-->
+                <xpath expr="//page[@name='personal_information']//field[@name='birthday']" position="after">
+                    <label for="employee_age" />
+                    <div class="o_row" name="employee_age" attrs="{'invisible':[('birthday', '=', False)]}">
+                        <field name="employee_age" nolabel="1" readonly="1" force_save="1" />
+                        <span> years </span>
+                    </div>
+                </xpath>
+
+
+                <xpath expr="//page[@name='personal_information']/group[1]" position="after">
+                    <group>
+                        <!-- Employee Features-->
+                        <group name="employee_features" string="Features">
+                            <field name="is_left_handed" />
+                            <field name="employee_has_vehicle" />
+                            <field name="employee_height" eval="0.0" />
+                            <field name="employee_weight" eval="0.0" />
+                        </group>
+                        
+                    </group>
+                </xpath>
+
+                <!--Page Bank information-->
+                <xpath expr="//page[@name='personal_information']" position="after">
+                    <page name="bank_information" string="Bank information">
+                        <separator string="Employee Bank information" />
+                        <group name="bank_information_group" style="width:50%;">
+                            <field name="bank_id" options="{'no_create': True}" required="1" />
+                            <field name="bank_account_number" required="1" />
+                            <field name="account_type" required="1" />
+                            <field name="account_holder" required="1" />
+                            <field name="holder_account_id" required="1" />
+                        </group>
+                    </page>
+                </xpath>
+
+            </field>
+        </record>
+
+        <record id="hr_employee_view_form_inherit_banavih_required_field" model="ir.ui.view">
+            <field name="name">hr.employee.view.form.inherit.banavih.required.field</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form" />
+            <field name="arch" type="xml">
+
+                <xpath expr="//page[@name='personal_information']//field[@name='country_id']" position="attributes">
+                    <attribute name="required">1</attribute>
+                </xpath>
+
+                <xpath expr="//page[@name='personal_information']//field[@name='identification_id']" position="attributes">
+                    <attribute name="required">1</attribute>
+                </xpath>
+
+                <xpath expr="//page[@name='personal_information']//field[@name='birthday']" position="attributes">
+                    <attribute name="required">1</attribute>
+                </xpath>
+
+            </field>
+        </record>
+
+    </data>
+
+</odoo>

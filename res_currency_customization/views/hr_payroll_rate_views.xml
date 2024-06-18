@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<!-- VIEWS -->
+	<record id="rate_payroll_view_tree" model="ir.ui.view">
+		<field name="name">rate.payroll.view.tree</field>
+		<field name="model">hr.payroll.rate</field>
+		<field name="arch" type="xml">
+			<tree string="Rate Social Benefits" editable="bottom">
+				<field name="name"/>				
+                <field name="rate"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+                <field name="create_date" string="Create date" optional="hide"/>				
+			</tree>
+		</field>
+	</record>
+
+	<!-- ACTIONS -->
+	<record id="rate_payroll_action" model="ir.actions.act_window">
+		<field name="name">Rate social benefits</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">hr.payroll.rate</field>
+		<field name="view_mode">tree</field>
+	</record>
+
+	<!-- MENUS -->
+	<menuitem action="rate_payroll_action" name='Rate social benefits' id="rate_menu_payroll_action" parent="hr_payroll.menu_hr_salary_configuration" sequence="10"/>
+</odoo>

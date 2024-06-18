@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="hr_export_payment_banavih" model="ir.ui.view">
+        <field name="name">hr.export.payment.banavih</field>
+        <field name="model">export.bank.payments</field>
+        <field name="inherit_id" ref="hr_export_payroll_payments.export_bank_payments_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='bank_id']" position="before">
+                <field name="nro_banavih" options="{'no_create': True, 'no_edit': True}" attrs="{'invisible': [('type_trans', '!=', 'fiscal')], 'readonly': [('state', '=', 'done')]}"/>
+            </xpath>
+
+            <xpath expr="//sheet/group[1]/group[2]/div[1]" position="replace">
+                <div>
+                    <field name="date_start" required="1" class="oe_inline"/>
+                    -                    <field name="date_end" required="1" class="oe_inline"/>
+                </div>
+            </xpath>
+
+            <xpath expr="//field[@name='employee_ids']" position="before">
+                <field name="lote_payroll_domain" widget="many2many_tags" options="{'no_create_edit': True}" attrs="{'invisible': [('get_data_from', '=', 'individual')], 'readonly': [('state', '=', 'done')]}"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

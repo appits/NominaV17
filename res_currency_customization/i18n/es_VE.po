@@ -1,0 +1,124 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* res_currency_customization
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-07 21:04+0000\n"
+"PO-Revision-Date: 2023-08-07 17:09-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: res_currency_customization
+#: model:ir.model.fields,field_description:res_currency_customization.field_hr_payroll_rate__rate
+msgid "Average between active and passive"
+msgstr "Promedio entre activo y pasivo"
+
+#. module: res_currency_customization
+#: model:ir.model.fields,field_description:res_currency_customization.field_hr_payroll_rate__company_id
+msgid "Company"
+msgstr "Compañia"
+
+#. module: res_currency_customization
+#: model_terms:ir.ui.view,arch_db:res_currency_customization.rate_payroll_view_tree
+msgid "Create date"
+msgstr "Fecha de creación"
+
+#. module: res_currency_customization
+#: model:ir.model.fields,field_description:res_currency_customization.field_hr_payroll_rate__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: res_currency_customization
+#: model:ir.model.fields,field_description:res_currency_customization.field_hr_payroll_rate__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: res_currency_customization
+#: model:ir.model,name:res_currency_customization.model_res_currency
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: res_currency_customization
+#: model:ir.model,name:res_currency_customization.model_res_currency_rate
+msgid "Currency Rate"
+msgstr "Tasa monetaria"
+
+#. module: res_currency_customization
+#: model:ir.model.fields,field_description:res_currency_customization.field_hr_payroll_rate__name
+msgid "Date"
+msgstr "Fecha"
+
+#. module: res_currency_customization
+#: model:ir.model.fields,field_description:res_currency_customization.field_hr_payroll_rate__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: res_currency_customization
+#: model:ir.model.fields,field_description:res_currency_customization.field_hr_payroll_rate__id
+msgid "ID"
+msgstr ""
+
+#. module: res_currency_customization
+#: model:ir.model.fields,field_description:res_currency_customization.field_hr_payroll_rate____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: res_currency_customization
+#: model:ir.model.fields,field_description:res_currency_customization.field_hr_payroll_rate__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: res_currency_customization
+#: model:ir.model.fields,field_description:res_currency_customization.field_hr_payroll_rate__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: res_currency_customization
+#: model:ir.model.constraint,message:res_currency_customization.constraint_hr_payroll_rate_unique_name_per_day
+msgid "Only one rate per day allowed!"
+msgstr "Solo se permite una tasa por dia"
+
+#. module: res_currency_customization
+#: model:ir.model.fields,field_description:res_currency_customization.field_res_currency_rate__is_payroll_rate
+msgid "Payroll rate"
+msgstr "Tasa de nomina"
+
+#. module: res_currency_customization
+#: model_terms:ir.ui.view,arch_db:res_currency_customization.rate_payroll_view_tree
+msgid "Rate Social Benefits"
+msgstr "Tasa de Prestaciones Sociales"
+
+#. module: res_currency_customization
+#: model:ir.actions.act_window,name:res_currency_customization.rate_payroll_action
+#: model:ir.ui.menu,name:res_currency_customization.rate_menu_payroll_action
+msgid "Rate social benefits"
+msgstr "Tasa de prestaciones sociales"
+
+#. module: res_currency_customization
+#: model:ir.model.constraint,message:res_currency_customization.constraint_hr_payroll_rate_currency_rate_check
+msgid "The rate must be strictly positive."
+msgstr "La tasa debe ser estrictamente positiva"
+
+#. module: res_currency_customization
+#: model:ir.model.fields,field_description:res_currency_customization.field_res_currency_rate__is_fiscal_rate
+msgid "VE Currency"
+msgstr ""
+
+#. module: res_currency_customization
+#: code:addons/res_currency_customization/models/hr_payroll_rate.py:0
+#, python-format
+msgid "You cannot delete a non-current date"
+msgstr "No puedes eliminar a tasa de fecha no actual"
+
+#. module: res_currency_customization
+#: model:ir.model,name:res_currency_customization.model_hr_payroll_rate
+msgid "rate BCV used only to payroll"
+msgstr "Tasa BCV usado solo para nómina"

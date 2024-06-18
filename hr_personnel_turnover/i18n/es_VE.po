@@ -1,0 +1,625 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_personnel_turnover
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-27 15:11+0000\n"
+"PO-Revision-Date: 2023-12-27 11:14-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,help:hr_personnel_turnover.field_hr_resume_line__type_training
+msgid ""
+"\n"
+"                                        Internal: training provied by empress\n"
+"                                        External: training provied by others\n"
+"                                    "
+msgstr ""
+"\n"
+"                                        Interno: Capacitación impartida por la empresa\n"
+"                                        Externo: Capacitación impartida por otros\n"
+"                                    "
+
+#. module: hr_personnel_turnover
+#: model_terms:ir.ui.view,arch_db:hr_personnel_turnover.personnel_turnover_form
+msgid ""
+"<br/>\n"
+"                                change to:"
+msgstr ""
+"<br/>\n"
+"                                Cambiado a:"
+
+#. module: hr_personnel_turnover
+#: model_terms:ir.ui.view,arch_db:hr_personnel_turnover.turnover_resume_line_view_form
+msgid "<span>Hours</span>"
+msgstr "<span>Horas</span>"
+
+#. module: hr_personnel_turnover
+#: model_terms:ir.ui.view,arch_db:hr_personnel_turnover.wizard_personnel_turnover_form
+msgid ""
+"<strong>Some of the fields that have received changes must be registered and approved.</strong>\n"
+"                <br/>\n"
+"                <br/>\n"
+"                The list below are part of those fields, please state the type and reason for the change."
+msgstr ""
+"<strong>Algunos de los campos que han recibido cambios deben ser registrados y aprobados.</strong>\n"
+"                <br/>\n"
+"                <br/>\n"
+"                La siguiente lista son parte de esos campos, por favor indique el tipo y la razón del cambio."
+
+#. module: hr_personnel_turnover
+#: model:mail.template,body_html:hr_personnel_turnover.mail_personnel_turnover
+msgid ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"padding-top: 16px; background-color: "
+"#F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-collapse:separate;"
+"\"><tr><td align=\"center\">\n"
+"                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"padding: 16px; "
+"background-color: white; color: #454748; border-collapse:separate;\">\n"
+"                <tbody>\n"
+"                    <!-- HEADER -->\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" "
+"style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                <tr><td valign=\"middle\">\n"
+"                                    <span style=\"font-size: 20px; font-weight: bold;\">\n"
+"                                        Hello!\n"
+"                                    </span>\n"
+"                                </td><td valign=\"middle\" align=\"right\">\n"
+"                                    <img t-attf-src=\"/logo.png?company={{ object.employee_id.company_id."
+"id }}\" style=\"padding: 0px; margin: 0px; height: auto; width: 80px;\" t-att-alt=\"object.employee_id."
+"company_id.name\"/>\n"
+"                                </td></tr>\n"
+"                                <tr><td colspan=\"2\" style=\"text-align:center;\">\n"
+"                                <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium "
+"none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                                </td></tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <!-- CONTENT -->\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" "
+"style=\"min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-collapse:separate;\">\n"
+"                                <tr><td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                                    <div>\n"
+"                                        The modification of a contract or employee of <h5><t t-out=\"object."
+"employee_id.name\"/></h5> that requires your approval was requested.\n"
+"                                        <br/>\n"
+"                                        <br/>\n"
+"                                        You can check the changes at this link:<br/>\n"
+"                                        <div style=\"margin: 16px 0px 16px 0px;\">\n"
+"                                            <a t-att-href=\"object.turnover_url\" style=\"background-color: "
+"#875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-radius: 5px; font-size:13px;"
+"\">\n"
+"                                                Review changes\n"
+"                                            </a>\n"
+"                                        </div>\n"
+"                                        If you do not expect this, you can safely ignore this email.<br/><br/"
+">\n"
+"                                    </div>\n"
+"                                </td></tr>\n"
+"                                <tr><td style=\"text-align:center;\">\n"
+"                                <hr width=\"100%\" style=\"background-color:rgb(204,204,204);border:medium "
+"none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;\"/>\n"
+"                                </td></tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <!-- FOOTER -->\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" "
+"style=\"min-width: 590px; background-color: white; font-size: 11px; padding: 0px 8px 0px 8px; border-"
+"collapse:separate;\">\n"
+"                                <tr><td valign=\"middle\" align=\"left\">\n"
+"                                    <t t-out=\"object.employee_id.company_id.name or ''\">YourCompany</t>\n"
+"                                </td></tr>\n"
+"                                <tr><td valign=\"middle\" align=\"left\" style=\"opacity: 0.7;\">\n"
+"                                    <t t-out=\"object.employee_id.company_id.phone or ''\">+1 650-123-4567</"
+"t>\n"
+"\n"
+"                                    <t t-if=\"object.employee_id.company_id.email\">\n"
+"                                        | <a t-att-href=\"'mailto:%s' % object.employee_id.company_id."
+"email\" style=\"text-decoration:none; color: #454748;\" t-out=\"object.employee_id.company_id.email or "
+"''\">info@yourcompany.com</a>\n"
+"                                    </t>\n"
+"                                    <t t-if=\"object.employee_id.company_id.website\">\n"
+"                                        | <a t-att-href=\"'%s' % object.employee_id.company_id.website\" "
+"style=\"text-decoration:none; color: #454748;\" t-out=\"object.employee_id.company_id.website or ''\">http://"
+"www.example.com</a>\n"
+"                                    </t>\n"
+"                                </td></tr>\n"
+"                            </table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"                </table>\n"
+"                </td></tr>\n"
+"                <!-- POWERED BY -->\n"
+"                <tr><td align=\"center\" style=\"min-width: 590px;\">\n"
+"                    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"min-width: "
+"590px; background-color: #F1F1F1; color: #454748; padding: 8px; border-collapse:separate;\">\n"
+"                    <tr><td style=\"text-align: center; font-size: 13px;\">\n"
+"                        Powered by <a target=\"_blank\" href=\"https://www.odoo.com?utm_source=db&amp;"
+"utm_medium=auth\" style=\"color: #875A7B;\">Odoo</a>\n"
+"                    </td></tr>\n"
+"                    </table>\n"
+"                </td></tr>\n"
+"                </table>\n"
+"            "
+msgstr ""
+"<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"box-sizing:border-box;padding-top: 16px; "
+"background-color: #F1F1F1; font-family:Verdana, Arial,sans-serif; color: #454748; width: 100%; border-"
+"collapse:separate;\" width=\"100%\"><tbody><tr><td align=\"center\">\n"
+"                <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"box-sizing:"
+"border-box;padding: 16px; background-color: white; color: #454748; border-collapse:separate;\">\n"
+"                <tbody>\n"
+"                    <!-- HEADER -->\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" "
+"style=\"box-sizing:border-box;min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-"
+"collapse:separate;\">\n"
+"                                <tbody><tr><td valign=\"middle\">\n"
+"                                    <span style=\"font-size: 20px; font-weight: bold;\">\n"
+"                                        Hello!\n"
+"                                    </span>\n"
+"                                </td><td valign=\"middle\" align=\"right\">\n"
+"                                    <img t-attf-src=\"/logo.png?company={{ object.employee_id.company_id."
+"id }}\" style=\"border-style: none; box-sizing: border-box; vertical-align: middle; padding: 0px; margin: "
+"0px; height: auto; width: 80px; object-fit: cover;\" t-att-alt=\"object.employee_id.company_id.name\" "
+"width=\"80\" height=\"0\">\n"
+"                                </td></tr>\n"
+"                                <tr><td colspan=\"2\" style=\"text-align:center;\">\n"
+"                                <hr width=\"100%\" style=\"border-style:none;border-top-color:currentcolor;"
+"border-top-width:medium;border-image-width:1;border-image-source:none;border-image-slice:100%;border-image-"
+"repeat:stretch;border-image-outset:0;border-left-color:currentcolor;border-left-width:medium;border-bottom-"
+"color:currentcolor;border-bottom-width:medium;border-right-color:currentcolor;border-right-width:medium;"
+"overflow-y:visible;overflow-x:visible;height:0px;box-sizing:content-box;background-color:#cccccc;border:"
+"medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;"
+"\">\n"
+"                                </td></tr>\n"
+"                            </tbody></table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <!-- CONTENT -->\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" "
+"style=\"box-sizing:border-box;min-width: 590px; background-color: white; padding: 0px 8px 0px 8px; border-"
+"collapse:separate;\">\n"
+"                                <tbody><tr><td valign=\"top\" style=\"font-size: 13px;\">\n"
+"                                    <div>\n"
+"                                        The modification of a contract or employee of <h5 style=\"margin:0px "
+"0 6px 0;box-sizing:border-box;font-size:14.3px;color:#091124;line-height:1.2;font-weight:500;\"><t t-"
+"out=\"object.employee_id.name\"></t></h5> that requires your approval was requested.\n"
+"                                        <br>\n"
+"                                        <br>\n"
+"                                        You can check the changes at this link:<br>\n"
+"                                        <div style=\"margin: 16px 0px 16px 0px;\">\n"
+"                                            <a t-att-href=\"object.turnover_url\" style=\"box-sizing:border-"
+"box;background-color: #875A7B; padding: 8px 16px 8px 16px; text-decoration: none; color: #fff; border-"
+"radius: 5px; font-size:13px;\">\n"
+"                                                Review changes\n"
+"                                            </a>\n"
+"                                        </div>\n"
+"                                        If you do not expect this, you can safely ignore this email."
+"<br><br>\n"
+"                                    </div>\n"
+"                                </td></tr>\n"
+"                                <tr><td style=\"text-align:center;\">\n"
+"                                <hr width=\"100%\" style=\"border-style:none;border-top-color:currentcolor;"
+"border-top-width:medium;border-image-width:1;border-image-source:none;border-image-slice:100%;border-image-"
+"repeat:stretch;border-image-outset:0;border-left-color:currentcolor;border-left-width:medium;border-bottom-"
+"color:currentcolor;border-bottom-width:medium;border-right-color:currentcolor;border-right-width:medium;"
+"overflow-y:visible;overflow-x:visible;height:0px;box-sizing:content-box;background-color:#cccccc;border:"
+"medium none;clear:both;display:block;font-size:0px;min-height:1px;line-height:0; margin: 16px 0px 16px 0px;"
+"\">\n"
+"                                </td></tr>\n"
+"                            </tbody></table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                    <!-- FOOTER -->\n"
+"                    <tr>\n"
+"                        <td align=\"center\" style=\"min-width: 590px;\">\n"
+"                            <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" "
+"style=\"box-sizing:border-box;min-width: 590px; background-color: white; font-size: 11px; padding: 0px 8px "
+"0px 8px; border-collapse:separate;\">\n"
+"                                <tbody><tr><td valign=\"middle\" align=\"left\">\n"
+"                                    <t t-out=\"object.employee_id.company_id.name or ''\">YourCompany</t>\n"
+"                                </td></tr>\n"
+"                                <tr><td valign=\"middle\" align=\"left\" style=\"opacity: 0.7;\">\n"
+"                                    <t t-out=\"object.employee_id.company_id.phone or ''\">+1 650-123-4567</"
+"t>\n"
+"\n"
+"                                    <t t-if=\"object.employee_id.company_id.email\">\n"
+"                                        | <a t-att-href=\"'mailto:%s' % object.employee_id.company_id."
+"email\" style=\"box-sizing:border-box;background-color:transparent;text-decoration:none; color: #454748;\" t-"
+"out=\"object.employee_id.company_id.email or ''\">info@yourcompany.com</a>\n"
+"                                    </t>\n"
+"                                    <t t-if=\"object.employee_id.company_id.website\">\n"
+"                                        | <a t-att-href=\"'%s' % object.employee_id.company_id.website\" "
+"style=\"box-sizing:border-box;background-color:transparent;text-decoration:none; color: #454748;\" t-"
+"out=\"object.employee_id.company_id.website or ''\">http://www.example.com</a>\n"
+"                                    </t>\n"
+"                                </td></tr>\n"
+"                            </tbody></table>\n"
+"                        </td>\n"
+"                    </tr>\n"
+"                </tbody>\n"
+"                </table>\n"
+"                </td></tr>\n"
+"                <!-- POWERED BY -->\n"
+"                <tr><td align=\"center\" style=\"min-width: 590px;\">\n"
+"                    <table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" width=\"590\" style=\"box-sizing:"
+"border-box;min-width: 590px; background-color: #F1F1F1; color: #454748; padding: 8px; border-collapse:"
+"separate;\">\n"
+"                    <tbody><tr><td style=\"text-align: center; font-size: 13px;\">\n"
+"                        Powered by <a target=\"_blank\" href=\"https://www.odoo.com?utm_source=db&amp;"
+"utm_medium=auth\" style=\"text-decoration:none;box-sizing:border-box;background-color:transparent;color: "
+"#875A7B;\">Odoo</a>\n"
+"                    </td></tr>\n"
+"                    </tbody></table>\n"
+"                </td></tr>\n"
+"                </tbody></table>\n"
+"            "
+
+#. module: hr_personnel_turnover
+#: model:mail.template,subject:hr_personnel_turnover.mail_personnel_turnover
+msgid "Approval of Personnel Movement"
+msgstr "Aprobación de Movimiento de Personal"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__hr_personnel_turnover__state__validate
+msgid "Approved"
+msgstr "Aprobado"
+
+#. module: hr_personnel_turnover
+#: model_terms:ir.ui.view,arch_db:hr_personnel_turnover.wizard_personnel_turnover_form
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__changed_field
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover_line__changed_field
+msgid "Changed Field"
+msgstr "Campo cambiado"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__user_changer
+msgid "Changed by"
+msgstr "Cambiado por"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__hr_personnel_turnover__reason__collective
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__wizard_personnel_turnover_line__reason__collective
+msgid "Collective Contract"
+msgstr "Contrato colectivo"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__company_id
+msgid "Company"
+msgstr "Compañia"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__contract_id
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover_line__contract_id
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: hr_personnel_turnover
+#: model_terms:ir.ui.view,arch_db:hr_personnel_turnover.personnel_turnover_form
+msgid "Contract Reference"
+msgstr "Referencia de contrato"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__create_uid
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover__create_uid
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover_line__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__create_date
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover__create_date
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover_line__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: hr_personnel_turnover
+#: model_terms:ir.ui.view,arch_db:hr_personnel_turnover.personnel_turnover_form
+#: model_terms:ir.ui.view,arch_db:hr_personnel_turnover.personnel_turnover_tree
+msgid "Creation date"
+msgstr "Fecha de creación"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__description
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover_line__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__display_name
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover__display_name
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover_line__display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: hr_personnel_turnover
+#: model_terms:ir.ui.view,arch_db:hr_personnel_turnover.turnover_resume_line_view_form
+msgid "Due date"
+msgstr "Fecha de culminación"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_resume_line__duration
+msgid "Duration"
+msgstr "Duración"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__employee_id
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover__employee_id
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover_line__employee_id
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__hr_personnel_turnover__reason__evaluation
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__wizard_personnel_turnover_line__reason__evaluation
+msgid "Evaluation"
+msgstr "Evaluación"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__hr_personnel_turnover__move_type__out
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__hr_resume_line__type_training__out
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__wizard_personnel_turnover_line__move_type__out
+msgid "External"
+msgstr "Externo"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__field_name
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover_line__field_name
+msgid "Field name"
+msgstr "Nombre del campo"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__id
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover__id
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover_line__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__hr_personnel_turnover__move_type__in
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__hr_resume_line__type_training__in
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__wizard_personnel_turnover_line__move_type__in
+msgid "Internal"
+msgstr "Interno"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_resume_line__is_training
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_resume_line_type__is_training
+msgid "Is Training"
+msgstr ""
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover____last_update
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover____last_update
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover_line____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__write_uid
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover__write_uid
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__write_date
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover__write_date
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__hr_personnel_turnover__reason__level
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__wizard_personnel_turnover_line__reason__level
+msgid "Leveling"
+msgstr "Nivelación"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__move_type
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover_line__move_type
+msgid "Movement type"
+msgstr "Tipo de movimiento"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__field_value
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover_line__field_value
+msgid "New value"
+msgstr "Nuevo valor"
+
+#. module: hr_personnel_turnover
+#: model_terms:ir.ui.view,arch_db:hr_personnel_turnover.wizard_personnel_turnover_form
+msgid ""
+"No other fields will be saved as long as the fields in the list are modified.\n"
+"                    <br/>\n"
+"                    The approver will receive an e-mail notifying of these movements."
+msgstr ""
+"No se guardará ningún otro campo mientras se modifiquen los campos de la lista.\n"
+"                    <br/>\n"
+"                    Los aprobadores recibirán un correo electrónico notificándole estos movimientos."
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__origin
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover_line__origin
+msgid "Origin"
+msgstr "Origen"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__hr_personnel_turnover__reason__other
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__wizard_personnel_turnover_line__reason__other
+msgid "Other"
+msgstr "Otro"
+
+#. module: hr_personnel_turnover
+#: model:ir.model,name:hr_personnel_turnover.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Nómina"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover_line__personnel_id
+msgid "Personnel"
+msgstr "Personal"
+
+#. module: hr_personnel_turnover
+#: model:mail.template,name:hr_personnel_turnover.mail_personnel_turnover
+msgid "Personnel Movement Template"
+msgstr "Plantilla de Movimiento de Personal"
+
+#. module: hr_personnel_turnover
+#: model:ir.actions.act_window,name:hr_personnel_turnover.personnel_turnover_action
+#: model:ir.ui.menu,name:hr_personnel_turnover.personnel_turnover_menu
+#: model_terms:ir.ui.view,arch_db:hr_personnel_turnover.personnel_turnover_form
+#: model_terms:ir.ui.view,arch_db:hr_personnel_turnover.personnel_turnover_tree
+msgid "Personnel Turnover"
+msgstr "Movimiento de Personal"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__hr_personnel_turnover__reason__decree
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__wizard_personnel_turnover_line__reason__decree
+msgid "Presidential Decree"
+msgstr "Decreto Presidencial"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__hr_personnel_turnover__reason__promo
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__wizard_personnel_turnover_line__reason__promo
+msgid "Promotion"
+msgstr "Promoción"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__reason
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover_line__reason
+msgid "Reason"
+msgstr "Razón"
+
+#. module: hr_personnel_turnover
+#: model_terms:ir.ui.view,arch_db:hr_personnel_turnover.wizard_personnel_turnover_form
+msgid "Recording Personnel Turnover"
+msgstr "Registrando Movimiento de Personal"
+
+#. module: hr_personnel_turnover
+#: model:ir.actions.server,name:hr_personnel_turnover.personnel_turnover_action_menu_refuse
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__hr_personnel_turnover__state__refuse
+#: model_terms:ir.ui.view,arch_db:hr_personnel_turnover.personnel_turnover_form
+msgid "Refuse"
+msgstr "Rechazar"
+
+#. module: hr_personnel_turnover
+#: model_terms:ir.ui.view,arch_db:hr_personnel_turnover.wizard_personnel_turnover_form
+msgid "Register"
+msgstr "Registrar"
+
+#. module: hr_personnel_turnover
+#: model:ir.model,name:hr_personnel_turnover.model_hr_resume_line
+msgid "Resumé line of an employee"
+msgstr "Línea de currículum vitae de un empleado"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__state
+msgid "State"
+msgstr "Estado"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_resume_line__supplier_name
+msgid "Supplier name"
+msgstr "Nombre de proveedor"
+
+#. module: hr_personnel_turnover
+#: model_terms:ir.ui.view,arch_db:hr_personnel_turnover.personnel_turnover_form
+msgid "The modified field is:"
+msgstr "El campo modificado es:"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,help:hr_personnel_turnover.field_hr_resume_line__supplier_name
+msgid "This is the name of the institute, academy or whoever provided the training."
+msgstr "Este es el nombre del instituto, academia o quien haya impartido la capacitación."
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__hr_personnel_turnover__state__confirm
+msgid "To Approve"
+msgstr "Por Aprobar"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover__turnover_ids
+msgid "Turnover"
+msgstr "Movimiento"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_wizard_personnel_turnover__turnover_url
+msgid "Turnover Url"
+msgstr ""
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_resume_line__type_training
+msgid "Type Training"
+msgstr "Tipo de capacitación"
+
+#. module: hr_personnel_turnover
+#: model:ir.model,name:hr_personnel_turnover.model_hr_resume_line_type
+msgid "Type of a resumé line"
+msgstr "Tipo de línea de currículum vitae"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields.selection,name:hr_personnel_turnover.selection__hr_personnel_turnover__reason__vacation
+msgid "Vacation"
+msgstr "Vacación"
+
+#. module: hr_personnel_turnover
+#: model:ir.actions.server,name:hr_personnel_turnover.personnel_turnover_action_menu_validate
+#: model_terms:ir.ui.view,arch_db:hr_personnel_turnover.personnel_turnover_form
+msgid "Validate"
+msgstr "Validar"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__validate_date
+msgid "Validate date"
+msgstr "Fecha de validación"
+
+#. module: hr_personnel_turnover
+#: model:ir.model.fields,field_description:hr_personnel_turnover.field_hr_personnel_turnover__user_validate
+msgid "Validated by"
+msgstr "Validado por"
+
+#. module: hr_personnel_turnover
+#: model:ir.model,name:hr_personnel_turnover.model_hr_personnel_turnover
+msgid "hr.personnel.turnover"
+msgstr ""
+
+#. module: hr_personnel_turnover
+#: model:ir.model,name:hr_personnel_turnover.model_wizard_personnel_turnover
+msgid "wizard.personnel.turnover"
+msgstr ""
+
+#. module: hr_personnel_turnover
+#: model:ir.model,name:hr_personnel_turnover.model_wizard_personnel_turnover_line
+msgid "wizard.personnel.turnover.line"
+msgstr ""

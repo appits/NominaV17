@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="wizard_personnel_turnover_form" model="ir.ui.view">
+        <field name="name">wizard.personnel.turnover.form</field>
+        <field name="model">wizard.personnel.turnover</field>
+        <field name="arch" type="xml">
+            <form string="Recording Personnel Turnover">
+                <strong>Some of the fields that have received changes must be registered and approved.</strong>
+                <br/>
+                <br/>
+                The list below are part of those fields, please state the type and reason for the change.
+
+                <field name="turnover_ids" nolabel="1" readonly="0">
+                    <tree editable="bottom" create="0" delete="0"> 
+                        <field name="field_name"/>
+                        <field name="field_value"/>
+                        <field name="move_type" required="True"/>
+                        <field name="reason" required="True"/>
+                        <field name="description" attrs="{'required': [('reason', '=', 'other')]}"/>
+                    </tree>
+                </field>
+
+                <div class="text-warning">
+                    No other fields will be saved as long as the fields in the list are modified.
+                    <br/>
+                    The approver will receive an e-mail notifying of these movements. 
+                </div>
+
+                <footer>
+                    <button name="validate_personnel_turnover" string="Register" class="oe_highlight" type="object" />
+                    <button name="close_personnel_turnover" string="Cancel" class="btn-default" type="object"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

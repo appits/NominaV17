@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+        <!-- Additional Fixed Income and Discount form -->
+        <record id="hr_employee_additional_discount_income_tree" model="ir.ui.view">
+            <field name="name">hr.employee.additional.discount.income.tree</field>
+            <field name="model">hr_employee_additional_discount_income</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="active" invisible="1"/>
+                    <field name="start_date" />
+                    <field name="end_date" />
+                    <field name="type" />
+                    <field name="employee_id" widget="many2one_avatar_employee" />
+                    <field name="contract_id" invisible="1" />
+                    <field name="name" />
+                    <field name="amount" />
+                    <field name="rate_id" />
+                    <field name="rate_amount" />
+                    <field name="currency_id" optional="hide"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--Additional Fixed Income and Discount form-->
+        <record id="hr_employee_additional_discount_income_form" model="ir.ui.view">
+            <field name="name">hr.employee.additional.discount.income.form</field>
+            <field name="model">hr_employee_additional_discount_income</field>
+            <field name="arch" type="xml">
+                <form string="Additional and Disconut Income">
+                    <header></header>
+                    <sheet>
+                        <field name="active" invisible="1"/>
+                        <group name="group_top">
+                            <group name="group_left" style="width:50%;">
+                                <field name="employee_id" required="1" options="{ 'no_open': True}"/>
+                                <field name="contract_id" attrs="{'invisible': [('contract_ids', '!=', [])]}" options="{ 'no_open': True}"/>
+                                <field name="contract_ids" widget="many2many_tags" attrs="{'invisible': [('contract_id', '!=', False)]}" options="{ 'no_open': True}"/>
+                                <field name="type" required="1"/>
+                            </group>
+                            <group name="group_right" style="width:50%;">
+                                <field name="name" required="1" />
+                                <label for="amount" />
+                                <div class="o_row" name="amount">
+                                    <field name="amount" nolabel="1" widget="monetary" options="{'currency_field': 'currency_id'}" required="1" />
+                                    <span> - </span>
+                                    <field name="currency_id" options="{ 'no_open': True}" />
+                                </div>
+                                
+                                <label for="rate_id" />
+                                <div class="o_row" name="rate" >
+                                    <field name="rate_id" nolabel="1" options="{'no_create': True, 'no_open': True}" domain="[('is_payroll_rate', '=', True)]"/>
+                                    <span> - </span>
+                                    <field name="rate_amount" readonly="1" force_save="1" />
+                                </div>
+                                <field name="start_date" required="1" />
+                                <field name="end_date" required="1" />
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="hr_employee_additional_discount_income_search" model="ir.ui.view">
+            <field name="name">hr.employee.additional.discount.income.search</field>
+            <field name="model">hr_employee_additional_discount_income</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <separator/>
+                    <filter name="archived" string="Archived" domain="[('active', '=', False)]"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="hr_employee_additional_discount_income_action" model="ir.actions.act_window">
+            <field name="name">Incomes and Discounts additionals</field>
+            <field name="res_model">hr_employee_additional_discount_income</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- actions -->
+        <menuitem id="hr_employee_additional_discount_income_config" name="Incomes and Discounts additionals" action="hr_employee_additional_discount_income_action" parent="menu_hr_employee_salary_advance" sequence="2" />
+
+        <!--Page Fixed Additional Discounts on Employees-->
+        <record id="hr_employee_view_form_inherit_additional_discounts" model="ir.ui.view">
+            <field name="name">hr.employee.view.form.inherit.additional.discounts</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr_employee_customization.hr_advance_employee_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='employee_advance']" position="after">
+                    <page name="employee_discount" string="Incomes and Discounts additionals">
+                        <separator string="Incomes and Discounts additionals"/>
+                        <field name="employee_additional_discounts_ids" mode="tree" nolabel="1" options="{'no_open': True}">
+                            <tree create="0" delete="0">
+                                <field name="start_date" />
+                                <field name="end_date" />
+                                <field name="type"/>
+                                <field name="name" />
+                                <field name="amount" />
+                                <field name="currency_id" invisible="1"/>
+                                <field name="rate_id" />
+                                <field name="rate_amount" />
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+
+</odoo>

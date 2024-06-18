@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="wizard_work_constancy_form" model="ir.ui.view">
+        <field name="name">wizard.work.constancy.form</field>
+        <field name="model">wizard.work.constancy</field>
+        <field name="arch" type="xml">
+            <form string="Print Work Constancy">
+                <group>
+                    <group id="left">
+                        <field name="employee" required='1' />
+                    </group>
+                    <group id="right">
+                        <field name="job" required='1'/>
+                        <field name="default" widget="boolean_toggle"/>
+                    </group>
+
+                </group>
+
+                <div class="mt-3 justify-content-center">
+                    Write de name and position of the employee how is going to sign the work constancy
+                </div>
+
+                <footer>
+                    <button name="print_work_constancy" string="Print" class="oe_highlight" type="object" />
+                    <button string="Cancel" class="btn-default" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="work_constancy_employee_form" model="ir.ui.view">
+        <field name="name">work.constancy.employee.form</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button name="action_work_constancy" string="Work Constancy" class="oe_highlight" type="object"></button>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="work_constancy_employee_tree" model="ir.ui.view">
+        <field name="name">work.constancy.employee.tree</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_tree" />
+        <field name="arch" type="xml">
+            <xpath expr="//tree" position="inside">
+                <header>
+                    <button string="Massive Work Constancy" name="action_work_constancy" type="object" class="oe_highlight"/>
+                </header>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

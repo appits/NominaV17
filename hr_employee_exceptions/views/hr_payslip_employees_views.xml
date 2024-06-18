@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    
+        <record id="inherit_payslip_by_employees_exceptions" model="ir.ui.view">
+            <field name="name">inherit.payslip.by.employees.exceptions</field>
+            <field name="model">hr.payslip.employees</field>
+            <field name="inherit_id" ref="hr_payroll.view_hr_payslip_by_employees" />
+            <field name="arch" type="xml">
+                
+                <xpath expr="//footer" position="before">
+                    <group colspan="4">
+                        <separator string="Exceptions" colspan="4"/>
+                        <newline/>
+                        <field name="exceptions_employee_ids" nolabel="1" readonly="1">
+                            <tree delete="0">
+                                <field name="name" readonly="1"/>
+                                <field name="work_email" readonly="1"/>
+                                <field name="department_id" readonly="1"/>
+                            </tree>
+                        </field>
+                    </group>
+                </xpath>
+
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+  <data>
+    <!--Button to cancel batch payroll payments-->
+    <record id="payslip_run_inherit_button_cancel" model="ir.ui.view">
+      <field name="name">payslip.run.inherit.button.cancel</field>
+      <field name="model">hr.payslip.run</field>
+      <field name="inherit_id" ref="hr_payroll.hr_payslip_run_form" />
+      <field name="arch" type="xml">
+        <xpath expr="//header/button[@name='action_draft']" position="after">
+          <button name="action_payslip_run_cancel" type="object" string="Cancelar nómina" class="oe_highlight" states="close,verify"/>
+        </xpath>
+      </field>
+    </record>
+  
+    <!--Button to cancel individual payroll payments-->
+    <record id="payslip_payroll_button_cancel" model="ir.ui.view">
+      <field name="name">payslip.payroll.button.cancel</field>
+      <field name="model">hr.payslip</field>
+      <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form" />
+      <field name="arch" type="xml">
+        <xpath expr="//header/button[@name='action_print_payslip']" position="after">
+          <button name="payslip_cancel" type="object" string="Cancelar nómina" class="oe_highlight" states="done"/>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

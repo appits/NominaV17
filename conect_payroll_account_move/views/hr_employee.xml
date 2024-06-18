@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="inherit_employee_new_account" model="ir.ui.view">
+            <field name="name">inherit.employee.new.account</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//sheet[1]/group[1]/group[2]" position="inside">
+                    <field name="account_location"/>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

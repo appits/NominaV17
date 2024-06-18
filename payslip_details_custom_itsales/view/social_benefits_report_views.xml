@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="wizard_report_ppss_form" model="ir.ui.view">
+        <field name="name">wizard.report.ppss.form</field>
+        <field name="model">social.benefits.report</field>
+        <field name="arch" type="xml">
+            <form string="ppss Report">
+                <group>
+                    <group>
+                        <field name="employee_ids" widget="many2many_tags"/>
+                    </group>
+                    <group>                        
+                        <field name="date"/>
+                        <field name="massive_selection" widget="boolean_toggle"/>
+                        <div>
+                            Choose a date to print report for month <strong><field name="month_name" nolabel="1" readonly="1" class="oe_inline"/></strong>
+                        </div>
+                        <field name="msg" invisible='1'/>
+                        <div class="text-warning" attrs="{'invisible': [('msg', '=', False)]}">
+                            The date chosen is outside the range of the contract or is later than the current day
+                        </div>
+                    </group>
+                </group>
+
+                <footer>
+                    <button name="print_ppss_report" string="Print" class="oe_highlight" type="object" />
+                    <button string="Cancel" class="btn-default" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="wizard_report_ppss_action" model="ir.actions.act_window">
+        <field name="name">Reporte de Prestaciones Sociales</field>
+        <field name="res_model">social.benefits.report</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="wizard_report_ppss_menuitem" action="wizard_report_ppss_action" parent="hr_payroll.menu_hr_payroll_report" sequence="100" />
+</odoo>

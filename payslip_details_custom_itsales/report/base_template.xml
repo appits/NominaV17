@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Modify footer -->
+    <template id="modified_template" inherit_id="web.external_layout" primary="True">
+        <xpath expr="//t[4]" position="replace"> </xpath>
+        <xpath expr="//t[@t-if='company.external_report_layout_id']" position="replace">
+            <t t-call="payslip_details_custom_itsales.custom_footer_layout">
+                <t t-out="0"/>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="custom_footer_layout" inherit_id="web.external_layout_standard" primary="True">
+        <xpath expr="//div[@class='text-center']//ul[@class='list-inline mb4']//div[@t-field]" position="replace"/>
+        <xpath expr="//div[@class='text-muted']" position="replace"/>
+        <xpath expr="//div[@class='text-center']" position="attributes">
+            <attribute name="style">border-top: 1px solid black; margin-bottom: 2cm;</attribute>
+        </xpath>
+    </template>
+</odoo>

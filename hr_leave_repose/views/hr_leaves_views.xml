@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+
+    <record id="inherit_repose_hr_leave_view_form" model="ir.ui.view">
+        <field name="name">inherit.repose.hr.leave.view.form</field>
+        <field name="model">hr.leave</field>
+        <field name="inherit_id" ref="hr_holidays.hr_leave_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='request_date_from_period']" position="attributes">
+                <attribute name="placeholder">Period</attribute>
+            </xpath>
+
+            <xpath expr="//label[@for='number_of_days']" position="before">
+                <field name="count_weekend" attrs="{'readonly': ['|', ('state', '=', 'validate'), ('is_holiday_nomina', '=', True)]}"/>
+                <field name="extend_leave" attrs="{'invisible': [('is_holiday_nomina', '=', True)], 'readonly': [('state', '=', 'validate')]}"/>
+            </xpath>
+
+            <xpath expr="//field[@name='number_of_days']" position="attributes">
+                <attribute name="attrs">{'readonly': [('state', '=', 'validate')]}</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='work_days_hr']" position="before">
+
+                <label for="days_paid" string="Days paid" attrs="{'invisible': ['|', ('is_holiday_nomina', '=', True), ('state', '!=', 'validate')]}"/>
+                <div name="days_paid" attrs="{'invisible': ['|', ('is_holiday_nomina', '=', True), ('state', '!=', 'validate')]}">
+                    <div class="o_row">
+                        <div class="o_row" >
+                            <field name="days_paid" nolabel="1" readonly="1" class="oe_inline" modifiers="{&quot;readonly&quot;: true}"/>
+                            <span>Days</span>
+                        </div>
+                    </div>
+                </div>
+
+            </xpath>
+
+        </field>
+    </record>
+    
+</odoo>

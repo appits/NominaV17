@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+
+        <record id="hr_employee_age_form" model="ir.ui.view">
+            <field name="name">hr.employee.age.form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form" />
+            <field name="arch" type="xml">
+                <!-- Employee Spouse -->
+                <xpath expr="//page[@name='personal_information']//field[@name='spouse_birthdate']" position="after">
+
+                    <field name="employee_spouse_ci" attrs="{'invisible': [('marital', 'not in', ['married', 'cohabitant'])]}" />
+                    <label for="employee_spouse_age" attrs="{'invisible': [('marital', 'not in', ['married', 'cohabitant'])]}" />
+                    <div class="o_row" name="employee_spouse_age" attrs="{'invisible':[('spouse_birthdate', '=', False)]}">
+                        <field name="employee_spouse_age" nolabel="1" readonly="1" force_save="1" />
+                        <span> years </span>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="hr_employee_family_burden_form" model="ir.ui.view">
+            <field name="name">hr.employee.family.burden.form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form" />
+            <field name="arch" type="xml">
+
+                <!-- Family burden: Page -->
+                <xpath expr="//page[@name='hr_settings']" position="before">
+
+                    <page name="famyily_burden" string="Family burden">
+                        <group>
+                            <group string="Employee Mother">
+                                <field name="employee_mothers_name" />
+                                <field name="employee_mothers_birthdate" />
+                                <field name="employee_mothers_ci" />
+                                <label for="employee_mothers_age" attrs="{'invisible': [('marital', 'not in', ['married', 'cohabitant'])]}" />
+                                <div class="o_row" name="employee_mothers_age" attrs="{'invisible':[('employee_mothers_birthdate', '=', False)]}">
+                                    <field name="employee_mothers_age" nolabel="1" readonly="1" force_save="1" />
+                                    <span> years </span>
+                                </div>                                
+                                <field name="employee_mothers_guardianship" />
+                            </group>
+
+                            <group string="Employee Father">
+                                <field name="employee_fathers_name" />
+                                <field name="employee_fathers_birthdate" />
+                                <field name="employee_fathers_ci" />
+                                <label for="employee_fathers_age" attrs="{'invisible': [('marital', 'not in', ['married', 'cohabitant'])]}" />
+                                <div class="o_row" name="employee_fathers_age" attrs="{'invisible':[('employee_fathers_birthdate', '=', False)]}">
+                                    <field name="employee_fathers_age" nolabel="1" readonly="1" force_save="1" />
+                                    <span> years </span>
+                                </div>
+                                <field name="employee_fathers_guardianship" />
+                            </group>
+                        </group>
+
+                        <separator string="Children" colspan="4" />
+                        <!-- <field name="children_ids" nolabel="1"></field> -->
+
+                        <field name="children_ids" widget="one2many" readonly="0">
+                            <tree editable="bottom" no_open="0" create="1" delete="1">
+
+                                <field name="name"/>
+                                <field name="guardianship"/>
+                                <field name="birhtdate"/>
+                                <field name="age" />
+                                <field name="type_age"/>
+                                <field name="child_ci"/>
+                                <field name="study_level"/>
+
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+
+            </field>
+        </record>
+
+
+    </data>
+</odoo>

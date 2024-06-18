@@ -1,0 +1,491 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_contract_customization
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e-20220307\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-22 18:47+0000\n"
+"PO-Revision-Date: 2022-08-22 18:47+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_contract_customization
+#: model_terms:ir.ui.view,arch_db:hr_contract_customization.hr_contract_view_form_inherit_customization
+msgid "/ hours"
+msgstr "/ horas"
+
+#. module: hr_contract_customization
+#: model_terms:ir.ui.view,arch_db:hr_contract_customization.hr_contract_view_form_inherit_customization
+msgid "<span> / </span>"
+msgstr ""
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__accrue_social_benefit_interest
+msgid "Accrue social benefit interest?"
+msgstr "¿Acumular los intereses de las prestaciones sociales?"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_accrued_benefits
+msgid "Accumulated benefits"
+msgstr "Prestaciones acumuladas"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,help:hr_contract_customization.field_hr_contract__employee_additional_days
+msgid "Additional days"
+msgstr "Dias adicionales"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_holiday_advance
+#: model_terms:ir.ui.view,arch_db:hr_contract_customization.hr_contract_view_form_inherit_customization
+msgid "Advance vacation"
+msgstr "Anticipo de vacaciones"
+
+#. module: hr_contract_customization
+#: model_terms:ir.ui.view,arch_db:hr_contract_customization.hr_contract_view_form_inherit_customization
+msgid "Advances"
+msgstr "Anticipos"
+
+#. module: hr_contract_customization
+#: model_terms:ir.ui.view,arch_db:hr_contract_customization.hr_contract_view_form_inherit_customization
+msgid "Advances Page"
+msgstr "Pasivos / Préstamos"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_adu
+msgid "Advances of utilities"
+msgstr "Anticipo de utilidades"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__average_salary_currency
+msgid "Average Salary Currency"
+msgstr ""
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__average_salary
+msgid "Average salary"
+msgstr "Salario promedio"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__basket_ticket_currency
+msgid "Basket Ticket Currency"
+msgstr ""
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__compensated
+msgid "Compensated"
+msgstr "Compensado"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__compute_field_income_discounts
+msgid "Compute Field Income Discounts"
+msgstr ""
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__compute_field_soo
+msgid "Compute Field Soo"
+msgstr ""
+
+#. module: hr_contract_customization
+#: model_terms:ir.ui.view,arch_db:hr_contract_customization.hr_contract_form_inherit_salary_icon
+msgid "Contract Name"
+msgstr "Nombre del contrato"
+
+#. module: hr_contract_customization
+#: model:ir.model,name:hr_contract_customization.model_hr_contract_history
+msgid "Contract history"
+msgstr "Histórico de contratación"
+
+#. module: hr_contract_customization
+#: model_terms:ir.ui.view,arch_db:hr_contract_customization.hr_contract_form_inherit_salary_icon
+msgid "Current Contracts"
+msgstr "Contratos actuales"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__current_social_benefit_interest
+msgid "Current social benefit interest"
+msgstr "Interés actual de la prestación social"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__custom_currency_id
+msgid "Custom Currency"
+msgstr "Moneda personalizada"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__custom_salary_currency
+msgid "Custom Salary Currency"
+msgstr ""
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,help:hr_contract_customization.field_hr_contract__sdp
+msgid "Daily salary benefits"
+msgstr "Salario diario prestaciones"
+
+#. module: hr_contract_customization
+#: model_terms:ir.ui.view,arch_db:hr_contract_customization.hr_contract_view_form_inherit_customization
+msgid "Date End"
+msgstr "Fecha de fin"
+
+#. module: hr_contract_customization
+#: model_terms:ir.ui.view,arch_db:hr_contract_customization.hr_contract_view_form_inherit_customization
+msgid "Date Start"
+msgstr "Fecha de inicio"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__average_salary_date_end
+msgid "Date end"
+msgstr "Fecha de fin"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_accrued_benefits_date
+msgid "Date of accrued benefits"
+msgstr "Fecha de las prestaciones acumuladas"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__date_last_benefit_calculation
+msgid "Date of last benefit calculation"
+msgstr "Fecha ultimo calculo de prestaciones"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__date_last_days_per_year_calculation
+msgid "Date of last days per year calculation"
+msgstr "Fecha del último cálculo de días por año"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__average_salary_date_start
+msgid "Date start"
+msgstr "Fecha de inicio"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,help:hr_contract_customization.field_hr_contract__employee_days_seniority
+msgid "Days of seniority of the employee"
+msgstr "Días de antiguedad del empleado"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_days_per_year
+msgid "Days per year"
+msgstr "Días por año"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__department_name
+msgid "Department Name"
+msgstr "Nombre de Departamento"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_additional_days
+msgid "Employee Additional Days"
+msgstr "Dias adicionales"
+
+#. module: hr_contract_customization
+#: model:ir.model,name:hr_contract_customization.model_hr_contract
+msgid "Employee Contract"
+msgstr "Contrato de empleado"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_days_seniority
+msgid "Employee Days Seniority"
+msgstr "Días de antiguedad del empleado"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_months_seniority
+msgid "Employee Months Seniority"
+msgstr "Meses de antiguedad del empleado"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_seniority
+#: model:ir.model.fields,help:hr_contract_customization.field_hr_contract__employee_seniority
+msgid "Employee Seniority"
+msgstr "Antiguedad del empleado"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_years_seniority
+msgid "Employee Years Seniority"
+msgstr "Años de antiguedad del empleado"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,help:hr_contract_customization.field_hr_contract__average_salary_date_end
+msgid ""
+"End date up to which the payrolls that are in paid status will be searched "
+"for the calculation of the average salary."
+msgstr ""
+"Fecha final hasta la que se buscarán las nóminas que están en estado de "
+"pagopara el cálculo del salario promedio."
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__fiscal_currency_id
+msgid "Fiscal Currency"
+msgstr "Moneda fiscal"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_fixed_additional_income_discounts_ids
+msgid "Fixed additional income"
+msgstr "Ingreso adicional fijo"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__forced_unemployment
+msgid "Forced unemployment"
+msgstr "SPF"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__hourly_wage_currency
+msgid "Hourly Wage Currency"
+msgstr "Moneda del salario por hora"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__husing_policy_law
+msgid "Housing policy law"
+msgstr "LPVH"
+
+#. module: hr_contract_customization
+#: model_terms:ir.ui.view,arch_db:hr_contract_customization.hr_contract_view_form_inherit_customization
+msgid "Incomes and Discounts additionals"
+msgstr "Ingresos y Descuentos adicionales"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__is_benefit_calculation_valid
+msgid "Is day"
+msgstr ""
+
+#. module: hr_contract_customization
+#: model_terms:ir.ui.view,arch_db:hr_contract_customization.hr_contract_form_inherit_salary_icon
+msgid "Monthly Wage"
+msgstr "Salario mensual"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,help:hr_contract_customization.field_hr_contract__smp
+msgid "Monthly salary benefits"
+msgstr "Salario mensual prestaciones"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,help:hr_contract_customization.field_hr_contract__employee_months_seniority
+msgid "Months of seniority of the employee"
+msgstr "Meses de antiguedad del empleado"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__most_recent_spd
+msgid "Most Recent Spd"
+msgstr "Pago SPD más reciente"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,help:hr_contract_customization.field_hr_contract__most_recent_spd
+msgid "Most recent SPD payment"
+msgstr "Pago SPD más reciente"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__net_amount
+msgid "Net amount"
+msgstr "Anticipo de Quincena"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__night_bonus
+msgid "Night bonus"
+msgstr "Bono nocturno"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__overtime_hours_currency
+msgid "Overtime Hours Currency"
+msgstr "Moneda de Horas extras"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__overtime_hours
+msgid "Overtime horus"
+msgstr "Horas extras"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__overtime_hours_amount
+msgid "Overtime horus amount"
+msgstr "Monto por horas extras"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__punctuality_bonus
+msgid "Punctuality Bonus"
+msgstr "Bono puntualidad"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__punctuality_bonus_currancy
+msgid "Punctuality Bonus Currancy"
+msgstr ""
+
+#. module: hr_contract_customization
+#: model_terms:ir.ui.view,arch_db:hr_contract_customization.hr_contract_view_form_inherit_customization
+msgid "Retentions"
+msgstr "Retenciones"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__salary_advance_ids
+msgid "Salary Advance"
+msgstr "Prestamo"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__salary_assignment_currency
+msgid "Salary Assignment Currency"
+msgstr ""
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__salary_basket_ticket
+msgid "Salary Basket Ticket"
+msgstr "Salario Cesta Ticket"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__social_security_salary
+msgid "Salary Social Security"
+msgstr "Salario Mínimo Base SSO"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_dpres
+msgid "Salary advance discounts"
+msgstr "Descuento Prestamo"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_loans
+#: model_terms:ir.ui.view,arch_db:hr_contract_customization.hr_contract_view_form_inherit_customization
+msgid "Salary advances"
+msgstr "Prestamos"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__salary_assignment
+msgid "Salary assignment"
+msgstr "Asignación de salario"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__custom_salary
+msgid "Salary in $"
+msgstr "Salario en $"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__sdp
+msgid "Sdp"
+msgstr "SDP"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__smp
+msgid "Smp"
+msgstr "SMP"
+
+#. module: hr_contract_customization
+#: model:ir.actions.server,name:hr_contract_customization.ir_cron_employee_social_benefits_ir_actions_server
+#: model:ir.cron,cron_name:hr_contract_customization.ir_cron_employee_social_benefits
+#: model:ir.cron,name:hr_contract_customization.ir_cron_employee_social_benefits
+msgid "Social Benefits"
+msgstr "Prestaciones Sociales"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__social_security_currency
+msgid "Social Security Currency"
+msgstr ""
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__social_benefit_interest
+msgid "Social benefit interest"
+msgstr "Interés de la prestación social"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_social_benefits
+#: model_terms:ir.ui.view,arch_db:hr_contract_customization.hr_contract_view_form_inherit_customization
+msgid "Social benefits"
+msgstr "Prestaciones Sociales"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_advance_payment_benefits
+msgid "Social benefits advance deduction"
+msgstr "Descuentos anticipos de prestaciones"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,help:hr_contract_customization.field_hr_contract__average_salary_date_start
+msgid ""
+"Starting date from which the payrolls that are in paid status will be "
+"searched for the calculation of the average salary."
+msgstr ""
+"Fecha de inicio a partir de la cual se buscarán las nóminas que estén en "
+"estado de pagopara el cálculo del salario promedio."
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_result_profit
+msgid "Total available"
+msgstr "Total disponible"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_total_available_social_benefits
+msgid "Total available benefits"
+msgstr "Total disponible prestaciones"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_total_social_benefits
+msgid "Total benefits"
+msgstr "Prestaciones acumuladas"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_total_holiday_advance
+msgid "Total holiday advance"
+msgstr "Total anticipo de vacaciones"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_result_loans
+msgid "Total loans"
+msgstr "Total prestamos"
+
+#. module: hr_contract_customization
+#: model_terms:ir.ui.view,arch_db:hr_contract_customization.hr_contract_view_form_inherit_customization
+msgid "Update Advances"
+msgstr "Actualizar Anticipos / Préstamos"
+
+#. module: hr_contract_customization
+#: model:ir.actions.server,name:hr_contract_customization.ir_cron_update_advances_button_ir_actions_server
+#: model:ir.cron,cron_name:hr_contract_customization.ir_cron_update_advances_button
+#: model:ir.cron,name:hr_contract_customization.ir_cron_update_advances_button
+msgid "Update advances button"
+msgstr "Botón Actualizar Anticipos / Préstamos"
+
+#. module: hr_contract_customization
+#: model:ir.actions.server,name:hr_contract_customization.ir_cron_update_social_benefit_interest_ir_actions_server
+#: model:ir.cron,cron_name:hr_contract_customization.ir_cron_update_social_benefit_interest
+#: model:ir.cron,name:hr_contract_customization.ir_cron_update_social_benefit_interest
+msgid "Update social benefit interest"
+msgstr "Actualizar el interés de las prestaciones sociales"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_profit
+#: model_terms:ir.ui.view,arch_db:hr_contract_customization.hr_contract_view_form_inherit_customization
+msgid "Utilities"
+msgstr "Utilidades"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_holiday_depresvac_amount
+msgid "Vacation Advance Discounts"
+msgstr "Descuentos de anticipos de vacaciones"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__employee_vacation_bonus
+msgid "Vacation bonus"
+msgstr "Bono vacacional"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__wage_currency
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract_history__wage_currency
+msgid "Wage Currency"
+msgstr "Moneda del salario"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__withholding_discount_rate
+msgid "Withholding discount rate"
+msgstr "ISLR"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,help:hr_contract_customization.field_hr_contract__employee_years_seniority
+msgid "Years of seniority of the employee"
+msgstr "Años de antiguedad del empleado"
+
+#. module: hr_contract_customization
+#: model:ir.model.fields,field_description:hr_contract_customization.field_hr_contract__social_security
+msgid "social Security"
+msgstr "SSO"
+
+#. module: hr_contract_customization
+#: model_terms:ir.ui.view,arch_db:hr_contract_customization.hr_contract_view_form_inherit_customization
+msgid "to"
+msgstr "hasta"

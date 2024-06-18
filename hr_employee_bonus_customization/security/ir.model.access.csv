@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_model_hr_employee_children,model_access_hr_employee_children,hr_employee_bonus_customization.model_hr_employee_children,base.group_user,1,1,1,1
+access_model_hr_employee_bonus,model_access_hr_employee_bonus,hr_employee_bonus_customization.model_hr_employee_bonus,base.group_user,1,1,1,1
+access_model_hr_employee_bonus_line,model_access_hr_employee_bonus_line,hr_employee_bonus_customization.model_hr_employee_bonus_line,base.group_user,1,1,1,1

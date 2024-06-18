@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+    
+        <record id="inherit_hr_contract_exception" model="ir.ui.view">
+            <field name="name">inherit.hr.contract.exception</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form" />
+            <field name="arch" type="xml">
+
+                <xpath expr="//page[@name='other']/group[@name='notes_group']" position="before">
+                    <group string="Exceptions" name="exceptions">
+                        <field name="exception_struct_ids" nolabel="1" mode="tree">
+                            <tree editable="bottom">
+                                <field name="name" readonly="1"/>
+                                <field name="schedule_pay" readonly="1"/>
+                                <field name="country_id" readonly="1" options="{'no_open': False}"/>
+                            </tree>
+                        </field>
+                    </group>
+                </xpath>
+
+            </field>
+        </record>        
+
+    </data>
+</odoo>

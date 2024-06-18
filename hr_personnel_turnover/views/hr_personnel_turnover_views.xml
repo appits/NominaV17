@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="personnel_turnover_search" model="ir.ui.view">
+        <field name="name">hr.personnel.turnover.search</field>
+        <field name="model">hr.personnel.turnover</field>
+        <field name="arch" type="xml">
+            <search>
+                <!-- groups by -->
+                <filter name="employee_id" context="{'group_by': 'employee_id'}" />
+                <separator />
+                <filter name="move_type" context="{'group_by': 'move_type'}" />
+                <filter name="reason" context="{'group_by': 'reason'}" />
+                <filter name="state" context="{'group_by': 'state'}" />                
+            </search>
+        </field>
+    </record>
+
+    <record id="personnel_turnover_form" model="ir.ui.view">
+        <field name="name">hr.personnel.turnover.form</field>
+        <field name="model">hr.personnel.turnover</field>
+        <field name="arch" type="xml">
+            <form string="Personnel Turnover" create="0">
+                <header>
+                    <button name="validate_move" string="Validate" type="object" class="oe_highlight" states="confirm" groups="hr_payroll.group_hr_payroll_manager"/>
+                    <button name="refuse_move" string="Refuse" type="object" class="oe_highlight" states="confirm" groups="hr_payroll.group_hr_payroll_manager"/>
+                    <field name="state" widget="statusbar" readonly="1"/>
+                </header>
+                <sheet>
+                    <div class="oe_title pr-0" name="title">
+                        <h1 class="d-flex flex-row justify-content-between">
+                            <field name="name" class="text-truncate" placeholder="Contract Reference"/>
+                        </h1>
+                        <h2>
+                            <field name="company_id" groups="base.group_multi_company" invisible="1"/>
+                        </h2>
+                    </div>
+
+                    <group>
+                        <group id="left">
+                            <div>
+                                The modified field is: 
+                                <strong><field name="field_name" nolabel="1"/></strong> 
+                                <br/>
+                                change to:
+                                <strong><field name="field_value" nolabel="1"/></strong>
+                            </div>
+
+                            <field name="employee_id" readonly="1" />
+                            <field name="contract_id" readonly="1"/>
+                        </group>
+                        <group id="right">
+                            <field name="user_changer" attrs="{'invisible': [('reason', '=', 'vacation')]}"/>
+                            <field name="user_validate" attrs="{'invisible': [('state', '=', 'confirm')]}"/>
+                            <field name="create_date" string="Creation date" readonly="1" attrs="{'invisible': [('reason', '=', 'vacation')]}"/>
+                            <field name="validate_date" readonly="1" attrs="{'invisible': [('state', '=', 'confirm')]}"/>
+                            <field name="move_type" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                            <field name="reason" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                            <field name="description" attrs="{'readonly': [('state', '=', 'validate')]}"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="personnel_turnover_tree" model="ir.ui.view">
+        <field name="name">hr.personnel.turnover.tree</field>
+        <field name="model">hr.personnel.turnover</field>
+        <field name="arch" type="xml">
+            <tree string="Personnel Turnover" create="0">
+                <field name="employee_id"/>
+                <field name="field_name"/>
+                <field name="field_value"/>
+                <field name="move_type" required="True"/>
+                <field name="reason" required="True"/>
+                <field name="create_date" string="Creation date"/>
+                <field name="validate_date"/>
+                <field name="state" widget="badge" decoration-info="state == 'confirm'" decoration-success="state == 'validate'"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+
+    <record model="ir.actions.server" id="personnel_turnover_action_menu_validate">
+        <field name="name">Validate</field>
+        <field name="model_id" ref="hr_personnel_turnover.model_hr_personnel_turnover"/>
+        <field name="binding_model_id" ref="hr_personnel_turnover.model_hr_personnel_turnover"/>
+        <field name="state">code</field>
+        <field name="code">
+            action = records.validate_move()
+        </field>
+        <field name="groups_id" eval="[(4, ref('hr_payroll.group_hr_payroll_manager'))]"/>
+    </record>
+    
+    <record model="ir.actions.server" id="personnel_turnover_action_menu_refuse">
+        <field name="name">Refuse</field>
+        <field name="model_id" ref="hr_personnel_turnover.model_hr_personnel_turnover"/>
+        <field name="binding_model_id" ref="hr_personnel_turnover.model_hr_personnel_turnover"/>
+        <field name="state">code</field>
+        <field name="code">
+            action = records.refuse_move()
+        </field>
+        <field name="groups_id" eval="[(4, ref('hr_payroll.group_hr_payroll_manager'))]"/>
+    </record>
+
+    <record id="personnel_turnover_action" model="ir.actions.act_window">
+        <field name="name">Personnel Turnover</field>
+        <field name="res_model">hr.personnel.turnover</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="personnel_turnover_menu" action="personnel_turnover_action" parent="hr.menu_hr_root" sequence="11" />
+</odoo>

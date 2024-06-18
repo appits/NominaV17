@@ -1,0 +1,47 @@
+<odoo>
+  <data>
+
+    <!-- Net amount button-->
+    <record id="payslip_run_form_inherit_net_amount_button" model="ir.ui.view">
+      <field name="name">payslip.run.form.inherit.net.amount.button</field>
+      <field name="model">hr.payslip.run</field>
+      <field name="inherit_id" ref="hr_payroll.hr_payslip_run_form" />
+      <field name="arch" type="xml">
+
+        <xpath expr="//sheet/group[1]/group[1]/div[1]" position="after">
+            <field name="group_account_id" string='Agrupar por Cuentas' invisible="0"/>
+            <field name="biweekly_advance" attrs="{'readonly': [('state', '!=', 'draft')]}" widget="boolean_toggle"/>
+        </xpath>
+          
+      </field>
+  </record>
+
+    <record id="custom_payroll_payslip_run_monday_number_form" model="ir.ui.view">
+      <field name="name">custom.payroll.payslip.run.monday.number.form</field>
+      <field name="model">hr.payslip.run</field>
+      <field name="inherit_id" ref="hr_payroll.hr_payslip_run_form" />
+      <field name="arch" type="xml">
+        <!--SSO and Basket ticket in batch payments-->
+        <xpath expr="//sheet/group[1]" position="after">
+          <group name="sso_basket_ticket" style="width: 50%;" string="SSO and Basket ticket">
+            <field name="compute_field_payslip_run" invisible="1"/>
+            <field name="social_security_salary" readonly="1"/>
+            <field name="salary_basket_ticket" readonly="1"/>
+          </group>
+        </xpath>
+
+        <!--Monday Number in batch-->
+        <xpath expr="//sheet/group[1]/group[1]/div[1]" position="after">
+          <field name="monday_numbers" attrs="{'required': [('monday_numbers', '=', 0)]}" />
+          <field name="saturdays_sunday_numbers" attrs="{'required': [('saturdays_sunday_numbers', '=', 0)]}" />
+        </xpath>
+
+        <!-- Select rate -->
+        <xpath expr="//sheet/group[1]/group[1]/div[1]" position="after">
+          <field name="rate_id" required="1" options="{'no_create': True, 'no_open': True}" domain="[('is_payroll_rate', '=', True)]"/>
+          <field name="rate_amount" readonly="1" force_save="1"/>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>

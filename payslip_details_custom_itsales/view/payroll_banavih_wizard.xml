@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="wizard_report_banavih_form" model="ir.ui.view">
+        <field name="name">wizard.report.banavih.form</field>
+        <field name="model">wizard.report.banavih</field>
+        <field name="arch" type="xml">
+            <form string="Banavih Report">
+                <group>
+                    <group>
+                        <field name="order_table_by" widget="selection" required="1"/> 
+                        <field name="salary_structure_type" widget="many2many_tags"/>
+                        <field name="LPVH"/>
+                    </group>
+                    <group>
+                        <field name="start_date" required="1"/>
+                        <field name="end_date" required="1"/>
+                    </group>
+                </group>
+
+                <footer>
+                    <button name="print_banavih_report" string="Print" class="oe_highlight" type="object" />
+                    <button string="Cancel" class="btn-default" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="wizard_report_banavih_action" model="ir.actions.act_window">
+        <field name="name">Reporte Banavih</field>
+        <field name="res_model">wizard.report.banavih</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="wizard_report_banavih_menuitem" action="wizard_report_banavih_action" parent="hr_payroll.menu_hr_payroll_report" sequence="100" />
+</odoo>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <!-- Added the check button for the cestatickets for the run view (por lotes) -->
+    <record id="custom_hr_payslip_run_cestatickets_form" model="ir.ui.view">
+        <field name="name">custom.hr.payslip.run.cestatickets.form</field>
+        <field name="model">hr.payslip.run</field>
+        <field name="inherit_id" ref="hr_payroll.hr_payslip_run_form" />
+        <field name="arch" type="xml">
+
+            <!-- Adds a validation field (cestaticket payment) to the run view, after the biweekly_advance field -->
+            <xpath expr="//sheet/group[1]/group[1]/field[@name='biweekly_advance']" position="after">
+                <field name="cestaticket_payment" attrs="{'readonly': [('state', 'not in', ['draft'])]}" widget="boolean_toggle"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

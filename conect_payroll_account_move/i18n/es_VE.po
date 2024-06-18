@@ -1,0 +1,129 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* conect_payroll_account_move
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-12 18:13+0000\n"
+"PO-Revision-Date: 2024-04-12 14:18-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: conect_payroll_account_move
+#: model:ir.model.fields,help:conect_payroll_account_move.field_hr_employee__account_location
+msgid ""
+"\n"
+"Configure the accounts in which payroll payments will be recorded.\n"
+"\n"
+"Expenses: it will take the expense accounts from the rules (base behavior).\n"
+"Direct cost: it will take the direct cost accounts from the rules.\n"
+"Indirect cost: it will take the indirect cost accounts from the rules.\n"
+msgstr ""
+"\n"
+"Configura las cuentas en las cuales se registraran los pagos de nomina\n"
+"\n"
+"Gastos: tomara las cuentas de gastos de las reglas (comportamiento base)\n"
+"Costo directo: tomara las cuentas de costo directo de las reglas\n"
+"Costo indirecto: tomara las cuentas de costo indirecto de las reglas\n"
+
+#. module: conect_payroll_account_move
+#: model:ir.model,name:conect_payroll_account_move.model_account_move
+msgid "Account Move"
+msgstr ""
+
+#. module: conect_payroll_account_move
+#: model:ir.model.fields,field_description:conect_payroll_account_move.field_hr_employee__account_location
+msgid "Accounting location"
+msgstr "Ubicación contable"
+
+#. module: conect_payroll_account_move
+#: model:ir.model.fields,field_description:conect_payroll_account_move.field_hr_salary_rule__account_credit_direct_cost_id
+msgid "Credit account direct cost"
+msgstr "Cuenta de crédito costo directo"
+
+#. module: conect_payroll_account_move
+#: model_terms:ir.ui.view,arch_db:conect_payroll_account_move.inherit_salary_rule_new_account
+msgid "Credit account expense"
+msgstr "Cuenta de crédito gasto"
+
+#. module: conect_payroll_account_move
+#: model:ir.model.fields,field_description:conect_payroll_account_move.field_hr_salary_rule__account_credit_indirect_cost_id
+msgid "Credit account indirect cost"
+msgstr "Cuenta de crédito costo indirecto"
+
+#. module: conect_payroll_account_move
+#: model:ir.model.fields,field_description:conect_payroll_account_move.field_hr_salary_rule__account_debit_direct_cost_id
+msgid "Debit account direct cost"
+msgstr "Cuenta de débito costo directo"
+
+#. module: conect_payroll_account_move
+#: model_terms:ir.ui.view,arch_db:conect_payroll_account_move.inherit_salary_rule_new_account
+msgid "Debit account expense"
+msgstr "Cuenta de débito gasto"
+
+#. module: conect_payroll_account_move
+#: model:ir.model.fields,field_description:conect_payroll_account_move.field_hr_salary_rule__account_debit_indirect_cost_id
+msgid "Debit account indirect cost"
+msgstr "Cuenta de débito costo indirecto"
+
+#. module: conect_payroll_account_move
+#: model_terms:ir.ui.view,arch_db:conect_payroll_account_move.inherit_salary_rule_new_account
+msgid "Direct Cost"
+msgstr "Costo Directo"
+
+#. module: conect_payroll_account_move
+#: model:ir.model.fields.selection,name:conect_payroll_account_move.selection__hr_employee__account_location__d_cost
+msgid "Direct costs"
+msgstr "Costos directo"
+
+#. module: conect_payroll_account_move
+#: model:ir.model,name:conect_payroll_account_move.model_hr_employee
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: conect_payroll_account_move
+#: model:ir.model.fields.selection,name:conect_payroll_account_move.selection__hr_employee__account_location__exp
+msgid "Expense"
+msgstr "Gasto"
+
+#. module: conect_payroll_account_move
+#: model_terms:ir.ui.view,arch_db:conect_payroll_account_move.inherit_salary_rule_new_account
+msgid "Indirect Cost"
+msgstr "Costo Indirecto"
+
+#. module: conect_payroll_account_move
+#: model:ir.model.fields.selection,name:conect_payroll_account_move.selection__hr_employee__account_location__i_cost
+msgid "Indirect costs"
+msgstr "Costos indirecto"
+
+#. module: conect_payroll_account_move
+#: model:ir.model,name:conect_payroll_account_move.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Nómina"
+
+#. module: conect_payroll_account_move
+#: model:ir.model.fields,field_description:conect_payroll_account_move.field_account_bank_statement_line__payroll_id
+#: model:ir.model.fields,field_description:conect_payroll_account_move.field_account_move__payroll_id
+#: model:ir.model.fields,field_description:conect_payroll_account_move.field_account_payment__payroll_id
+msgid "Payroll"
+msgstr ""
+
+#. module: conect_payroll_account_move
+#: model:ir.model.fields,field_description:conect_payroll_account_move.field_account_bank_statement_line__payroll_run_id
+#: model:ir.model.fields,field_description:conect_payroll_account_move.field_account_move__payroll_run_id
+#: model:ir.model.fields,field_description:conect_payroll_account_move.field_account_payment__payroll_run_id
+msgid "Payroll lot"
+msgstr ""
+
+#. module: conect_payroll_account_move
+#: model:ir.model,name:conect_payroll_account_move.model_hr_salary_rule
+msgid "Salary Rule"
+msgstr "Regla de Salario"

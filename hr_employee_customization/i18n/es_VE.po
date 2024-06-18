@@ -1,0 +1,1152 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_employee_customization
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-12-13 15:30+0000\n"
+"PO-Revision-Date: 2023-12-13 11:32-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: hr_employee_customization
+#: model:ir.actions.report,print_report_name:hr_employee_customization.work_constancy_report_action
+msgid ""
+" 'Work Constancies' if len(object.employee_ids.ids) > 1 else 'Work Constancy "
+"- %s' % object.employee_ids.name "
+msgstr ""
+" 'Constancias de Trabajo' if len(object.employee_ids.ids) > 1 else "
+"'Constancia de Trabajo - %s' % object.employee_ids.name "
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.work_constancy_report
+msgid ""
+", \n"
+"                                        a los"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_additional_discount_income_form
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_salary_advance_form
+msgid "<span> - </span>"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_view_form_inherit_employee_info
+msgid "<span> years </span>"
+msgstr "<span> años </span>"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.work_constancy_report
+msgid "<span>Atentamente:</span><br/>"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.work_constancy_report
+msgid "<strong>CONSTANCIA DE TRABAJO</strong>"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__access_warning
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__access_warning
+msgid "Access warning"
+msgstr "Advertencia de acceso"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee__account_holder
+msgid "Account holder"
+msgstr "Titular de la cuenta"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__message_needaction
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__message_needaction
+msgid "Action Needed"
+msgstr "Acción necesaria"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__active
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__active
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_monday_number__active
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__active
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_weekend__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__active_advance
+msgid "Active advance"
+msgstr "Activar préstamo"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__activity_ids
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__activity_ids
+msgid "Activities"
+msgstr "Actividades"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__activity_exception_decoration
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "Actividad Excepción Decoración"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__activity_state
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__activity_state
+msgid "Activity State"
+msgstr "Estado de la actividad"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__activity_type_icon
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "Icono del tipo de actividad"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_additional_discount_income_form
+msgid "Additional and Disconut Income"
+msgstr "Ingreso adicional fijo"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee__employee_additional_discounts_ids
+msgid "Additional employee discount"
+msgstr "Días adicionales"
+
+#. module: hr_employee_customization
+#: model:ir.actions.act_window,name:hr_employee_customization.hr_employee_salary_advance_action
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_salary_advance_form
+msgid "Advance"
+msgstr "Anticipos / Préstamos"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_salary_advance__reason__3
+msgid "Advance Health"
+msgstr "Préstamo por Salud"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_salary_advance__reason__5
+msgid "Advance Personal"
+msgstr "Préstamo Personal"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__salary_advance_id
+msgid "Advance Salary id"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_salary_advance__reason__1
+msgid "Advance payment of social benefits"
+msgstr "Anticipo de prestaciones sociales"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__name
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__name
+msgid "Advance type"
+msgstr "Tipo de anticipo"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_salary_advance__reason__4
+msgid "Advance vacation"
+msgstr "Anticipo de vacaciones"
+
+#. module: hr_employee_customization
+#: model:ir.ui.menu,name:hr_employee_customization.menu_hr_employee_salary_advance
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_advance_employee_form
+msgid "Advances"
+msgstr "Anticipos / Préstamos"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__amount
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__advancement
+msgid "Amount"
+msgstr "Monto"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_salary_advance_form
+msgid "Approve"
+msgstr "Aprobar"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_salary_advance__state__approved
+msgid "Approved"
+msgstr "Aprobado"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_additional_discount_income_search
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_salary_advance_search
+msgid "Archived"
+msgstr "Archivado"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__asig_struct_nomina
+msgid "Asignar en Estructura"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__message_attachment_count
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__message_attachment_count
+msgid "Attachment Count"
+msgstr "Conteo de anexos"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee__bank_id
+msgid "Bank"
+msgstr "Banco"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee__account_holder
+msgid "Bank account holder"
+msgstr "Titular de la cuenta bancaria"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee__bank_account_number
+msgid "Bank account number"
+msgstr "Número de cuenta bancaria"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_view_form_inherit_employee_info
+msgid "Bank information"
+msgstr "Información bancaria"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee__bank_id
+msgid "Bank to which the beneficiary's bank account belongs."
+msgstr "Banco al que pertence la cuenta bancaria del beneficiario."
+
+#. module: hr_employee_customization
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_salary_advance__type_advance_vacation__1
+msgid "Bonus"
+msgstr "Bono"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_debt_payment__state__draft
+msgid "Borrador"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee__holder_account_id
+msgid "C.I. of the account holder"
+msgstr "C.I. del titular de la cuenta"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.wizard_work_constancy_form
+msgid "Cancel"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_wizard_work_constancy__job
+msgid "Charge"
+msgstr "Cargo"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee__coach_custom_id
+msgid "Coach"
+msgstr "Mentor"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__company_id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__company_id
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_debt_payment__name__3
+msgid "Company"
+msgstr "Compañía"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_salary_advance_form
+msgid "Confirm"
+msgstr "Confirmar"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.work_constancy_report
+msgid ""
+"Constancia que se expide a petición de la parte interesada \n"
+"                                        en"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__contract_id
+msgid "Contract"
+msgstr "Contrato"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__contract_ids
+msgid "Contracts"
+msgstr "Contratos"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__create_uid
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__create_uid
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_monday_number__create_uid
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__create_uid
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_type__create_uid
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_weekend__create_uid
+#: model:ir.model.fields,field_description:hr_employee_customization.field_wizard_work_constancy__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__create_date
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__create_date
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_monday_number__create_date
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__create_date
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_type__create_date
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_weekend__create_date
+#: model:ir.model.fields,field_description:hr_employee_customization.field_wizard_work_constancy__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__quot_actual
+msgid "Cuota Actual"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__quote_amount
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__quote_amount
+msgid "Cuota a Pagar"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__currency_id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__currency_id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee__account_type__1
+msgid "Current account"
+msgstr "Cuenta corriente"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_debt_payment__access_url
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_salary_advance__access_url
+msgid "Customer Portal URL"
+msgstr "URL del portal del cliente"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__date
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_monday_number__monday_number_date
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__date
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_weekend__weekend_date
+msgid "Date"
+msgstr "Fecha"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__start_date
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__date_from
+msgid "Date from"
+msgstr "Periodo desde"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__end_date
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__date_to
+msgid "Date to"
+msgstr "Periodo hasta"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_res_users__default_employee_work_constancy
+msgid "Default Employee Work Constancy"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_res_users__default_job_work_constancy
+msgid "Default Job Work Constancy"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_res_users__default_work_constancy
+msgid "Default Work Constancy"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__department_id
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_debt_payment__name__2
+msgid "Department"
+msgstr "Departamento"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__department_ids
+msgid "Departments"
+msgstr "Departamentos"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__desc_struct_nomina
+msgid "Descontar en Estructura"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__name
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_monday_number__description
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_weekend__description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__debt_inicial
+msgid "Deuda Inicial"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__deuda_total
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__debt_total
+msgid "Deuda Total"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_additional_discount_income__type__2
+msgid "Discount"
+msgstr "Descuento"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__display_name
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__display_name
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_monday_number__display_name
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__display_name
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_type__display_name
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_weekend__display_name
+#: model:ir.model.fields,field_description:hr_employee_customization.field_wizard_work_constancy__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_view_form_inherit_employee_info
+msgid "Ej.: J-012345678"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model,name:hr_employee_customization.model_hr_employee
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__employee_id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__employee_id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__employee_id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_wizard_work_constancy__employee_ids
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_debt_payment__name__1
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_salary_advance__name__1
+msgid "Employee"
+msgstr "Empleado"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee__employee_additional_discounts_ids
+msgid "Employee Additional Discounts"
+msgstr "Descuentos adicionales para empleados"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_view_form_inherit_employee_info
+msgid "Employee Bank information"
+msgstr "Información bancaria del empleado"
+
+#. module: hr_employee_customization
+#: model:ir.model,name:hr_employee_customization.model_hr_employee_debt_payment
+msgid "Employee Debt Payment"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__employee_payslip_id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__employee_payslip_id
+msgid "Employee Payslip"
+msgstr "Nómina del empleado"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee__bank_account_number
+msgid "Employee Salary Bank Account"
+msgstr "Cuenta bancaria de salario del empleado"
+
+#. module: hr_employee_customization
+#: model:ir.actions.act_window,name:hr_employee_customization.employee_type_action
+#: model:ir.ui.menu,name:hr_employee_customization.employee_type_menu
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.employee_type_tree_view
+msgid "Employee Type"
+msgstr "Tipo de trabajador"
+
+#. module: hr_employee_customization
+#: model:ir.model,name:hr_employee_customization.model_hr_employee_additional_discount_income
+msgid "Employee additional Income and Discount"
+msgstr "Ingresos y Descuento adicionales del empleado"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee__employee_age
+msgid "Employee age"
+msgstr "Edad del empleado"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__employee_contract_ids
+msgid "Employee contracts"
+msgstr "Contratos de empleado"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee__employee_height
+msgid "Employee height"
+msgstr "Altura del empleado"
+
+#. module: hr_employee_customization
+#: model:ir.model,name:hr_employee_customization.model_hr_employee_monday_number
+msgid "Employee monday numbers"
+msgstr "Números del lunes de los empleados"
+
+#. module: hr_employee_customization
+#: model:ir.model,name:hr_employee_customization.model_hr_employee_salary_advance
+msgid "Employee salary advance"
+msgstr "Anticipo de salario"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee__employee_weight
+msgid "Employee weight"
+msgstr "Peso del empleado"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__employee_ids
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__employee_ids
+msgid "Employees"
+msgstr "Empleados"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_view_form_inherit_employee_info
+msgid "Features"
+msgstr "Características"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__x_studio_ficha
+msgid "Ficha"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__message_follower_ids
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__message_follower_ids
+msgid "Followers"
+msgstr "Seguidores"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__message_partner_ids
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Seguidores (Socios)"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_debt_payment__activity_type_icon
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_salary_advance__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "Icono de la fuente impresionante, por ejemplo, fa-tasks"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__has_message
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__has_message
+msgid "Has Message"
+msgstr "Tiene mensaje"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee__employee_has_vehicle
+msgid "Has vehicle?"
+msgstr "Tiene vehículo?"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_monday_number__id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_type__id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_weekend__id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_wizard_work_constancy__id
+msgid "ID"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee__holder_account_id
+msgid "ID of the account holder"
+msgstr "ID del Titular de la cuenta"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__activity_exception_icon
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__activity_exception_icon
+msgid "Icon"
+msgstr "Icono"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_debt_payment__activity_exception_icon
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_salary_advance__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "Icono para indicar una actividad de excepción."
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_debt_payment__message_needaction
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_debt_payment__message_unread
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_salary_advance__message_needaction
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_salary_advance__message_unread
+msgid "If checked, new messages require your attention."
+msgstr "Si está marcada, los nuevos mensajes requieren su atención."
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_debt_payment__message_has_error
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_debt_payment__message_has_sms_error
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_salary_advance__message_has_error
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_salary_advance__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Si está marcada, algunos mensajes tienen un error de entrega."
+
+#. module: hr_employee_customization
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_additional_discount_income__type__1
+msgid "Income"
+msgstr "Ingreso"
+
+#. module: hr_employee_customization
+#: model:ir.actions.act_window,name:hr_employee_customization.hr_employee_additional_discount_income_action
+#: model:ir.ui.menu,name:hr_employee_customization.hr_employee_additional_discount_income_config
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_view_form_inherit_additional_discounts
+msgid "Incomes and Discounts additionals"
+msgstr "Ingresos y descuentos adicionales"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_additional_discount_income__type
+msgid "Indicate if it is an income or an additional discount"
+msgstr "Indique si es un ingreso o un descuento adicional"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__message_is_follower
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__message_is_follower
+msgid "Is Follower"
+msgstr "Es seguidor"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee__is_left_handed
+msgid "Is left handed"
+msgstr "Es zurdo?"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__advance_vacation
+msgid "It is a vacation bonus?"
+msgstr "¿Es un bono vacacional?"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income____last_update
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment____last_update
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_monday_number____last_update
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance____last_update
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_type____last_update
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_weekend____last_update
+#: model:ir.model.fields,field_description:hr_employee_customization.field_wizard_work_constancy____last_update
+msgid "Last Modified on"
+msgstr "Última modificación el"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__write_uid
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__write_uid
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_monday_number__write_uid
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__write_uid
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_type__write_uid
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_weekend__write_uid
+#: model:ir.model.fields,field_description:hr_employee_customization.field_wizard_work_constancy__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__write_date
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__write_date
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_monday_number__write_date
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__write_date
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_type__write_date
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_weekend__write_date
+#: model:ir.model.fields,field_description:hr_employee_customization.field_wizard_work_constancy__write_date
+msgid "Last Updated on"
+msgstr "Ultima actualización en"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__message_main_attachment_id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__message_main_attachment_id
+msgid "Main Attachment"
+msgstr "Adjunto principal"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_salary_advance_form
+msgid "Mark as Draft"
+msgstr "Marcar como borrador"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.work_constancy_employee_tree
+msgid "Massive Work Constancy"
+msgstr "Constancias de Trabajo Masivas"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__message_has_error
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__message_has_error
+msgid "Message Delivery error"
+msgstr "Error en la entrega del mensaje"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__message_ids
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__message_ids
+msgid "Messages"
+msgstr "Mensajes"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_monday_number__name
+msgid "Monday number"
+msgstr "Número de lunes"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__my_activity_date_deadline
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "Mi plazo de actividad"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_type__name
+#: model:ir.model.fields,field_description:hr_employee_customization.field_wizard_work_constancy__employee
+msgid "Name"
+msgstr "Nombre"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__activity_calendar_event_id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__activity_calendar_event_id
+msgid "Next Activity Calendar Event"
+msgstr "Próximo evento del calendario de actividades"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__activity_date_deadline
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "Plazo de la próxima actividad"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__activity_summary
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__activity_summary
+msgid "Next Activity Summary"
+msgstr "Resumen de la siguiente actividad"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__activity_type_id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__activity_type_id
+msgid "Next Activity Type"
+msgstr "Siguiente tipo de actividad"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__cuota_nro
+msgid "Nro Cuota"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__quotes
+msgid "Nro de Cuotas"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__message_needaction_counter
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Número de acciones"
+
+#. module: hr_employee_customization
+#: model:ir.model,name:hr_employee_customization.model_hr_employee_weekend
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_weekend__name
+msgid "Number of Saturdays and Sundays"
+msgstr "Número de sábados y domingos"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__message_has_error_counter
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__message_has_error_counter
+msgid "Number of errors"
+msgstr "Número de errores"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_debt_payment__message_needaction_counter
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_salary_advance__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr "Número de mensajes que requieren una acción"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_debt_payment__message_has_error_counter
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_salary_advance__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Número de mensajes con error de entrega"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_debt_payment__message_unread_counter
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_salary_advance__message_unread_counter
+msgid "Number of unread messages"
+msgstr "Número de mensajes no leídos"
+
+#. module: hr_employee_customization
+#: code:addons/hr_employee_customization/models/models.py:0
+#, python-format
+msgid ""
+"Only numeric characters [0-9] are allowed and the total length of the account "
+"holders I.D. number must be equal to 8 characters."
+msgstr ""
+
+#. module: hr_employee_customization
+#: code:addons/hr_employee_customization/models/models.py:0
+#, python-format
+msgid ""
+"Only numeric characters [0-9] are allowed and the total length of the bank "
+"account number must be equal to 20 characters."
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_debt_payment__state__confirm
+msgid "Pagado"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_salary_advance_form
+msgid "Pagos de Empleados"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_salary_advance_form
+msgid "Pagos de Prestamos"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_salary_advance__state__paid
+msgid "Paid"
+msgstr "Pagado"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__payments_links_ids
+msgid "Payments Employee"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.work_constancy_report
+msgid "Por medio de la presente hacemos constar que el (la) ciudadano (a)"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__access_url
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__access_url
+msgid "Portal Access URL"
+msgstr "Portal de acceso UR"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.wizard_work_constancy_form
+msgid "Print"
+msgstr "Imprimir"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.wizard_work_constancy_form
+msgid "Print Work Constancy"
+msgstr "Imprimir Constancia de Trabajo"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_salary_advance__reason__2
+msgid "Profit advance"
+msgstr "Anticipo de utilidades"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee__rif
+msgid "R.I.F"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__x_studio_rif
+msgid "R.I.F."
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__rate_id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__rate_id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__rate_id
+msgid "Rate"
+msgstr "Tasa"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__rate_amount
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__rate_amount
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__rate_amount
+msgid "Rate amount"
+msgstr "Monto de la tasa"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__reason
+msgid "Reason"
+msgstr "Razón"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_salary_advance_form
+msgid "Refuse"
+msgstr "Rechazar"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_salary_advance__state__refuse
+msgid "Rejected"
+msgstr "Rechazado"
+
+#. module: hr_employee_customization
+#: model:ir.ui.menu,name:hr_employee_customization.hr_employee_salary_advance_config
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.hr_employee_salary_advance_form
+msgid "Request advance"
+msgstr "Solicitar anticipo / préstamos"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__activity_user_id
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__activity_user_id
+msgid "Responsible User"
+msgstr "Usuario responsable"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__message_has_sms_error
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "Error de entrega de SMS"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee__salary_advance_ids
+msgid "Salary advances requested by the employee"
+msgstr "Anticipo de salario solicitado por el empleado"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee__account_type__2
+msgid "Savings account"
+msgstr "Cuenta de ahorro"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__access_token
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__access_token
+msgid "Security Token"
+msgstr "Ficha de seguridad"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee__coach_custom_id
+msgid ""
+"Select the \"Employee\" who is the coach of this employee.\n"
+"The \"Coach\" has no specific rights or responsibilities by default."
+msgstr ""
+"Seleccione el \"Empleado\" que es el entrenador de este empleado.\n"
+"El \"Entrenador\" no tiene derechos ni responsabilidades específicas por "
+"defecto."
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_weekend__active
+msgid ""
+"Set active to false to hide the Saturday and Sunday number tag without "
+"removing it."
+msgstr ""
+"Establezca activo en falso para ocultar la etiqueta de número de sábado y "
+"domingo sin eliminarla."
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_additional_discount_income__active
+msgid ""
+"Set active to false to hide the additional Income and Discount tag without "
+"removing it."
+msgstr ""
+"Establezca activo en falso para ocultar la etiqueta adicional de ingresos y "
+"descuentos sin eliminarla."
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_monday_number__active
+msgid "Set active to false to hide the monday number tag without removing it."
+msgstr ""
+"Configure activo en falso para ocultar la etiqueta del número del lunes sin "
+"eliminarla."
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_debt_payment__active
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_salary_advance__active
+msgid "Set active to false to hide the salary advance tag without removing it."
+msgstr ""
+"Configure activo en falso para ocultar la etiqueta de anticipo de salario sin "
+"eliminarla."
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_wizard_work_constancy__default
+msgid "Set default"
+msgstr "Establecer como predefinido"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__state
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__state
+msgid "Status"
+msgstr "Estado"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_debt_payment__activity_state
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_salary_advance__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_salary_advance__state__confirm
+msgid "To be approved"
+msgstr "Por aprobar"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_salary_advance__state__draft
+msgid "To be sent"
+msgstr "Borrador"
+
+#. module: hr_employee_customization
+#: code:addons/hr_employee_customization/models/hr_employee_salary_advance.py:0
+#, python-format
+msgid "Todas las monedas en Descontar en Estructura tienen que ser la misma"
+msgstr ""
+
+#. module: hr_employee_customization
+#: code:addons/hr_employee_customization/models/hr_employee_salary_advance.py:0
+#, python-format
+msgid "Todas las monedas en las estructuras escogidas tienen que ser la misma"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_additional_discount_income__type
+msgid "Type"
+msgstr "Tipo"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__type_advance_vacation
+msgid "Type advance vacation"
+msgstr "Tipo de anticipos de vacaciones"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee__account_type
+msgid "Type of account"
+msgstr "Tipo de cuenta"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee__account_type
+msgid "Type of employees bank account."
+msgstr "Tipo de cuenta bancaria del empleado"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_debt_payment__activity_exception_decoration
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_salary_advance__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "Tipo de la actividad de excepción registrada."
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__message_unread
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__message_unread
+msgid "Unread Messages"
+msgstr "Mensajes no leídos"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__message_unread_counter
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr "Contador de mensajes no leídos"
+
+#. module: hr_employee_customization
+#: model:ir.model,name:hr_employee_customization.model_res_users
+msgid "Users"
+msgstr "Usuarios"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields.selection,name:hr_employee_customization.selection__hr_employee_salary_advance__type_advance_vacation__2
+msgid "Vacations"
+msgstr "Vacaciones"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.work_constancy_external_layout_standard_inherit
+msgid "Válido sin tachaduras ni enmiendas"
+msgstr ""
+
+#. module: hr_employee_customization
+#: code:addons/hr_employee_customization/models/models.py:0
+#, python-format
+msgid ""
+"Warning! The client or supplier is already registered with the rif: %s and is "
+"active"
+msgstr ""
+
+#. module: hr_employee_customization
+#: code:addons/hr_employee_customization/models/models.py:0
+#, python-format
+msgid ""
+"Warning! The rif has the wrong format. Ej: V-012345678, E-012345678, "
+"J-012345678 o G-012345678. Please try again"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_debt_payment__website_message_ids
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee_salary_advance__website_message_ids
+msgid "Website Messages"
+msgstr "Mensajes del sitio web"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_debt_payment__website_message_ids
+#: model:ir.model.fields,help:hr_employee_customization.field_hr_employee_salary_advance__website_message_ids
+msgid "Website communication history"
+msgstr "Historia de la comunicación en la web"
+
+#. module: hr_employee_customization
+#: model:ir.actions.report,name:hr_employee_customization.work_constancy_report_action
+#: model:ir.model,name:hr_employee_customization.model_wizard_work_constancy
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.work_constancy_employee_form
+msgid "Work Constancy"
+msgstr "Constancia de Trabajo"
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee__hr_employee_type_id
+msgid "Worker type"
+msgstr "Tipo de trabajador"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.wizard_work_constancy_form
+msgid ""
+"Write de name and position of the employee how is going to sign the work "
+"constancy"
+msgstr ""
+"Escriba el nombre y cargo del empleado que va a firmar la constancia de "
+"trabajo"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.work_constancy_report
+msgid "desempeñando el cargo de"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.work_constancy_report
+msgid ""
+"devengando una remuneración básica\n"
+"                                        mensual de"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.work_constancy_report
+msgid "en el departamento de"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.work_constancy_report
+msgid "hasta el dia"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model,name:hr_employee_customization.model_hr_employee_type
+msgid "hr.employee.type"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.work_constancy_report
+msgid "presta"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.work_constancy_report
+msgid "prestó"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model:ir.model.fields,field_description:hr_employee_customization.field_hr_employee__salary_advance_ids
+msgid "salary_advance"
+msgstr "Anticipo"
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.work_constancy_report
+msgid ""
+"sus servicios\n"
+"                                        laborales en esta empresa desde el día"
+msgstr ""
+
+#. module: hr_employee_customization
+#: model_terms:ir.ui.view,arch_db:hr_employee_customization.work_constancy_report
+msgid "titular de la Cédula de Identidad N.º"
+msgstr ""

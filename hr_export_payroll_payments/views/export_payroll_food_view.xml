@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <record id="hr_export_payment_food" model="ir.ui.view">
+        <field name="name">hr.export.payment.food</field>
+        <field name="model">export.bank.payments</field>
+        <field name="inherit_id" ref="hr_export_payroll_payments.export_bank_payments_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='valid_date']" position="attributes">
+                <attribute name="attrs">{'invisible': [('type_trans', 'not in', ['payroll', 'food'])], 'required': [('type_trans', 'in', ['payroll', 'food'])]}</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='get_data_from']" position="attributes">
+                <attribute name="attrs">{'invisible': [('type_trans', 'not in', ['payroll', 'food'])], 'readonly': [('state', '=', 'done')]}</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='employee_ids']" position="attributes">
+                <attribute name="attrs">{'invisible': [('get_data_from', '!=', 'individual')], 'readonly': [('state', '=', 'done')], 'required': [('get_data_from', '=', 'individual'), ('type_trans', '=', 'food')]}</attribute>
+            </xpath>
+
+            <xpath expr="//field[@name='lote_payroll_domain']" position="attributes">
+                <attribute name="attrs">{'invisible': [('get_data_from', '=', 'individual')], 'readonly': [('state', '=', 'done')], 'required': [('get_data_from', '!=', 'individual'), ('type_trans', '=', 'food')]}</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <record id="paperformat_payroll_custom" model="report.paperformat">
+    <field name="name">Payroll Paperformat</field>
+    <field name="default" eval="True" />
+    <field name="orientation">Portrait</field>
+    <field name="margin_top">50.00</field>
+    <field name="margin_bottom">32.00</field>
+    <field name="margin_left">7.00</field>
+    <field name="margin_right">7.00</field>
+    <field name="header_line" eval="False" />
+    <field name="header_spacing">45</field>
+  </record>
+
+  <record id="report_payroll_detail_action" model="ir.actions.report">
+    <field name="name">Payroll Report Detail</field>
+    <field name="model">wizard.report.payslip.detail</field>
+    <field name="report_type">qweb-pdf</field>
+    <field name="report_name">payslip_details_custom_itsales.payroll_detail_doc</field>
+    <field name="paperformat_id" ref="payslip_details_custom_itsales.paperformat_payroll_custom" />
+    <field name="print_report_name">'Payroll Report Detail'</field>
+  </record>
+
+  <record id="report_payroll_by_concepts_action" model="ir.actions.report">
+    <field name="name">Payroll Report by concepts</field>
+    <field name="model">wizard.report.payslip.detail</field>
+    <field name="report_type">qweb-pdf</field>
+    <field name="report_name">payslip_details_custom_itsales.payroll_by_concepts_doc</field>
+    <field name="paperformat_id" ref="payslip_details_custom_itsales.paperformat_payroll_custom" />
+    <field name="print_report_name">'Payroll Report by concepts'</field>
+  </record>
+
+  <record id="islr_report_action" model="ir.actions.report">
+    <field name="name">ISLR Report</field>
+    <field name="model">wizard.report.islr</field>
+    <field name="report_type">qweb-pdf</field>
+    <field name="report_name">payslip_details_custom_itsales.islr_report_report</field>
+    <field name="report_file">payslip_details_custom_itsales.islr_report_report</field>
+    <field name="paperformat_id" ref="payslip_details_custom_itsales.paperformat_payroll_custom" />
+    <field name="binding_model_id" ref="model_wizard_report_islr"/>
+    <field name="binding_type">report</field>
+    <field name="print_report_name">'ISLR Report'</field>
+  </record>
+
+  <report
+    id="report_banavih_report_action_xlsx"
+    string="Reporte ISLR"
+    model="wizard.report.islr"
+    report_type="xlsx"
+    name="payslip_details_custom_itsales.report_employee_xlsx"
+    file="payslip_details_custom_itsales.report_employee_xlsx" />
+    
+  <record id="banavih_report_action" model="ir.actions.report">
+    <field name="name">Banavih Report</field>
+    <field name="model">wizard.report.banavih</field>
+    <field name="report_type">qweb-pdf</field>
+    <field name="report_name">payslip_details_custom_itsales.banavih_report_report</field>
+    <field name="report_file">payslip_details_custom_itsales.banavih_report_report</field>
+    <field name="paperformat_id" ref="payslip_details_custom_itsales.paperformat_payroll_custom" />
+    <field name="binding_model_id" ref="model_wizard_report_banavih"/>
+    <field name="binding_type">report</field>
+    <field name="print_report_name">'Banavih Report'</field>
+  </record>
+
+  <record id="inces_report_action" model="ir.actions.report">
+    <field name="name">INCES Report</field>
+    <field name="model">wizard.report.inces</field>
+    <field name="report_type">qweb-pdf</field>
+    <field name="report_name">payslip_details_custom_itsales.inces_report_report</field>
+    <field name="report_file">payslip_details_custom_itsales.inces_report_report</field>
+    <field name="paperformat_id" ref="payslip_details_custom_itsales.paperformat_payroll_custom" />
+    <field name="binding_model_id" ref="model_wizard_report_inces"/>
+    <field name="binding_type">report</field>
+    <field name="print_report_name">'INCES Report'</field>
+  </record>
+  
+  <record id="ppss_report_action" model="ir.actions.report">
+    <field name="name">Social Benefits Report</field>
+    <field name="model">social.benefits.report</field>
+    <field name="report_type">qweb-pdf</field>
+    <field name="report_name">payslip_details_custom_itsales.ppss_report_report</field>
+    <field name="report_file">payslip_details_custom_itsales.ppss_report_report</field>
+    <field name="paperformat_id" ref="payslip_details_custom_itsales.paperformat_payroll_custom" />
+    <field name="binding_model_id" ref="model_social_benefits_report"/>
+    <field name="binding_type">report</field>
+    <field name="print_report_name"> 'Reporte PPSS'</field>
+  </record>
+</odoo>

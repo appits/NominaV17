@@ -1,0 +1,39 @@
+<odoo>
+	<data>
+		<!--Structure type-->
+		<record id="hr_payroll_structure_type_view_form_inherit" model="ir.ui.view">
+			<field name="name">hr.payroll.structure.type.view.form.inherit</field>
+			<field name="model">hr.payroll.structure.type</field>
+			<field name="inherit_id" ref="hr_payroll.hr_payroll_structure_type_view_form" />
+			<field name="arch" type="xml">
+			<xpath expr="//field[@name='wage_type']" position="after">
+				<field name="currency_id" options="{'no_create': True, 'no_open': True}" required="1"/>
+			</xpath>
+			</field>
+		</record>
+
+		<!--Structure-->
+		<record id="view_hr_employee_grade_form_inherit" model="ir.ui.view">
+			<field name="name">view.hr.employee.grade.form.inherit</field>
+			<field name="model">hr.payroll.structure</field>
+			<field name="inherit_id" ref="hr_payroll.view_hr_employee_grade_form" />
+			<field name="arch" type="xml">
+			<xpath expr="//field[@name='country_id']" position="after">
+				<field name="currency_id"/>
+			</xpath>
+			</field>
+		</record>
+
+		<!--Salary rule-->
+		<record id="hr_salary_rule_form_inherit" model="ir.ui.view">
+			<field name="name">hr.salary.rule.form.inherit</field>
+			<field name="model">hr.salary.rule</field>
+			<field name="inherit_id" ref="hr_payroll.hr_salary_rule_form" />
+			<field name="arch" type="xml">
+			<xpath expr="//field[@name='struct_id']" position="after">
+				<field name="currency_id"/>
+			</xpath>
+			</field>
+		</record>
+	</data>
+</odoo>

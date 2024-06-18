@@ -1,0 +1,68 @@
+<odoo>
+    <data>
+
+        <!-- Monday number -->
+        <record id="hr_employee_monday_number_tree" model="ir.ui.view">
+            <field name="name">hr.employee.monday.number.tree</field>
+            <field name="model">hr_employee_monday_number</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="active" invisible="1"/>
+                    <field name="monday_number_date"/>
+                    <field name="description"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="hr_employee_monday_number_form" model="ir.ui.view">
+            <field name="name">hr.employee.monday.number.form</field>
+            <field name="model">hr_employee_monday_number</field>
+            <field name="arch" type="xml">
+                <form string="Monday number">
+                    <header>
+                    </header>
+                    <sheet>
+                        <field name="active" invisible="1"/>
+                        <group name="group_top" string="Monday number">
+                            <group name="group_left" style="width:50%;">
+                                <field name="description"/>
+                                <field name="name" required="True"/>
+                            </group>
+                            <group name="group_right" style="width:50%;">
+                                <field name="monday_number_date" required="True"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="hr_employee_monday_number_search" model="ir.ui.view">
+            <field name="name">hr.employee.monday.number.search</field>
+            <field name="model">hr_employee_monday_number</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <separator/>
+                    <filter name="archived" string="Archived" domain="[('active', '=', False)]"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="hr_employee_monday_number_action" model="ir.actions.act_window">
+            <field name="name">Monday number</field>
+            <field name="res_model">hr_employee_monday_number</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- actions -->
+        <menuitem 
+                id="hr_employee_monday_number_config"
+                name="Monday number" 
+                action="hr_employee_monday_number_action" 
+                parent="hr_work_entry_contract_enterprise.menu_hr_work_entry_configuration" 
+                sequence="101"/>
+
+    </data>
+</odoo>

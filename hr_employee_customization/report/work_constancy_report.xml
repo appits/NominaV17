@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="work_constancy_external_layout_inherit" inherit_id="web.external_layout" primary="True">
+        <xpath expr="//t[4]" position="replace">
+        </xpath>
+        <xpath expr="//t[@t-if='company.external_report_layout_id']" position="replace">
+            <t t-if="1" t-call="hr_employee_customization.work_constancy_external_layout_standard_inherit"><t t-out="0"/></t>
+        </xpath>
+    </template>
+
+    <template id="work_constancy_external_layout_standard_inherit" inherit_id="web.external_layout_standard" primary="True">
+        <xpath expr="//div[3]/div/ul" position="after">
+            <div >
+                Válido sin tachaduras ni enmiendas
+            </div>
+        </xpath>
+    </template>
+
+    <template id="company_ubication">
+        <t t-set="c" t-value="e.company_id" />
+        <t t-if="c.city">
+            <t t-out="c.city"/>
+        </t>
+        <t t-if="c.state_id">
+             <t t-out="c.state_id.name"/>
+        </t>
+        <t t-if="c.zip">
+             <t t-out="c.zip"/>
+        </t>
+    </template>
+
+    <template id="work_constancy_report">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="o">
+                <t t-foreach="o.employee_ids" t-as="e">
+                    <t t-call="hr_employee_customization.work_constancy_external_layout_inherit">
+                        <t t-set="date" t-value="e.contract_id.date_start" />
+                        <t t-set="today" t-value="datetime.datetime.now()" />
+                        <t t-if="e.contract_id.date_end and today.date() >= e.contract_id.date_end">
+                            <t t-set="is_end" t-value="True" />
+                            <t t-set="date_end" t-value="e.contract_id.date_end" />
+                        </t>
+                        <t t-else="else">
+                            <t t-set="is_end" t-value="False" />                            
+                        </t>
+
+                        <div class="page w-100 h-100 container" style="font-family: Lato,Helvetica,Verdana !important;">                        
+                            <div id="body" class="col-12">
+                                <div style="max-width: 90%; margin: 0 auto;  text-align: justify; ">
+                                    <h2 class="mb-5" style="text-align: center; margin-top: 70px;"><strong>CONSTANCIA DE TRABAJO</strong></h2>
+                                    <div    class="mb-5 justify-content-start" 
+                                            style="font-size: 15pt;">
+                                        Por medio de la presente hacemos constar que el (la) ciudadano (a) <strong><t t-out="e.name"/></strong>
+                                        titular de la Cédula de Identidad N.º <strong><t t-out="e.identification_id"/></strong> 
+                                        <t t-if="is_end">
+                                            prestó
+                                        </t>   
+                                        <t t-else="else">
+                                            presta 
+                                        </t>
+                                        sus servicios
+                                        laborales en esta empresa desde el día <strong><t t-esc="date.strftime('%d/%m/%Y')"/></strong> 
+                                        <t t-if="is_end">
+                                            hasta el dia <strong><t t-esc="date_end.strftime('%d/%m/%Y')"/></strong> 
+                                        </t>   
+                                        en el departamento de <strong><t t-out="e.department_id.name"/></strong>
+                                        desempeñando el cargo de <strong><t t-out="e.contract_id.job_id.name"/></strong> devengando una remuneración básica
+                                        mensual de <t t-out="e._get_write_amount()"/> (<span t-esc="e.contract_id.wage"  t-options='{"widget": "monetary", "display_currency": e.contract_id.wage_currency}'/>).
+                                    </div>
+                                    <div class="mb-5" style="font-size: 15pt;">
+                                        Constancia que se expide a petición de la parte interesada 
+                                        en <t t-call="hr_employee_customization.company_ubication"/>, 
+                                        a los <t t-esc="today.strftime('%d/%m/%Y')"/>.
+                                    </div>
+
+                                    <div class="justify-content-center" style="text-align: center; font-size: 15pt; margin-top: 200px; ">
+                                        <span>Atentamente:</span><br></br>
+                                        <span style="font-weight: bolder;" t-esc="o.employee"/><br></br>
+                                        <span t-esc="o.job"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </t>
+                </t>
+            </t>
+        </t>
+    </template>
+
+    <record id="work_constancy_report_action" model="ir.actions.report">
+        <field name="name">Work Constancy</field>
+        <field name="model">wizard.work.constancy</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">hr_employee_customization.work_constancy_report</field>
+        <field name="report_file">hr_employee_customization.work_constancy_report</field>
+        <field name="binding_model_id" ref="model_wizard_work_constancy"/>
+        <field name="binding_type">report</field>
+        <field name="print_report_name"> 'Work Constancies' if len(object.employee_ids.ids) > 1 else 'Work Constancy - %s' % object.employee_ids.name </field>
+    </record>
+
+</odoo>

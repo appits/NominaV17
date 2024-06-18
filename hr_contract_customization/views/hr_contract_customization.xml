@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data noupdate="0">
+        <record id="hr_contract_view_form_inherit_customization" model="ir.ui.view">
+            <field name="name">hr.contract.view.form.inherit.customization</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form" />
+            <field name="arch" type="xml">
+                <!-- New fields in information page -->
+                <xpath expr="//group[@name='salary']/div[@name='wage']" position="after">
+                    <field name="fiscal_currency_id" invisible="0" />
+                    <label for="salary_assignment"/>
+                    <div name="salary_assignment_div" class="o_row">
+                        <field name="salary_assignment" required="1" options="{'currency_field': 'salary_assignment_currency'}" />
+                        <field name="salary_assignment_currency" required="1" options="{'no_create': True, 'no_open': True}"/>
+                    </div>
+
+                    <label for="average_salary" />
+                    <div class="o_row" name="average_salary">
+                        <field name="average_salary" options="{'currency_field': 'average_salary_currency'}"/>
+                        <field name="average_salary_currency" required="0" options="{'no_create': True, 'no_open': True}"/>
+                        <field name="average_salary_date_start" placeholder="Date Start" />
+                        <field name="average_salary_date_end" placeholder="Date End" />
+                    </div>
+
+                    <field name="department_name" invisible="1" />
+
+                    <label for='overtime_hours' />
+                    <div class="o_row" name="overtime_hours" >
+                        <field name="overtime_hours" nolabel="1" />
+                        <field name="overtime_hours_amount" widget='monetary' options="{'currency_field': 'overtime_hours_currency'}" attrs="{'required': [('overtime_hours', '=', True)], 'invisible': [('overtime_hours', '=', False)]}"/>
+                        <field name="overtime_hours_currency" options="{'no_create': True, 'no_open': True}" attrs="{'required': [('overtime_hours', '=', True)], 'invisible': [('overtime_hours', '=', False)]}"/>
+                        <spand attrs="{'invisible': [('overtime_hours', '=', False)]}"> / hours </spand>
+                    </div>
+                </xpath>
+
+                <xpath expr="//group[@name='salary']" position="after">
+                    <group name="contact_salary_customization">
+                        <field name="compute_field_soo" invisible="1" />
+                        <field name="net_amount" options="{'currency_field': 'fiscal_currency_id'}"/>
+                        <label for="salary_basket_ticket"/>
+                        <div name="salary_basket_ticket_div" class="o_row">
+                            <field name="salary_basket_ticket" options="{'currency_field': 'basket_ticket_currency'}" readonly="0"/>
+                            <field name="basket_ticket_currency" options="{'no_create': True, 'no_open': True}" readonly="0"/>
+                        </div>
+                        
+                        <label for="social_security_salary"/>
+                        <div name="social_security_salary_div" class="o_row">
+                            <field name="social_security_salary" options="{'currency_field': 'social_security_currency'}" readonly="0"/>
+                            <field name="social_security_currency" options="{'no_create': True, 'no_open': True}" readonly="0"/>
+                        </div>
+                        <field name="check_compute_security_salary" readonly="0"/>
+
+                    </group>
+                </xpath>
+
+                <!-- Change attributes in wage field -->
+                <xpath expr="//field[@name='wage']" position="replace">
+                    <field name="wage" options="{'currency_field': 'wage_currency'}"/>
+                    <field name="wage_currency" options="{'no_create': True, 'no_open': True}" attrs="{'required': [('wage_type', '=', 'monthly')]}"/>
+                </xpath>
+
+                <xpath expr="//field[@name='date_end']" position="after">
+                    <field name="description_end_contract" placeholder="Motivo de Egreso" />
+                </xpath>
+
+                <!--Advance and additional income and discount Page-->
+                <xpath expr="//notebook/page[@name='information']" position="after">
+                    <page name="employee_advance" string="Advances Page">
+                        <div style="width:100%;">
+                            <group name="group_top">
+                                <field name="compute_field_income_discounts" invisible="1" />
+                                <group name="gruop_left" style="width:50%;">
+                                    <div>
+                                        <group name="loans_group" style="width:20%;">
+                                            <div>
+                                                <group string="Salary advances">
+                                                    <field name="employee_loans" options="{'currency_field': 'fiscal_currency_id'}" readonly="1" />
+                                                    <field name="employee_dpres" options="{'currency_field': 'fiscal_currency_id'}" readonly="1" />
+                                                    <field name="next_cuota" options="{'currency_field': 'fiscal_currency_id'}" readonly="1" />
+                                                    <field name="employee_result_loans" options="{'currency_field': 'fiscal_currency_id'}" readonly="1" />
+                                                </group>
+                                            </div>
+                                        </group>
+                                    </div>
+                                </group>
+                                <group name="gruop_right" style="width:50%;">
+                                    <div>
+                                        <group name="holiday_advance_group" style="width:20%;">
+                                            <div>
+                                                <group string="Advance vacation">
+                                                    <field name="employee_holiday_advance" options="{'currency_field': 'fiscal_currency_id'}" readonly="1" />
+                                                    <field name="employee_vacation_bonus" options="{'currency_field': 'fiscal_currency_id'}" readonly="1" />
+                                                    <field name="employee_holiday_depresvac_amount" options="{'currency_field': 'fiscal_currency_id'}" readonly="1" />
+                                                    <field name="employee_total_holiday_advance" options="{'currency_field': 'fiscal_currency_id'}" readonly="1" />
+                                                </group>
+                                            </div>
+                                        </group>
+                                    </div>
+                                </group>
+                            </group>
+                        </div>
+                        <!--Tree of Advances in contracts-->
+                        <separator string="Advances" colspan="4" />
+                        <field name="salary_advance_ids" nolabel="1" readonly="1" force_saved="1" />
+                    </page>
+                    <page name="employee_additional_income" string="Incomes and Discounts additionals">
+                        <separator string="Incomes and Discounts additionals" colspan="4" />
+                        <field name="employee_fixed_additional_income_discounts_ids" nolabel="1">
+                            <tree create="0" delete="0">
+                                <field name="start_date" />
+                                <field name="end_date" />
+                                <field name="type"/>
+                                <field name="name" />
+                                <field name="amount" />
+                                <field name="currency_id" invisible="1"/>
+                                <field name="rate_id" />
+                                <field name="rate_amount" />
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+
+                <!-- Retentians Page -->
+                <xpath expr="//notebook" position="inside">
+                    <page name="retentions_page" string="Retentions">
+                        <group name="retentions">
+                            <field name="social_security" />
+                            <field name="forced_unemployment" />
+                            <field name="husing_policy_law" />
+                            <label for="withholding_discount_rate"/>
+                            <div name="withholding_discount_rate_div" class="o_row">
+                                <field name="withholding_discount_rate" nolabel="1" />
+                                <span>%</span>
+                            </div>
+                        </group>
+                    </page>
+                </xpath>
+
+                <!--Seniority employees in contracts-->
+                <xpath expr="//notebook/page[1]/group[1]" position="before">
+                    <group name="employee_seniority">
+                        <field name="employee_seniority" invisible="1" />
+                        <field name="employee_years_seniority" readonly="1" />
+                        <field name="employee_months_seniority" readonly="1" />
+                        <field name="employee_days_seniority" readonly="1" />
+                    </group>
+                </xpath>
+                
+                <!--Button to update advances-->
+                <xpath expr="//header" position="inside">
+                    <button name="update_advances" string="Update Advances" type="object" class="oe_highlight" states="draft,open" />
+                </xpath>
+
+                <!-- SOCIAL BENEFITS NEW -->
+                <xpath expr="//notebook" position="inside">
+                    <page name="social_benefits" string="Social Benefits">
+
+                        <group>
+                            <group id="social_benefits_left" style="width:35%;">
+                                <field name="quarterly_payment"/>
+                                <label for="guarantee_days" string="Guarantee of social benefits"/>
+                                <div class="o_row">
+                                    <div class="o_row" >
+                                        <field name="guarantee_days" nolabel="1" readonly="1" class="oe_inline"/>
+                                        <span>Days</span>
+                                    </div>
+                                    <field name="guarantee_salary" readonly="1" options="{'currency_field': 'fiscal_currency_id'}"/>
+                                </div>
+                                <label for="additional_days" string="Additional days of social benefits"/>
+                                <div class="o_row">
+                                    <div class="o_row" >
+                                        <field name="additional_days" nolabel="1" readonly="1" class="oe_inline"/>
+                                        <span>Days</span>
+                                    </div>
+                                    <field name="additional_salary" readonly="1" options="{'currency_field': 'fiscal_currency_id'}"/>
+                                </div>
+                                <field name="advance_social_benefits" readonly="1" options="{'currency_field': 'fiscal_currency_id'}"/>
+                                <field name="available_social_benefits" readonly="1" options="{'currency_field': 'fiscal_currency_id'}"/>
+                                <field name="interest_social_benefits" readonly="1" options="{'currency_field': 'fiscal_currency_id'}"/>                                
+                                <label for="payroll_rate_id" string="Rate of social benefits"/>
+                                <div class="o_row">
+                                    <field name="payroll_rate_id" nolabel="1" readonly="1" options="{'no_create':True, 'no_open':True, 'no_edit':True}"/>
+                                    <span> / </span>                                    
+                                    <field name="payroll_rate" readonly="1"/>
+                                </div>
+                            </group>
+                            
+                            <group id="social_benefits_right" string="Base values and configurations">
+                                <label for="accrued_benefits"/>
+                                <div class="o_row">
+                                    <field name="accrued_benefits_date" nolabel="1" attrs="{'required': [('accrued_benefits', '>', 0)] }" />
+                                    <spand> / </spand>
+                                    <field name="accrued_benefits" nolabel="1" options="{'currency_field': 'fiscal_currency_id'}" />
+                                </div>
+                                <label for="add_accrued"/>
+                                <div class="o_row">
+                                    <field name="add_accrued_date" nolabel="1" attrs="{'required': [('add_accrued', '>', 0)] }" />
+                                    <spand> / </spand>
+                                    <field name="add_accrued" nolabel="1" options="{'currency_field': 'fiscal_currency_id'}" />
+                                </div>
+                                <field name="advance_social_benefits_extra" options="{'currency_field': 'fiscal_currency_id'}"/>
+                                <field name="interest_social_benefits_add" options="{'currency_field': 'fiscal_currency_id'}"/>
+                                <field name="trust_condition" invisible='1'/>
+                                <field name="trust_contribution" attrs="{'invisible': [('trust_condition', '=', 'no')]}" options="{'currency_field': 'fiscal_currency_id'}"/>
+                                <field name="additional_sum" widget="boolean_toggle" readonly="1"/>
+                                <field name="interest_sum" widget="boolean_toggle"/>
+                                <field name="guarantee_msg" invisible='1'/>
+                                <div class="text-warning" attrs="{'invisible': [('guarantee_msg', '=', False)]}">
+                                    The date chosen is outside the range of the contract or is later than the current day
+                                </div>
+                            </group>
+                        </group>
+
+                    </page>
+                </xpath>
+
+                <!-- PROFITS NEW -->
+                <xpath expr="//notebook" position="inside">
+                    <page name="profits" string="Profits">
+                        <group>
+                            <group id="profits_left">
+                                <field name="profit_days" readonly="1"/>
+                                <field name="profit_factor" readonly="1"/>
+                                <label for="profit_accrued_date" string="Accrued for profit in month"/>
+                                <div class="o_row">
+                                    <field name="profit_accrued_date" nolabel='1'/>
+                                    <span> / </span>
+                                    <field name="profit_accrued" nolabel='1' options="{'currency_field': 'fiscal_currency_id'}" readonly="1"/>
+                                </div>
+                                <field name="profit_accumulated" options="{'currency_field': 'fiscal_currency_id'}" readonly="1"/>
+                                <field name="profit_advance" options="{'currency_field': 'fiscal_currency_id'}" readonly="1"/>
+                                <field name="profit_paid" options="{'currency_field': 'fiscal_currency_id'}" readonly="1"/>
+                                <field name="profit_total" options="{'currency_field': 'fiscal_currency_id'}" readonly="1"/>
+                            </group>
+
+                            <group id="profits_right">
+                                <label for="profit_add"/>
+                                <div class="o_row">
+                                    <field name="profit_add_date" nolabel="1" attrs="{'required': [('profit_add', '>', 0)] }" />
+                                    <spand> / </spand>
+                                    <field name="profit_add" nolabel="1" options="{'currency_field': 'fiscal_currency_id'}" />
+                                </div>
+                                <field name="profit_msg" invisible='1'/>
+                                <div class="text-warning" attrs="{'invisible': [('profit_msg', '=', False)]}">
+                                    The date chosen is outside the range of the contract or is later than the current day
+                                </div>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+
+            </field>
+        </record>
+
+        <record id="hr_contract_form_inherit_2" model="ir.ui.view">
+            <field name="name">hr.contract.form.inherit.2</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_payroll.hr_contract_form_inherit"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='hourly_wage']" position="after">
+                    <field name="hourly_wage_currency" attrs="{'required': [('wage_type', '=', 'hourly')]}"/>
+                </xpath>
+                <xpath expr="//field[@name='hourly_wage']" position="attributes">
+                    <attribute name="options">{'currency_field': 'hourly_wage_currency'}</attribute>
+                </xpath>
+            </field>
+        </record>
+    </data>
+
+</odoo>

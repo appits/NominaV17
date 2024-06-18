@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <!-- Allocation check-->
+        <record id="hr_contract_allocation_customization" model="ir.ui.view">
+            <field name="name">hr.contract.allocation.customization</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form" />
+            <field name="arch" type="xml">
+
+                <xpath expr="//notebook/page[1]/group[1]" position="after">
+                    <group name="allocation">
+                        <field name="allocation" />
+                    </group>
+                </xpath>
+
+            </field>
+        </record>
+
+        <!-- Allocation page -->
+        <record id="hr_contract_allocation_page" model="ir.ui.view">
+            <field name="name">hr.contract.allocation.page</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form" />
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='information']" position="after">
+
+                    <page string="Allocation" attrs="{'invisible': [('allocation','=',False)]}">
+                        <separator string="Allocations" colspan="4" />
+                        <field name="allocation_ids" nolabel="1" options="{'no_create': True, 'no_open': True, 'no_edit': True}" />
+                        <group class="oe_subtotal_footer oe_right"></group>
+                    </page>
+
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

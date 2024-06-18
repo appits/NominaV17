@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <record id="resume_type_training" model="hr.resume.line.type">
+            <field name="name">Training</field>
+            <field name="sequence">3</field>
+            <field name="is_training">1</field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="wizard_report_payslip_detail_form" model="ir.ui.view">
+        <field name="name">wizard.report.payslip.detail.form</field>
+        <field name="model">wizard.report.payslip.detail</field>
+        <field name="arch" type="xml">
+            <form string="Invoice Payment Report">
+                <group>
+                    <group>
+                        <field name="date_start" required='1' />
+                        <field name="type_report" required='1'/>
+                        <field name="is_for_reference" />
+                        <field name="state" attrs="{'invisible': [('is_for_reference', '=', True)]}"/>
+                        <field name="state_lote" attrs="{'invisible': [('is_for_reference', '=', False)]}"/>
+                    </group>
+                    <group>
+                        <field name="date_end"/>
+                        <field name="type_payslip_id"/>
+                        <field name="is_for_contract" attrs="{'invisible': [('is_for_reference', '=', True)]}" />
+                        <field name="type_contract_ids" options="{'no_create': True}" attrs="{'invisible': [('is_for_contract', '=', False)], 'required': [('is_for_contract', '=', True)]}"/>
+                        <field name="reference_ids" options="{'no_create': True}" attrs="{'invisible': [('is_for_reference', '=', False)], 'required': [('is_for_reference', '=', True)]}"/>
+                    </group>
+                </group>
+
+                <footer>
+                    <button name="generate_report" string="Print Details" class="oe_highlight" type="object" />
+                    <button string="Cancel" class="btn-default" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="payslip_report_payslip_detail_action" model="ir.actions.act_window">
+        <field name="name">Reportes de Nomina</field>
+        <field name="res_model">wizard.report.payslip.detail</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="payslip_report_detail_menuitem" action="payslip_report_payslip_detail_action" parent="hr_payroll.menu_hr_payroll_report" sequence="99" />
+</odoo>

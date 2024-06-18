@@ -1,0 +1,97 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hr_salary_rule_customization
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-13 18:58+0000\n"
+"PO-Revision-Date: 2023-09-13 14:59-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: hr_salary_rule_customization
+#: model:ir.model.fields,field_description:hr_salary_rule_customization.field_hr_salary_rule__active_duration
+msgid "Active duration"
+msgstr "Activar duración"
+
+#. module: hr_salary_rule_customization
+#: model:ir.model.fields,help:hr_salary_rule_customization.field_hr_salary_rule__duration_python
+msgid "Applied this rule for time calculation if condition is true."
+msgstr "Aplica esta regla para calcular la duración si la condición se cumple."
+
+#. module: hr_salary_rule_customization
+#: model:ir.model.fields.selection,name:hr_salary_rule_customization.selection__hr_salary_rule__type_duration__d
+msgid "Days"
+msgstr "Días"
+
+#. module: hr_salary_rule_customization
+#: model_terms:ir.ui.view,arch_db:hr_salary_rule_customization.inherit_hr_payslip_report_custom
+msgid "Duración"
+msgstr ""
+
+#. module: hr_salary_rule_customization
+#: model:ir.model.fields,field_description:hr_salary_rule_customization.field_hr_payslip_line__duration
+#: model:ir.model.fields,field_description:hr_salary_rule_customization.field_hr_payslip_line__duration_display
+#: model:ir.model.fields,field_description:hr_salary_rule_customization.field_hr_salary_rule__duration
+#: model_terms:ir.ui.view,arch_db:hr_salary_rule_customization.inherit_salary_rule_custom
+msgid "Duration"
+msgstr "Duración"
+
+#. module: hr_salary_rule_customization
+#: model:ir.model.fields.selection,name:hr_salary_rule_customization.selection__hr_salary_rule__type_duration__h
+msgid "Hours"
+msgstr "Horas"
+
+#. module: hr_salary_rule_customization
+#: model:ir.model.fields.selection,name:hr_salary_rule_customization.selection__hr_salary_rule__type_duration__m
+msgid "Months"
+msgstr "Meses"
+
+#. module: hr_salary_rule_customization
+#: model:ir.model,name:hr_salary_rule_customization.model_hr_payslip
+msgid "Pay Slip"
+msgstr "Nómina"
+
+#. module: hr_salary_rule_customization
+#: model:ir.model,name:hr_salary_rule_customization.model_hr_payslip_line
+msgid "Payslip Line"
+msgstr "Línea de recibo de nómina"
+
+#. module: hr_salary_rule_customization
+#: model:ir.model.fields,field_description:hr_salary_rule_customization.field_hr_salary_rule__duration_python
+msgid "Python duration"
+msgstr "Duración Python"
+
+#. module: hr_salary_rule_customization
+#: model:ir.model,name:hr_salary_rule_customization.model_hr_salary_rule
+msgid "Salary Rule"
+msgstr "Regla de Salario"
+
+#. module: hr_salary_rule_customization
+#: model:ir.model.fields,help:hr_salary_rule_customization.field_hr_salary_rule__type_duration
+msgid "Select the time unit to this value"
+msgstr "Selecciona la unidad de tiempo para este valor"
+
+#. module: hr_salary_rule_customization
+#: model:ir.model.fields,field_description:hr_salary_rule_customization.field_hr_salary_rule__type_duration
+msgid "Time unit"
+msgstr "Unidad de tiempo"
+
+#. module: hr_salary_rule_customization
+#: code:addons/hr_salary_rule_customization/models/hr_salary_rule.py:0
+#, python-format
+msgid "Wrong python code defined for:"
+msgstr ""
+
+#. module: hr_salary_rule_customization
+#: model:ir.model.fields.selection,name:hr_salary_rule_customization.selection__hr_salary_rule__type_duration__y
+msgid "Years"
+msgstr "Años"

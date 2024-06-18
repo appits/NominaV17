@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="wizard_report_inces_form" model="ir.ui.view">
+        <field name="name">wizard.report.inces.form</field>
+        <field name="model">wizard.report.inces</field>
+        <field name="arch" type="xml">
+            <form string="ISLR Report">
+                <group>
+                    <group>
+                        <field name="period" widget="radio"/>
+                        <field name="date" required="1" attrs="{'invisible': [('period', '=', 'three')]}"/>
+                        <field name="quarter" required="1" attrs="{'invisible': [('period', '!=', 'three')]}"/>
+                        <field name="date_msg" invisible="1"/>
+                    </group>
+                    <group>
+                        <div>
+                            <strong>INCES Report</strong><br/>
+                            <div attrs="{'invisible': [('period', '!=', 'one')]}">
+                                Choose a date to print report for month <strong><field name="months_display" nolabel="1" readonly="1" class="oe_inline"/></strong>
+                            </div>
+                            
+                            <div attrs="{'invisible': [('period', '!=', 'three')]}">
+                                Choose a date to print report for following months: <strong><field name="months_display" nolabel="1" readonly="1" class="oe_inline"/></strong>
+                            </div>                            
+                            
+                        </div>
+
+                        <div class="text-warning mt-2" attrs="{'invisible': [('date_msg', '=', False)]}">
+                            The date chosen is outside the range of the contract or is later than the current day
+                        </div>
+                    </group>
+                </group>
+
+                <footer>
+                    <button name="print_inces_report" string="Print" class="oe_highlight" type="object" />
+                    <button string="Cancel" class="btn-default" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="wizard_report_inces_action" model="ir.actions.act_window">
+        <field name="name">Reporte INCES</field>
+        <field name="res_model">wizard.report.inces</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <menuitem id="wizard_report_inces_menuitem" action="wizard_report_inces_action" parent="hr_payroll.menu_hr_payroll_report" sequence="100" />
+</odoo>

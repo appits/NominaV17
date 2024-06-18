@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <!-- Form view for "model" -->
+        <record id="hr_payroll_structure_departments_customization" model="ir.ui.view">
+            <field name="name">hr.payroll.structure.departments.customization</field>
+            <field name="model">hr.payroll.structure</field>
+            <field name="inherit_id" ref="hr_payroll.view_hr_employee_grade_form" />
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='schedule_pay']" position="after">
+                    <field name="department_ids" widget="many2many_tags" required="1" />
+                </xpath>
+
+            </field>
+        </record>
+
+
+        <record id="hr_payroll_payslip_by_employees_customization" model="ir.ui.view">
+            <field name="name">hr.payroll.payslip.by.employees.customization</field>
+            <field name="model">hr.payslip.employees</field>
+            <field name="inherit_id" ref="hr_payroll.view_hr_payslip_by_employees" />
+            <field name="arch" type="xml">
+                <xpath expr="//group[3]" position="replace">
+                    <group colspan="2">
+                        <separator string="Department" colspan="2" />
+                        <newline />
+                        <span class="text-muted">Set a specific department if you want to select all employees of this department (and sub-departments) at once. In case you have selected a structure that has associated departments these will be selected automatically as well as their employees.</span>
+                        <group>
+                            <field name="department_id" nolabel="1" attrs="{'invisible': [('department_ids', '!=', [])]}" />
+                            <field name="department_ids" nolabel="1" widget="many2many_tags" />
+                        </group>
+                    </group>
+
+                </xpath>
+
+            </field>
+        </record>
+
+        <record id="payroll_structure_chatter" model="ir.ui.view">
+            <field name="name">payroll.structure.chatter</field>
+            <field name="model">hr.payroll.structure</field>
+            <field name="inherit_id" ref="hr_payroll.view_hr_employee_grade_form" />
+            <field name="arch" type="xml">
+
+                
+                <xpath expr="//sheet" position="after">
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="activity_ids" widget="mail_activity"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </xpath>
+
+            </field>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+        <record id="hr_employee_drive_license" model="ir.ui.view">
+            <field name="name">hr.employee.drive.license</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form" />
+            <field name="arch" type="xml">
+
+                <xpath expr="//page[@name='personal_information']//div[@name='div_km_home_work']" position="after">
+                    
+                    <field name="drive_license_ids" widget="many2many_tags" options="{'no_open': True, 'no_create': True}"/>
+                    
+                </xpath>
+            </field>
+            
+        </record>
+    </data>
+</odoo>

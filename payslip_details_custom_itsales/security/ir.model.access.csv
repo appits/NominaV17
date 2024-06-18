@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_wizard_report_payslip_detail,access_wizard_report_payslip_detail,model_wizard_report_payslip_detail,base.group_user,1,1,1,1
+access_wizard_report_banavih,access_wizard_report_banavih,model_wizard_report_banavih,base.group_user,1,1,1,1
+access_wizard_report_islr,access_wizard_report_islr,model_wizard_report_islr,base.group_user,1,1,1,1
+access_wizard_report_inces,access_wizard_report_inces,model_wizard_report_inces,base.group_user,1,1,1,1
+access_social_benefits_report,access_social_benefits_report,model_social_benefits_report,base.group_user,1,1,1,1
